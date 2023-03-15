@@ -1,0 +1,46 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+.header {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  border-bottom: $border;
+  font-size: 12px;
+  line-height: 11px;
+
+  &__burger-button {
+    background-image: url(../../assets/images/burger-button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: $border;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    border-right: $border;
+
+  }
+
+  &__list {
+    font-family: 'Montserrat';
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+  }
+
+  &__get-project-button {
+    padding: 14px 26px;
+    border: $border;
+    border-radius: 30px;
+    position: absolute;
+    right: 60px;
+  }
+
+  &__lng-button {
+    padding: 23px 16px;
+  }
+}

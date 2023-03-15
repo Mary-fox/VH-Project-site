@@ -1,0 +1,24 @@
+.breadcrumbs {
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    padding-bottom: 77px;
+    &__item{
+
+    }
+    &__item:last-child span {
+        display: none;
+    }
+    &__link{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 19px;
+        color: #262626;
+    }
+    &__item span {
+        padding-left: 12px;
+        padding-right: 12px;
+        color: #262626;
+        font-size: 12px;
+    }
+}
