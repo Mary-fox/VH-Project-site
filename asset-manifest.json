@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VH-Project-site/static/css/main.93491c41.css",
-    "main.js": "/VH-Project-site/static/js/main.d967d4c2.js",
+    "main.js": "/VH-Project-site/static/js/main.a95440a3.js",
     "static/media/Lato-Regular.woff": "/VH-Project-site/static/media/Lato-Regular.0c0f369e632be6c40323.woff",
     "static/media/Lato-Light.woff": "/VH-Project-site/static/media/Lato-Light.202977fa58e737605da5.woff",
     "static/media/Montserrat-ExtraBold.woff": "/VH-Project-site/static/media/Montserrat-ExtraBold.75ee4192581c503f2484.woff",
@@ -14,10 +14,10 @@
     "index.html": "/VH-Project-site/index.html",
     "static/media/burger-button.svg": "/VH-Project-site/static/media/burger-button.275164841630e2ec93de.svg",
     "main.93491c41.css.map": "/VH-Project-site/static/css/main.93491c41.css.map",
-    "main.d967d4c2.js.map": "/VH-Project-site/static/js/main.d967d4c2.js.map"
+    "main.a95440a3.js.map": "/VH-Project-site/static/js/main.a95440a3.js.map"
   },
   "entrypoints": [
     "static/css/main.93491c41.css",
-    "static/js/main.d967d4c2.js"
+    "static/js/main.a95440a3.js"
   ]
 }
