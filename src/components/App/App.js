@@ -1,5 +1,5 @@
 
-import {BrowserRouter,Routes,Route} from"react-router-dom";
+import {HashRouter,Routes,Route} from"react-router-dom";
 import './App.scss';
 import ServicesPage from '../ServicesPage/ServicesPage';
 // import Header from '../Header/Header';
@@ -9,12 +9,12 @@ import ServicesPage from '../ServicesPage/ServicesPage';
 function App() {
   return (
 
-  <BrowserRouter>
+  <HashRouter>
   <Routes>
     {/* <Route path="/" element={<MainPage/>}/> */}
     <Route path="/" element={<ServicesPage />}/>
   </Routes>
-  </BrowserRouter>
+  </HashRouter>
   );
 }
 
