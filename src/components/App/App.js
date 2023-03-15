@@ -8,6 +8,7 @@ import ServicesPage from '../ServicesPage/ServicesPage';
 
 function App() {
   return (
+
   <BrowserRouter>
   <Routes>
     {/* <Route path="/" element={<MainPage/>}/> */}
