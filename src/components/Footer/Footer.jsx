@@ -17,30 +17,32 @@ function Footer() {
         <nav className='footer__menu'>
           <ul className='footer__items'>
             <li><h3>Меню</h3></li>
-            <li className='footer__item'>О команде</li>
-            <li className='footer__item'>Портфолио</li>
-            <li className='footer__item'>Магазин</li>
-            <li className='footer__item'>Цели</li>
+            <li className='footer__item'><a href="#!">О команде</a></li>
+            <li className='footer__item'><a href="#!">Портфолио</a></li>
+            <li className='footer__item'><a href="#!">Магазин</a></li>
+            <li className='footer__item'><a href="#!">Цели</a></li>
           </ul>
           <ul className='footer__items'>
             <li><h3>Специализации</h3></li>
-            <li className='footer__item'>Веб-сайты</li>
-            <li className='footer__item'>Приложения</li>
-            <li className='footer__item'>Иллюстрации</li>
-            <li className='footer__item'>Мультфильмы</li>
+            <li className='footer__item'><a href="#!">Веб-сайты</a></li>
+            <li className='footer__item'><a href="#!">Приложения</a></li>
+            <li className='footer__item'><a href="#!">Иллюстрации</a></li>
+            <li className='footer__item'><a href="#!">Мультфильмы</a></li>
           </ul>
           <ul className='footer__items'>
             <li><h3>Прочее</h3></li>
-            <li className='footer__item'>Вакансии</li>
-            <li className='footer__item'>Документация</li>
-            <li className='footer__item'>Брифинг</li>
-            <li className='footer__item'>Контакты</li>
+            <li className='footer__item'><a href="#!">Вакансии</a></li>
+            <li className='footer__item'><a href="#!">Документация</a></li>
+            <li className='footer__item'><a href="#!">Брифинг</a></li>
+            <li className='footer__item'><a href="#!">Контакты</a></li>
           </ul>
         </nav>
         <div className="footer__info">
           <p className="footer__copyright">© 2023 Визуализируя сердцем все права защищены Индивидуальный Предприниматель Ходулев Владислав Алексеевич</p>
-          <p className="footer__privacy">Политика конфиденциальности</p>
-          <Link to='#top' title="Вернуться к началу"  className='footer__top'>В начало</Link>
+          <div className="footer__right-block">
+            <p className="footer__privacy">Политика конфиденциальности</p>
+            <Link to='#top' title="Вернуться к началу"  className='footer__top'>В начало</Link>
+          </div>
         </div>
       </div>
     </footer>

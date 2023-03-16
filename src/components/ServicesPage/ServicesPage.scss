@@ -35,3 +35,18 @@
     }
 
 }
+
+@media (max-width: 1199px) {
+    .servic {
+        &__left-banner {
+            border-right: 0;
+        }
+        &__content {
+            border-right: 0;
+        }
+        &__subheader{
+            padding: 40px 0 17px 0;
+        }
+    }
+    
+}

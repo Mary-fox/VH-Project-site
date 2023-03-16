@@ -50,10 +50,15 @@
         font-weight: 100;
         font-size: 14px;
         line-height: 28px;
+        cursor: pointer;
+    }
+    &__item a {
+        color: #262626;
     }
     &__info {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-weight: 300;
         font-size: 12px;
         line-height: 19px;
@@ -62,9 +67,12 @@
         opacity: 0.8;
         max-width: 431px;
     }
-    &____privacy{
+    &__right-block {
+        display: flex;
+        gap: 162px;
+    }
+    &__privacy{
         opacity: 0.8;
-        align-self: center;
     }
     &__top{
         background: #262626;
@@ -76,4 +84,25 @@
         color: #F8F8F8;
         cursor: pointer;
     }
+}
+@media (max-width: 1199px) {
+    .footer {
+        grid-template-columns: 60px 1fr 39px;
+
+        &__left-banner {
+            border-right: 0;
+        }
+        &__container {
+            border-right: 0;
+            padding: 88px 0 89px 0;
+        }
+        &__right-block{
+            flex-direction: column-reverse;
+            align-items: end;
+            gap: 8px;
+        }
+        &__top{
+            text-align: center;
+        }
+    }    
 }
