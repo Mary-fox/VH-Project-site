@@ -11,17 +11,18 @@ function ServicesPage() {
     <div>
         {/* <Main /> */}
     <Header />
-      <div className="servic">
-      <div className='servic__left-banner'></div>
-        <div className='servic__content'>
-        <div className="servic__subheader">
-        <Breadcrumbs/>
-            <div className="servic__container">
-                <h2 className='servic__title'>Услуги</h2>
-                <p className='servic__text'>Мы оказываем полный цикл цифровизации для бизнеса любого уровня.</p>
+        <div id={"top"}></div>
+        <div className="servic">
+        <div className='servic__left-banner'></div>
+            <div className='servic__content'>
+                <div className="servic__subheader">
+                <Breadcrumbs/>
+                    <div className="servic__container">
+                        <h2 className='servic__title'>Услуги</h2>
+                        <p className='servic__text'>Мы оказываем полный цикл цифровизации для бизнеса любого уровня.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
         <div className='servic__right-banner'></div>
         </div>
         <ServicesCard
@@ -35,8 +36,8 @@ function ServicesPage() {
             menu2={<>
                     <li><a href="#!">Работа с ЦА</a></li>
                     <li><a href="#!">UX - Исследования</a></li>
-                    <li><a href="#!">Аналитика метрик</a></li></>
-                }
+                    <li><a href="#!">Аналитика метрик</a></li>
+                    </>}
             />
         <ServicesCard
             title="Дизайн"
@@ -47,15 +48,13 @@ function ServicesPage() {
                     <li><a href="#!">Брендинг</a></li>
                     <li><a href="#!">Логотипы</a></li>
                     <li><a href="#!">Обложки</a></li>
-                    </>
-            }
-        menu2={<>
+                    </>}
+            menu2={<>
                     <li><a href="#!">Иллюстрации</a></li>
                     <li><a href="#!">Цифровые арты</a></li>
                     <li><a href="#!">Баннеры</a></li>
                     <li><a href="#!">NFT</a></li>
-                    </>
-            }
+                    </>}
         />
         <ServicesCard
             title="Веб-сайты"
@@ -66,14 +65,12 @@ function ServicesPage() {
                 <li><a href="#!">Интернет-магазины</a></li>
                 <li><a href="#!">Каталоги и витрины</a></li>
                 <li><a href="#!">No-code решения</a></li>
-                </>
-            }
+                </>}
             menu2={<>
                 <li><a href="#!">1С Битрикс</a></li>
                 <li><a href="#!">Wordpress</a></li>
                 <li><a href="#!">Tilda</a></li>
-                </>
-             }
+                </>}
         />
         <ServicesCard
             title="Поддержка и развитие"
@@ -82,9 +79,7 @@ function ServicesPage() {
                     <li><a href="#!">Техническая поддержка</a></li>
                     <li><a href="#!">Дизайн поддержка</a></li>
                     <li><a href="#!">Контент поддержка</a></li>
-                </>
-            }
-
+                </>}
         />
         <ServicesCard
             title="Маркетинг"
@@ -94,17 +89,10 @@ function ServicesPage() {
                     <li><a href="#!">Настройка и ведение Яндекс бизнес</a></li>
                     <li><a href="#!">Таргетинг в социальных сетях</a></li>
                     <li><a href="#!">Семантика и базовая SEO оптимизация</a></li>
-            </>
-        }
+            </>}
         />
-
-
-
-
-
     <Footer />
     </div>
-
     );
   }
   
