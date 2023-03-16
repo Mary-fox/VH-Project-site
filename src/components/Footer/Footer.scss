@@ -186,3 +186,19 @@
         }
     }
 }
+
+@media (max-width: 479px) {
+    .footer {
+        &__subtext{
+            padding-bottom: 230px;
+        }
+        &__btn {
+            right: 85px;
+            top: 265px;
+        }
+        &__menu{
+            flex-flow: wrap;
+            gap: 30px;
+        }
+    }
+}

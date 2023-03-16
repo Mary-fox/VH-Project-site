@@ -44,3 +44,11 @@
     padding: 23px 16px;
   }
 }
+
+@media (max-width: 479px) {
+  .header {
+    &__list {
+      display: none;
+    }
+  }
+}
