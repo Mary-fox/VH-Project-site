@@ -85,7 +85,7 @@
         cursor: pointer;
     }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .footer {
         grid-template-columns: 60px 1fr 39px;
 
@@ -105,4 +105,37 @@
             text-align: center;
         }
     }    
+}
+@media (max-width: 960px) {
+    .footer {
+        grid-template-columns: 40px 1fr 40px;
+        &__text, &__subtext {
+            width: 340px;
+        }
+        &__container {
+            position: relative;
+        }
+        &__btn{
+            position: absolute;
+            right: 0;
+            top: 89px;
+        }
+        &__menu{
+            gap: 100px;
+        }
+        &__container {
+            padding: 55px 0 89px 0;
+        }
+        &__subtext {
+            padding-bottom: 76.5px;
+        }
+        &__info{
+            font-size: 10px;
+        }
+        &__copyright {
+            max-width: 276px;
+        }
+
+    }
+    
 }
