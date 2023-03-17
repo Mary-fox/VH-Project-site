@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.76710f3c.css",
-    "main.js": "/VH-Project-site/static/js/main.b8998e80.js",
+    "main.css": "/VH-Project-site/static/css/main.b769a5f8.css",
+    "main.js": "/VH-Project-site/static/js/main.4e31a58d.js",
     "static/media/Lato-Regular.woff": "/VH-Project-site/static/media/Lato-Regular.0c0f369e632be6c40323.woff",
     "static/media/Lato-Light.woff": "/VH-Project-site/static/media/Lato-Light.202977fa58e737605da5.woff",
     "static/media/Montserrat-ExtraBold.woff": "/VH-Project-site/static/media/Montserrat-ExtraBold.75ee4192581c503f2484.woff",
@@ -16,11 +16,11 @@
     "index.html": "/VH-Project-site/index.html",
     "static/media/btn-open.svg": "/VH-Project-site/static/media/btn-open.c426c60d55d0acd6f90a.svg",
     "static/media/burger-button.svg": "/VH-Project-site/static/media/burger-button.275164841630e2ec93de.svg",
-    "main.76710f3c.css.map": "/VH-Project-site/static/css/main.76710f3c.css.map",
-    "main.b8998e80.js.map": "/VH-Project-site/static/js/main.b8998e80.js.map"
+    "main.b769a5f8.css.map": "/VH-Project-site/static/css/main.b769a5f8.css.map",
+    "main.4e31a58d.js.map": "/VH-Project-site/static/js/main.4e31a58d.js.map"
   },
   "entrypoints": [
-    "static/css/main.76710f3c.css",
-    "static/js/main.b8998e80.js"
+    "static/css/main.b769a5f8.css",
+    "static/js/main.4e31a58d.js"
   ]
 }
