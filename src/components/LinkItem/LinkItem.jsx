@@ -1,4 +1,4 @@
-import './Link.scss';
+import './LinkItem.scss';
 
 function Link(props) {
     const {className, href, text} = props;

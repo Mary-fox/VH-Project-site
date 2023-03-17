@@ -1,9 +1,12 @@
+@import "./src/assets/styles/colors";
+
 .footer {
     display: grid;
     grid-template-columns: 60px 1fr 60px;
     border-bottom: 1px solid #D3D3D3;
     font-family: 'Montserrat';
     color: #262626;
+    background: $white;
 
     &__left-banner {
         border-right: 1px solid #D3D3D3;
@@ -29,7 +32,7 @@
         padding-bottom: 108.5px;
     }
     &__btn {
-        background-image: url(../../assets/images/footer-btn.png);
+        background-image: url(../../assets/images/footer-btn.svg);
         width: 200px;
         height: 200px;
         cursor: pointer;
@@ -162,7 +165,7 @@
             gap: 30px;
         }
         &__btn{
-            background-image: url(../../assets/images/footer-btn-mobile.png);
+            background-image: url(../../assets/images/footer-btn-mobile.svg);
             background-size: cover;
             width: 150px;
             height: 150px;

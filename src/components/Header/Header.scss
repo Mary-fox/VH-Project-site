@@ -19,6 +19,8 @@
     background-repeat: no-repeat;
     border-right: $border;
     color: $black;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
   }
 
   &__container {
@@ -43,6 +45,8 @@
     border-radius: 30px;
     position: absolute;
     right: 60px;
+    cursor: pointer;
+
   }
 
   &__lng-button {
@@ -51,24 +55,25 @@
   } 
   &__burger-button--active{
     background-image: url(../../assets/images/btn-open.svg);
+    transition: all 0.5s ease-in;
   }
     
 }
-.black-layer{
-  display: none;
+// .black-layer{
+//   display: none;
 
-  &--active {
-    display: block;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.2);
-    transition: 1s;
-    z-index: 30;
-  }
-}
+//   &--active {
+//     display: block;
+//     position: fixed;
+//     top: 60px;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0,0,0,.2);
+//     transition: 1s;
+//     z-index: 30;
+//   }
+// }
 
 @media (max-width: 1199px) {
   .header {
