@@ -8,7 +8,7 @@ function Footer() {
       <div className='footer__left-banner'></div>
       <div className="footer__container">
         <div className="footer__content">
-          <div>
+          <div className='footer__about'>
             <h2 className='footer__text'>Расскажите о вашем проекте</h2>
             <p className='footer__subtext'>Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки.</p>
           </div>
