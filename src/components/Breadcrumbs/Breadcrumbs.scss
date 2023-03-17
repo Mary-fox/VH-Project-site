@@ -3,9 +3,6 @@
     display: flex;
     align-items: center;
     padding-bottom: 77px;
-    &__item{
-
-    }
     &__item:last-child span {
         display: none;
     }
@@ -24,7 +21,7 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
     .breadcrumbs {
         padding-bottom: 20px;
     }

@@ -86,7 +86,7 @@
         cursor: pointer;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .footer {
         grid-template-columns: 60px 1fr 39px;
 
@@ -107,7 +107,7 @@
         }
     }    
 }
-@media (max-width: 960px) {
+@media (max-width: 959px) {
     .footer {
         grid-template-columns: 40px 1fr 40px;
         &__text, &__subtext {
@@ -138,7 +138,7 @@
         }
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
     .footer {
         grid-template-columns: 20px 1fr 20px;
 
@@ -162,6 +162,7 @@
             gap: 30px;
         }
         &__btn{
+            background-image: url(../../assets/images/footer-btn-mobile.png);
             background-size: cover;
             width: 150px;
             height: 150px;
@@ -169,9 +170,6 @@
         &__menu {
             gap: 50px;
             padding-bottom: 30px;
-        }
-        &__ {
-            flex-direction: column-reverse;
         }
         &__right-block{
             width: 100%;
@@ -189,16 +187,28 @@
 
 @media (max-width: 479px) {
     .footer {
+        &__container{
+            padding: 52px 0 30px 0;
+        }
+        &__text{
+            margin-top: 0;
+        }
         &__subtext{
-            padding-bottom: 230px;
+            padding-bottom: 50px;
+        }
+        &__content{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
         }
         &__btn {
-            right: 85px;
-            top: 265px;
+            position: relative;
+            right: 0;
+            top: 0;
         }
         &__menu{
             flex-flow: wrap;
-            gap: 30px;
+            gap: 45px;
         }
     }
 }

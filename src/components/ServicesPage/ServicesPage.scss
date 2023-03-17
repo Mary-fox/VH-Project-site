@@ -39,7 +39,7 @@ html, body{
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .servic {
         &__left-banner {
             border-right: 0;
@@ -54,7 +54,7 @@ html, body{
     
 }
 
-@media (max-width: 960px) {
+@media (max-width: 959px) {
     .servic {
         grid-template-columns: 40px 1fr 40px;
         &__title {
@@ -70,7 +70,7 @@ html, body{
         }
     }   
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
     .servic {
         grid-template-columns: 20px 1fr 20px;
 

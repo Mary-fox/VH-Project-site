@@ -44,11 +44,22 @@
     padding: 23px 16px;
   }
 }
-
-@media (max-width: 479px) {
+@media (max-width: 1199px) {
+  .header {
+    &__container{
+      padding-left: 143px;
+      justify-content: flex-start;
+    }
+  }
+}
+@media (max-width: 959px) {
   .header {
     &__list {
       display: none;
     }
+    &__get-project-button {
+      right: 8px;
+    }
   }
 }
+
