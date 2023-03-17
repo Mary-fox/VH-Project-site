@@ -1,7 +1,6 @@
 import './Overlay.scss';
 import LinkItem from '../LinkItem/LinkItem';
 import {Link} from "react-router-dom";
-
 function Overlay(props) {
     const { isMenuOpen } = props;
     return (
@@ -25,12 +24,17 @@ function Overlay(props) {
                 </div>
                 <div className="contacts__links">
                     <h3 className='contacts__title'>Мы в социальных сетях:</h3>
-                        <ul className='contacts__items'>
-                            <li className='contacts__item'><a href="#!">telegram</a></li>
-                            <li className='contacts__item'><a href="#!">vkontakte</a></li>
-                            <li className='contacts__item'><a href="#!">Behance</a></li>
-                            <li className='contacts__item'><a href="#!">Dribble</a></li>
-                        </ul>
+                        <nav className='contacts__items'>
+                            <ul>                            
+                                <li className='contacts__item'><a href="#!">telegram</a></li>
+                                <li className='contacts__item'><a href="#!">vkontakte</a></li>
+                            </ul>
+                            <ul>                            
+                                <li className='contacts__item'><a href="#!">Behance</a></li>
+                                <li className='contacts__item'><a href="#!">Dribble</a></li>
+                            </ul>
+
+                        </nav>
 
                 </div>
 
