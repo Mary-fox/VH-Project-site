@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.5fdf33fa.css",
+    "main.css": "/VH-Project-site/static/css/main.c65a1e8c.css",
     "main.js": "/VH-Project-site/static/js/main.27a9dd79.js",
     "static/media/Lato-Regular.woff": "/VH-Project-site/static/media/Lato-Regular.0c0f369e632be6c40323.woff",
     "static/media/Lato-Light.woff": "/VH-Project-site/static/media/Lato-Light.202977fa58e737605da5.woff",
@@ -13,11 +13,11 @@
     "static/media/Montserrat-Regular.woff2": "/VH-Project-site/static/media/Montserrat-Regular.8b56391ed36ea95337c6.woff2",
     "index.html": "/VH-Project-site/index.html",
     "static/media/burger-button.svg": "/VH-Project-site/static/media/burger-button.275164841630e2ec93de.svg",
-    "main.5fdf33fa.css.map": "/VH-Project-site/static/css/main.5fdf33fa.css.map",
+    "main.c65a1e8c.css.map": "/VH-Project-site/static/css/main.c65a1e8c.css.map",
     "main.27a9dd79.js.map": "/VH-Project-site/static/js/main.27a9dd79.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fdf33fa.css",
+    "static/css/main.c65a1e8c.css",
     "static/js/main.27a9dd79.js"
   ]
 }
