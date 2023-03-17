@@ -8,12 +8,17 @@
   border-bottom: $border;
   font-size: 12px;
   line-height: 11px;
+  z-index: 60;
+  position: fixed;
+  width: 100%;
+  background:$white;
 
   &__burger-button {
     background-image: url(../../assets/images/burger-button.svg);
     background-position: center;
     background-repeat: no-repeat;
     border-right: $border;
+    color: $black;
   }
 
   &__container {
@@ -42,8 +47,29 @@
 
   &__lng-button {
     padding: 23px 16px;
+    color: $black;
+  } 
+  &__burger-button--active{
+    background-image: url(../../assets/images/btn-open.svg);
+  }
+    
+}
+.black-layer{
+  display: none;
+
+  &--active {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    transition: 1s;
+    z-index: 30;
   }
 }
+
 @media (max-width: 1199px) {
   .header {
     &__container{
@@ -62,4 +88,3 @@
     }
   }
 }
-

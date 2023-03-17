@@ -1,0 +1,45 @@
+import './Overlay.scss';
+import Link from '../Link/Link';
+function Overlay(props) {
+    const { isMenuOpen } = props;
+    return (
+    <div className={`overlay ${isMenuOpen ? 'overlay--open' : ''}`} >
+        <div className='overlay__left-banner'></div>
+        <div className="overlay__container">
+            <nav className="overlay__nav">
+                <ul className="overlay__list">
+                    <li className="overlay__list-item"><a href="#!">ГЛАВНАЯ</a></li>
+                    <li className="overlay__list-item"><a href="#!">ПРОЕКТЫ</a></li>
+                    <li className="overlay__list-item"><a href="#!">УСЛУГИ</a></li>
+                    <li className="overlay__list-item"><a href="#!">КОМАНДА</a></li>
+                    <li className="overlay__list-item"><a href="#!">КАРЬЕРА</a></li>
+                </ul>
+            </nav>
+            <div className="contacts">
+                <div className="contacts__block">
+                    <Link className='contacts__phone' href="tel:79270030100" text='8 927 700 0100'/>
+                    <Link  className='contacts__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
+                </div>
+                <div className="contacts__links">
+                    <h3 className='contacts__title'>Мы в социальных сетях:</h3>
+                        <ul className='contacts__items'>
+                            <li className='contacts__item'><a href="#!">telegram</a></li>
+                            <li className='contacts__item'><a href="#!">vkontakte</a></li>
+                            <li className='contacts__item'><a href="#!">Behance</a></li>
+                            <li className='contacts__item'><a href="#!">Dribble</a></li>
+                        </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div className='overlay__right-banner'></div>
+    </div>
+
+    );
+  }
+  
+  export default Overlay;
+  
