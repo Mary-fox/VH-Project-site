@@ -38,7 +38,7 @@ function Footer() {
           </ul>
         </nav>
         <div className="footer__info">
-          <p className="footer__copyright">© 2023 Визуализируя сердцем все права защищены Индивидуальный Предприниматель Ходулев Владислав Алексеевич</p>
+          <p className="footer__copyright">© 2023 Визуализируя сердцем все права защищены <br/> Индивидуальный Предприниматель Ходулев Владислав Алексеевич</p>
           <div className="footer__right-block">
             <p className="footer__privacy">Политика конфиденциальности</p>
             <Link to='#top' title="Вернуться к началу"  className='footer__top'>В начало</Link>

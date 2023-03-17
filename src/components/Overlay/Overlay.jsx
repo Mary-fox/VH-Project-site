@@ -13,13 +13,12 @@ function Overlay(props) {
                     <li className="overlay__list-item"><Link to="/">ПРОЕКТЫ</Link></li>
                     <li className="overlay__list-item"><Link to="/services">УСЛУГИ</Link></li>
                     <li className="overlay__list-item"><Link to="#!">КОМАНДА</Link></li>
-                    <li className="overlay__list-item"><Link to="#!">ГЛАВНАЯ</Link></li>
                     <li className="overlay__list-item"><Link to="#!">КАРЬЕРА</Link></li>
                 </ul>
             </nav>
             <div className="contacts">
                 <div className="contacts__block">
-                    <LinkItem className='contacts__phone' href="tel:79270030100" text='8 927 700 0100'/>
+                    <LinkItem className='contacts__phone' href="tel:79270030100" text='8 927 003 01 00'/>
                     <LinkItem  className='contacts__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
                 </div>
                 <div className="contacts__links">

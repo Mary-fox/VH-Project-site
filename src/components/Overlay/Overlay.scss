@@ -154,5 +154,23 @@
     }
 }
 
+@media (max-width: 479px) {
+    .overlay {
+        &__container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 50px;
+        }
+    }
+    .contacts {
+        gap: 50px;
+        align-items: flex-start;
+        
+        &__block {
+            align-items: flex-start;
+        }
+    }    
+    
+}
 
 

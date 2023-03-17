@@ -163,6 +163,7 @@
         &__info {
             flex-direction: column-reverse;
             gap: 30px;
+            align-items: flex-start;
         }
         &__btn{
             background-image: url(../../assets/images/footer-btn-mobile.svg);
@@ -181,9 +182,6 @@
         }
         &__top{
             width: 100%;
-        }
-        &__copyright {
-            max-width: 100%;
         }
     }
 }
@@ -216,6 +214,10 @@
         }
         &__about{
             width: 100%;
+        }
+        &__copyright, &__privacy{
+            font-size: 8px;
+            max-width: 100%;
         }
     }
 }
