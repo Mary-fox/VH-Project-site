@@ -6,6 +6,8 @@ import ServicesCard from '../ServicesCard/ServicesCard';
 
 // import Main from '../Main/Main';
 
+
+
 function ServicesPage() {
     return (
     <div>
@@ -16,7 +18,11 @@ function ServicesPage() {
         <div className='servic__left-banner'></div>
             <div className='servic__content'>
                 <div className="servic__subheader">
-                <Breadcrumbs/>
+                <Breadcrumbs
+                          items={[
+                            {label: 'Цифровые решения', url: '#!' },
+                            {label: 'Услуги', url: '#!' },
+                             ]}/>
                     <div className="servic__container">
                         <h2 className='servic__title'>Услуги</h2>
                         <p className='servic__text'>Мы оказываем полный цикл цифровизации для бизнеса любого уровня.</p>

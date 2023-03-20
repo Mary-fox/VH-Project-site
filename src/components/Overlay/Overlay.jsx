@@ -13,7 +13,7 @@ function Overlay(props) {
                     <li className="overlay__list-item"><Link to="/">ПРОЕКТЫ</Link></li>
                     <li className="overlay__list-item"><Link to="/services">УСЛУГИ</Link></li>
                     <li className="overlay__list-item"><Link to="#!">КОМАНДА</Link></li>
-                    <li className="overlay__list-item"><Link to="#!">КАРЬЕРА</Link></li>
+                    <li className="overlay__list-item"><Link to="/career">КАРЬЕРА</Link></li>
                 </ul>
             </nav>
             <div className="contacts">
