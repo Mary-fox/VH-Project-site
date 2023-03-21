@@ -89,7 +89,7 @@
             max-width: 580px;
         }
         &__item {
-            max-width: 649px;
+            padding-right: 70px !important;
         }
     }
     
@@ -100,9 +100,6 @@
 
         &__info{
             max-width: 443px;
-        }
-        &__item {
-            max-width: 450px;
         }
     }
 }
@@ -129,7 +126,7 @@
             font-size: 14px;
         }
         &__item {
-            max-width: 348px;
+            padding-right: 65px !important;
         }
         &__link {
             font-size: 14px;
@@ -146,9 +143,6 @@
 
         &__info{
             max-width: 200px;
-        }
-        &__item {
-            max-width: 200px; 
         }
     }
 }
