@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Accordion.scss';
+import {Link} from "react-router-dom";
 
 function Accordion(props) {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -16,19 +17,19 @@ function Accordion(props) {
                                 : <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31 1L16.15 21L0.999999 1" stroke="#2B2B2B"/></svg>
             }</span>
         </div>
-        {isExpanded && 
-            <div className="accordion__content">
-                <h3 className='accordion__info'>{props.info}</h3>
-                <nav className='accordion__items'>
-                    <h3 className='accordion__subtitle'>{props.subtitle1}</h3>
-                    <ul className='accordion__item'>{props.item1}</ul>
-                    <h3 className='accordion__subtitle'>{props.subtitle2}</h3>
-                    <ul className='accordion__item'>{props.item2}</ul>
-                    <h3 className='accordion__subtitle'>{props.subtitle3}</h3>
-                    <ul className='accordion__item'>{props.item3}</ul>
+        <div className={"accordion__content" + (isExpanded ? " accordion__content--expanded" : "")}>
+          <h3 className='accordion__info'>{props.info}</h3>
+                  <nav className='accordion__items'>
+                      <h3 className='accordion__subtitle'>{props.subtitle1}</h3>
+                      <ul className='accordion__item'>{props.item1}</ul>
+                      <h3 className='accordion__subtitle'>{props.subtitle2}</h3>
+                      <ul className='accordion__item'>{props.item2}</ul>
+                      <h3 className='accordion__subtitle'>{props.subtitle3}</h3>
+                      <ul className='accordion__item'>{props.item3}</ul>
 
-                </nav>
-            </div>}
+                  </nav>
+                  <Link className="accordion__link" to={props.href} target="_blank">{props.link}</Link>
+        </div>
       </div>
     );
   }

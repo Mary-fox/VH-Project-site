@@ -1,14 +1,18 @@
 @import "./src/assets/styles/colors";
 
+
 .accordion {
     color: $black;
     border-bottom: 1px solid #D3D3D3;
     padding: 0 20px 0 20px;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
 
     &__header {
         display: flex;
         justify-content: space-between;
         padding: 20px 0 37px 0;
+  
     }
     &__header h3{
         font-style: normal;
@@ -17,6 +21,14 @@
         line-height: 130%;
     }
     &__content {
+        max-height: 0;
+        overflow: hidden; /* скрываем содержимое блока, которое не влезает в max-height */
+        transition: all 0.4s ease-in-out;
+    }
+    &__content--expanded  {
+        max-height: 1000px;
+        transition: all 0.4s ease-in-out;
+        transition-delay: 0.1s;
         padding-bottom: 50px;
     }
     &__info {
@@ -25,6 +37,7 @@
         font-size: 16px;
         line-height: 19px;
         padding-bottom: 20px;
+        max-width: 1088px;
     }
     &__header_active{
         padding: 42px 0 14px 0;
@@ -38,9 +51,6 @@
     &__item {
         padding-bottom: 20px !important;
         max-width: 1070px;
-    }
-    &__item:last-child {
-        padding-bottom: 0 !important;
     }
     &__item li {
         font-family: 'Lato';
@@ -59,6 +69,14 @@
     }   
     &__item li:last-child {
         padding-bottom: 0;
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        text-decoration-line: underline;
+        color: $black;
     }
 
 }

@@ -59,6 +59,8 @@ function CareerPage() {
                         <li>Молодая и дружная команда;</li>
                         <li>Полностью удаленная работа.</li>
                         </>}
+                    href="https://obninsk.hh.ru/vacancy/77739277?from=vacancy_search_list"
+                    link="Вакансия на HeadHunter"
                 />
                 <Accordion 
                     title="PHP-разработчик"
@@ -85,6 +87,8 @@ function CareerPage() {
                         <li>Молодая и дружная команда;</li>
                         <li>Полностью удаленная работа.</li>
                         </>}
+                    href="https://obninsk.hh.ru/vacancy/77739277?from=vacancy_search_list"
+                    link="Вакансия на HeadHunter"
                 />
                 <Accordion 
                     title="Бизнес-аналитик"
@@ -111,6 +115,8 @@ function CareerPage() {
                         <li>Молодая и дружная команда;</li>
                         <li>Полностью удаленная работа.</li>
                         </>}
+                        href="https://obninsk.hh.ru/vacancy/77739277?from=vacancy_search_list"
+                        link="Вакансия на HeadHunter"
                 />
                 <Accordion 
                     title="Digital-маркетолог"
@@ -137,12 +143,18 @@ function CareerPage() {
                         <li>Молодая и дружная команда;</li>
                         <li>Полностью удаленная работа.</li>
                         </>}
+                    href="https://obninsk.hh.ru/vacancy/77739277?from=vacancy_search_list"
+                    link="Вакансия на HeadHunter"
                 />
             </div>
             <div className='servic__right-banner'></div>
         </div>
 
-    <Footer />
+    <Footer 
+        text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='#!!'>почту</a>,  " или в ", <a href='#!!'>vk.</a>]}
+        btn="Откликнуться"
+    />
+    
     </div>
     );
   }

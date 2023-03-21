@@ -1,7 +1,7 @@
 import './Footer.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 
-function Footer() {
+function Footer(props) {
 
   return (
     <footer className='footer' > 
@@ -9,10 +9,10 @@ function Footer() {
       <div className="footer__container">
         <div className="footer__content">
           <div className='footer__about'>
-            <h2 className='footer__text'>Расскажите о вашем проекте</h2>
-            <p className='footer__subtext'>Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки.</p>
+            <h2 className='footer__text'>{props.text}</h2>
+            <p className='footer__subtext'>{props.subtext}</p>
           </div>
-          <button className='footer__btn' type="button"></button>
+          <a href='#!' className='footer__btn' type="button">{props.btn}</a>
         </div>  
         <nav className='footer__menu'>
           <ul className='footer__items'>
