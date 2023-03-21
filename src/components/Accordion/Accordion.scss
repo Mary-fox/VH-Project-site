@@ -86,7 +86,7 @@
     .accordion {
 
         &__info {
-            max-width: 580px;
+            padding-right: 140px !important;
         }
         &__item {
             padding-right: 70px !important;
@@ -94,12 +94,10 @@
     }
     
 }
-
 @media (max-width: 959px) {
     .accordion {
-
-        &__info{
-            max-width: 443px;
+        &__info {
+            padding-right: 80px !important;
         }
     }
 }
@@ -120,7 +118,7 @@
         &__info {
             font-size: 14px;
             line-height: 17px;
-            max-width: 360px;
+            padding-right: 65px !important;
         }
         &__subtitle {
             font-size: 14px;
@@ -142,7 +140,7 @@
     .accordion { 
 
         &__info{
-            max-width: 200px;
+            padding-right: 60px !important;
         }
     }
 }
