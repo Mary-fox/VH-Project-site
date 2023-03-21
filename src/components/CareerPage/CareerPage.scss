@@ -59,3 +59,80 @@ html, body{
     }
 
 }
+
+
+@media (max-width: 1199px) {
+    .career {
+        &__content {
+            padding: 40px 40px 17px 40px;
+        }
+    }
+    
+}
+
+@media (max-width: 959px) {
+    .career {
+        grid-template-columns: 0 1fr 0;
+
+        &__left-banner h3{
+            display: none
+        }
+        &__text{
+            padding-bottom: 70px;
+        }
+        &__subtitle {
+            line-height: 46.8px;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .career {
+        &__content {
+            padding: 20px 20px 17px 20px;
+        }
+        &__container {
+            padding-top: 10px;
+            padding-bottom: 60px;
+        }
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__slogan {
+            font-size: 12px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+            padding-bottom: 50px;
+        }
+        &__subtitle {
+            font-size: 28px;
+            line-height: 56px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .career {
+
+        &__container {
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+            padding-top: 0;
+            padding-bottom: 25px;
+        }
+        &__text {
+            padding-bottom: 70px;
+        }
+        &__subtitle {
+            line-height: 36.4px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+

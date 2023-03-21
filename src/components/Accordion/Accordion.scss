@@ -25,7 +25,7 @@
         transition: all 0.4s ease-in-out;
     }
     &__content--expanded  {
-        max-height: 1000px;
+        max-height: 1400px;
         transition: all 0.4s ease-in-out;
         transition-delay: 0.1s;
         padding-bottom: 50px;
@@ -37,6 +37,9 @@
         line-height: 19px;
         padding-bottom: 20px;
         max-width: 1088px;
+    }
+    &__info a {
+        font-weight: 400;
     }
     &__header_active{
         padding: 42px 0 14px 0;
@@ -77,4 +80,75 @@
         color: $black;
     }
 
+}
+
+@media (max-width: 1199px) {
+    .accordion {
+
+        &__info {
+            max-width: 580px;
+        }
+        &__item {
+            max-width: 649px;
+        }
+    }
+    
+}
+
+@media (max-width: 959px) {
+    .accordion {
+
+        &__info{
+            max-width: 443px;
+        }
+        &__item {
+            max-width: 450px;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .accordion {
+        padding: 0 10px 0 10px;
+
+        &__header {
+            padding: 10px 0 24px 0;
+        }
+        &__header h3 {
+            font-size: 14px;
+        }
+        &__header_active{
+            padding: 20px 0 14px 0;
+        }
+        &__info {
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 360px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__item {
+            max-width: 348px;
+        }
+        &__link {
+            font-size: 14px;
+        }    
+        &__content--expanded  {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+
+@media (max-width: 479px) {
+    .accordion { 
+
+        &__info{
+            max-width: 200px;
+        }
+        &__item {
+            max-width: 200px; 
+        }
+    }
 }
