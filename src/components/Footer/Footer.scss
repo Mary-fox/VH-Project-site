@@ -166,10 +166,10 @@
     .footer {
         grid-template-columns: 20px 1fr 20px;
 
-        &__container{
+        &__container {
             padding: 64px 0 53px 0;
         }
-        &__text{
+        &__text {
             font-size: 26px;
             line-height: 32px;
             width: 269px;
@@ -197,12 +197,12 @@
             gap: 50px;
             padding-bottom: 30px;
         }
-        &__right-block{
+        &__right-block {
             width: 100%;
             align-items: self-start;
             gap: 30px;
         }
-        &__top{
+        &__top {
             width: 100%;
         }
     }
@@ -211,16 +211,16 @@
 @media (max-width: 479px) {
     .footer {
 
-        &__container{
+        &__container {
             padding: 52px 0 30px 0;
         }
-        &__text{
+        &__text {
             margin-top: 0;
         }
-        &__subtext{
+        &__subtext {
             padding-bottom: 50px;
         }
-        &__content{
+        &__content {
             flex-direction: column;
             align-items: center;
             padding-bottom: 30px;
@@ -230,15 +230,15 @@
             right: 0;
             top: 0;
         }
-        &__menu{
+        &__menu {
             flex-flow: wrap;
             gap: 45px;
         }
-        &__about{
+        &__about {
             width: 100%;
         }
-        &__copyright, &__privacy{
-            font-size: 8px;
+        &__copyright, &__privacy {
+            font-size: 8px; 
             max-width: 100%;
         }
     }

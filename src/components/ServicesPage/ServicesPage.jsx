@@ -4,14 +4,11 @@ import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import './ServicesPage.scss';
 import ServicesCard from '../ServicesCard/ServicesCard';
 
-// import Main from '../Main/Main';
-
 
 
 function ServicesPage() {
     return (
     <div>
-        {/* <Main /> */}
     <Header />
         <div id={"top"}></div>
         <div className="servic">
