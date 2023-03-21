@@ -45,14 +45,8 @@ html, body{
 
 @media (max-width: 1199px) {
     .servic {
-        &__left-banner {
-            border-right: 0;
-        }
-        &__content {
-            border-right: 0;
-        }
         &__subheader{
-            padding: 40px 0 17px 0;
+            padding: 40px 40px 17px 40px;
         }
     }
     
@@ -61,6 +55,12 @@ html, body{
 @media (max-width: 959px) {
     .servic {
         grid-template-columns: 40px 1fr 40px;
+        &__left-banner {
+            border-right: 0;
+        }
+        &__content {
+            border-right: 0;
+        }
         &__title {
             font-size: 46px;
             line-height: 56px;

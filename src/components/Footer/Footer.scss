@@ -112,19 +112,26 @@
 }
 @media (max-width: 1199px) {
     .footer {
-        grid-template-columns: 60px 1fr 39px;
+        grid-template-columns: 60px 1fr 60px;
 
-        &__left-banner {
-            border-right: 0;
-        }
+
         &__container {
-            border-right: 0;
-            padding: 88px 0 89px 0;
+            padding: 88px 40px 89px 39px;
+        }
+        &__text {
+            max-width: 400px;
+            margin-top: 32px;
+        }
+        &__subtext {
+            padding-bottom: 84.5px;
         }
         &__right-block{
             flex-direction: column-reverse;
             align-items: end;
             gap: 8px;
+        }
+        &__menu {
+            gap: 210px;
         }
         &__top{
             text-align: center;
@@ -134,10 +141,17 @@
 @media (max-width: 959px) {
     .footer {
         grid-template-columns: 40px 1fr 40px;
+        &__left-banner {
+            border-right: 0;
+        }
+        &__text {
+            margin-top: 54px;
+        }
         &__text, &__subtext {
             width: 340px;
         }
         &__container {
+            border-right: 0;
             position: relative;
         }
         &__btn{
