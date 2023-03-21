@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.1c24b5c0.css",
-    "main.js": "/VH-Project-site/static/js/main.3ffb71a4.js",
+    "main.css": "/VH-Project-site/static/css/main.14a8311d.css",
+    "main.js": "/VH-Project-site/static/js/main.6044c31f.js",
     "static/media/Lato-Regular.woff": "/VH-Project-site/static/media/Lato-Regular.0c0f369e632be6c40323.woff",
     "static/media/Lato-Light.woff": "/VH-Project-site/static/media/Lato-Light.202977fa58e737605da5.woff",
     "static/media/Montserrat-ExtraBold.woff": "/VH-Project-site/static/media/Montserrat-ExtraBold.75ee4192581c503f2484.woff",
@@ -15,11 +15,11 @@
     "static/media/btn-open.svg": "/VH-Project-site/static/media/btn-open.c426c60d55d0acd6f90a.svg",
     "static/media/burger-button.svg": "/VH-Project-site/static/media/burger-button.275164841630e2ec93de.svg",
     "static/media/accordion-marker.svg": "/VH-Project-site/static/media/accordion-marker.a8d31c36c174e657a274.svg",
-    "main.1c24b5c0.css.map": "/VH-Project-site/static/css/main.1c24b5c0.css.map",
-    "main.3ffb71a4.js.map": "/VH-Project-site/static/js/main.3ffb71a4.js.map"
+    "main.14a8311d.css.map": "/VH-Project-site/static/css/main.14a8311d.css.map",
+    "main.6044c31f.js.map": "/VH-Project-site/static/js/main.6044c31f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c24b5c0.css",
-    "static/js/main.3ffb71a4.js"
+    "static/css/main.14a8311d.css",
+    "static/js/main.6044c31f.js"
   ]
 }
