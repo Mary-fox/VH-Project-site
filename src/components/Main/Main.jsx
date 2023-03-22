@@ -2,7 +2,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Promo from "../Promo/Promo";
 import Services from "../Services/Services";
-import './Main.css'
+import './Main.scss'
 
 function Main() {
   return (<>

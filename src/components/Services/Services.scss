@@ -4,153 +4,139 @@
 
 .services {
   display: grid;
-  grid-template-columns: 60px 1fr;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  grid-template-columns: 60px 1fr 60px;
+  font-family: 'Montserrat';
+  color: $black;
 
-  &__left-banner {
-    @include left-banner;
-  }
-
-  &__container {
-    display: grid;
-    grid-template-columns: 4fr 4fr 3fr 60px;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  &__title {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 49px;
-  }
-
-  &__element {
-    padding: 42px 60px 65px;
-    border-right: $border;
-
-    &_webdev {
-      grid-column-start: 1;
-      grid-column-end: 3;
+    &__left-banner {
+      @include left-banner;
+      border-bottom: none;
+      position: relative;
     }
-
-    &_design {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      border-top: $border;
+    &__left-banner h3{
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 20px;
+      position: absolute;
+      top: 320px;
+    }
+    &__container{
       border-bottom: $border;
     }
-  }
-
-  .services__container::after {
-    content: "";
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    border-top: $border;
-    border-bottom: $border;
-  }
-
-  &__list {
-    margin-top: 73px;
-    margin-bottom: 58px;
-    display: flex;
-    gap: 60px;
-  }
-
-  &__button {
-    padding: 14px 44px;
-    border: $border;
-    border-radius: 30px;
-    font-size: 12px;
-    line-height: 11px;
-    color: $black;
-  }
-
-  &__button-more {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-
-    p {
+    &__block {
+      display: flex;
+      border-bottom: $border;
+      justify-content: space-between;
+    }
+    &__title {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 49px;
+      max-width: 515px;
+    }
+    &__subtitle{
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 800;
+    }
+    &__list {
+      display: flex;
+      gap: 60px;
+    }
+    &__list-item {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      color: $black;
+    }
+    &__element {
+      padding: 120px 60px 120px 60px;
+      border-right: 1px solid $grey;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      width: 100%;
+    }
+    &__paragraph {
+      padding: 220.5px 60px 220.5px 60px;
+      max-width: 359px;
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      color: $black;
+      border-right: 1px solid $grey;
+    }
+    &__button {
+      padding: 14px 44px;
+      border: 1px solid #D3D3D3;
+      border-radius: 30px;
+      font-size: 12px;
+      line-height: 11px;
+      color: $black;
+      cursor: pointer;
+    }
+    &__info {
+      display: flex;
+      gap: 35px;
+      padding-top: 10px;
+    }
+    &__text {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
       font-size: 12px;
       line-height: 14px;
+      display: flex;
+      align-items: center;
+      color: $black;
     }
-  }
-
-  &__paragraph {
-    padding-left: 60px;
-    padding-right: 60px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 46px;
-    border-right: $border;
-
-    &_design {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      border-top: $border;
-      border-bottom: $border;
+    &__paragraph_design {
+      max-width: 481px;
+      padding: 167.5px 60px 167.5px 60px;
     }
-
-    &_webdev {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
+    &__paragraph_design span {
+      font-weight: 400
+    };
+    &__product {
+      display: flex;
+      padding: 120px 60px 118px 60px;
+      flex-direction: column;
+      gap: 60px;
+      border-right: 1px solid $grey;
+      max-width: 480px;
+      flex: 2;
     }
-
-    &_analytic {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      border-bottom: $border;
+    &__product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
-
-    span {
-      font-weight: 700;
+    &__product-item {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      flex:2;
     }
-
-    button {
-      align-self: flex-start;
+    &__paragraph_analytic {
+      display: flex;
+      flex-direction: column;
+      width: 358px;
+      padding: 118px 60px 121px 60px;
+      gap: 46px;
     }
-  }
-
-  &__product {
-    padding: 63px 60px;
-    display: flex;
-    gap: 63px;
-    flex-direction: column;
-    border-right: $border;
-
-    &_analytic {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      border-bottom: $border;
+    &__paragraph_analytic span {
+      font-weight: 400;
     }
-
-    &_marceting {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      border-bottom: $border;
+    &__button_big {
+      width: 100%;
     }
-  }
-
-  &__product-list {
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
-  }
 }

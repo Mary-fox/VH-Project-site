@@ -16,6 +16,7 @@ function Promo() {
           <div className="promo__showreel">SHOWREEL</div>
         </div>
       </div>
+      <div className="promo__right-banner"></div>
     </section>
   )
 }
