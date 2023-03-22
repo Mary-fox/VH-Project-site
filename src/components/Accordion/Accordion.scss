@@ -1,6 +1,8 @@
 @import "./src/assets/styles/colors";
 
-
+*{
+    transition: all 0.8s;
+}
 .accordion {
     color: $black;
     border-bottom: 1px solid #D3D3D3;
@@ -22,11 +24,11 @@
     &__content {
         max-height: 0;
         overflow: hidden; 
-        transition: all 0.4s ease-in-out;
+        transition: all 0.8s ease-in-out;
     }
     &__content--expanded  {
         max-height: 1400px;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.8s ease-in-out;
         transition-delay: 0.1s;
         padding-bottom: 50px;
     }

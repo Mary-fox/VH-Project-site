@@ -36,7 +36,7 @@ function CareerPage() {
                  <h3 className='career__subtitle'>Актуальные вакансии</h3>
                 <Accordion 
                     title="Frontend-разработчик"
-                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank"> info@visualhearts.ru</a> ]}
+                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank" rel="noreferrer" key="mail-info"> info@visualhearts.ru</a> ]}
                     subtitle1="Обязанности:"
                     item1={<>
                         <li>Полноценное участие в создании веб-сайтов и сервисов (как на основе MVC-фреймворков, так и на чистом PHP), интеграции с сторонними сервисами;</li>
@@ -63,7 +63,7 @@ function CareerPage() {
                 />
                 <Accordion 
                     title="PHP-разработчик"
-                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank"> info@visualhearts.ru</a> ]}
+                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank" rel="noreferrer" key="mail-info"> info@visualhearts.ru</a> ]}
                     subtitle1="Обязанности:"
                     item1={<>
                         <li>Полноценное участие в создании веб-сайтов и сервисов (как на основе MVC-фреймворков, так и на чистом PHP), интеграции с сторонними сервисами;</li>
@@ -90,7 +90,7 @@ function CareerPage() {
                 />
                 <Accordion 
                     title="Бизнес-аналитик"
-                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank"> info@visualhearts.ru</a> ]}
+                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank" rel="noreferrer" key="mail-info"> info@visualhearts.ru</a> ]}
                     subtitle1="Обязанности:"
                     item1={<>
                         <li>Полноценное участие в создании веб-сайтов и сервисов (как на основе MVC-фреймворков, так и на чистом PHP), интеграции с сторонними сервисами;</li>
@@ -117,7 +117,7 @@ function CareerPage() {
                 />
                 <Accordion 
                     title="Digital-маркетолог"
-                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank"> info@visualhearts.ru</a> ]}
+                    info={["Приглашаем в нашу команду backend-разработчика. Если ты — внимательный к мелочам и любящий своё дело бэкендер, не читай дальше, просто звони! Или отправляй резюме на почту:", <a href='mailto:info@visualhearts.ru'  target="_blank" rel="noreferrer" key="mail-info"> info@visualhearts.ru</a> ]}
                     subtitle1="Обязанности:"
                     item1={<>
                         <li>Полноценное участие в создании веб-сайтов и сервисов (как на основе MVC-фреймворков, так и на чистом PHP), интеграции с сторонними сервисами;</li>
@@ -147,7 +147,7 @@ function CareerPage() {
         </div>
 
     <Footer 
-        text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='#!!'>почту</a>,  " или в ", <a href='#!!'>vk.</a>]}
+        text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='#!!' key="mail-link">почту</a>,  " или в ", <a href='#!!' key="vk-link">vk.</a>]}
         btn="Откликнуться"
     />
     

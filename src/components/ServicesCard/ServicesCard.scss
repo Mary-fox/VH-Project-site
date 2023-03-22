@@ -17,8 +17,8 @@
         font-family: 'Montserrat';
         color: $black;
         display: flex;
-    gap: 220px;
-    justify-content: start;
+        gap: 220px;
+        justify-content: flex-start;
 
     }
     &__menu{
@@ -196,7 +196,6 @@
             height: auto;
             flex-direction: column;
             padding: 52px 0 112px 0;
-            justify-content: flex-start;
         }
         &__title {
             font-size: 28px;
