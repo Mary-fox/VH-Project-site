@@ -9,10 +9,10 @@ function Footer(props) {
       <div className="footer__container">
         <div className="footer__content">
           <div className='footer__about'>
-            <h2 className='footer__text'>{props.text}</h2>
-            <p className='footer__subtext'>{props.subtext}</p>
+            <h2 className='footer__text' key="about-heading">{props.text}</h2>
+            <p className='footer__subtext' key="about-subheading">{props.subtext}</p>
           </div>
-          <a href='#!' className='footer__btn' type="button">{props.btn}</a>
+          <a href='#!' className='footer__btn' type="button" key="footer-button">{props.btn}</a>
         </div>  
         <nav className='footer__menu'>
           <ul className='footer__items'>

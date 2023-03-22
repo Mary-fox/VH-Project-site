@@ -18,17 +18,22 @@ function Accordion(props) {
             }</span>
         </div>
         <div className={"accordion__content" + (isExpanded ? " accordion__content--expanded" : "")}>
-          <h3 className='accordion__info'>{props.info}</h3>
+          <h3 className='accordion__info' key="about-info">{props.info}</h3>
                   <nav className='accordion__items'>
-                      <h3 className='accordion__subtitle'>{props.subtitle1}</h3>
-                      <ul className='accordion__item'>{props.item1}</ul>
-                      <h3 className='accordion__subtitle'>{props.subtitle2}</h3>
-                      <ul className='accordion__item'>{props.item2}</ul>
-                      <h3 className='accordion__subtitle'>{props.subtitle3}</h3>
-                      <ul className='accordion__item'>{props.item3}</ul>
+                      <h3 className='accordion__subtitle' key="about-subtitle1">{props.subtitle1}</h3>
+                      <ul className='accordion__item' key="about-item1">{props.item1}
+                      {colors.map((color) => (
+                <ColorButton key={color.image} color={color} setCurrentColorId={setCurrentColorId} currentColorId={currentColorId} />
+                    )
+                )}
+                      </ul>
+                      <h3 className='accordion__subtitle' key="about-subtitle2">{props.subtitle2}</h3>
+                      <ul className='accordion__item' key="about-item2">{props.item2}</ul>
+                      <h3 className='accordion__subtitle' key="about-item3">{props.subtitle3}</h3>
+                      <ul className='accordion__item' key="about-subtitle3">{props.item3}</ul>
 
                   </nav>
-                  <Link className="accordion__link" to={props.href} target="_blank">{props.link}</Link>
+                  <Link className="accordion__link" to={props.href} target="_blank" key="about-link">{props.link}</Link>
         </div>
       </div>
     );
