@@ -82,6 +82,11 @@
         color: $black;
     }
 
+    // interactive
+    &__link:hover {
+        color: $purple;
+    }
+
 }
 
 @media (max-width: 1199px) {

@@ -57,7 +57,16 @@
     background-image: url(../../assets/images/btn-open.svg);
     transition: all 0.5s ease-in;
   }
-    
+  
+  // interactive 
+  &__list-item a:hover {
+    color: $purple;
+  }
+  &__get-project-button:hover {
+    color: $purple;
+    border: $borderPurple;
+  }
+
 }
 // .black-layer{
 //   display: none;

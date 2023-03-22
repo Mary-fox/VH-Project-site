@@ -9,10 +9,10 @@
     background: $white;
 
     &__left-banner {
-        border-right: 1px solid #D3D3D3;
+        border-right: 1px solid $grey;
     }
     &__container {
-        border-right: 1px solid #D3D3D3;
+        border-right: 1px solid $grey;
         padding: 88px 60px 89px 60px;
     }
     &__content{
@@ -41,7 +41,7 @@
         height: 200px;
         cursor: pointer;
         transform: rotate(-23.91deg);
-        background-color: #262626;
+        background-color: $black;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -49,7 +49,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        color: #F8F8F8;
+        color: $white;
     }
     &__menu {
         display: flex;
@@ -70,7 +70,7 @@
         cursor: pointer;
     }
     &__item a {
-        color: #262626;
+        color: $black;
     }
     &__info {
         display: flex;
@@ -93,18 +93,27 @@
         opacity: 0.8;
     }
     &__top{
-        background: #262626;
+        background: $black;
         border-radius: 30px;
         padding: 14px 52px 15px 51px;
         font-weight: 400;
         font-size: 12px;
         line-height: 11px;
-        color: #F8F8F8;
+        color: $white;
         cursor: pointer;
     }
     
 // interactive
-
+    &__btn:hover {
+        background-color: $purple;
+    }
+    &__text a:hover {
+        border-bottom: 3px solid $purple;
+        color: $purple;
+    }
+    &__top:hover {
+        background: $purple;
+    }
 
 
 }
