@@ -20,13 +20,15 @@
       position: absolute;
       top: 320px;
     }
-    &__container{
+    &__content {
+      border-right: 1px solid $grey;
       border-bottom: $border;
     }
     &__block {
       display: flex;
-      border-bottom: $border;
       justify-content: space-between;
+      max-width: 1320px;
+      margin: 0 auto;
     }
     &__title {
       font-weight: 800;
@@ -54,7 +56,7 @@
     }
     &__element {
       padding: 120px 60px 120px 60px;
-      border-right: 1px solid $grey;
+      // border-right: 1px solid $grey;
       display: flex;
       flex-direction: column;
       gap: 60px;
@@ -70,7 +72,6 @@
       display: flex;
       align-items: center;
       color: $black;
-      border-right: 1px solid $grey;
     }
     &__button {
       padding: 14px 44px;
@@ -99,13 +100,14 @@
     &__paragraph_design {
       max-width: 481px;
       padding: 167.5px 60px 167.5px 60px;
+      border-right: 1px solid $grey;
     }
     &__paragraph_design span {
       font-weight: 400
     };
     &__product {
       display: flex;
-      padding: 120px 60px 118px 60px;
+      padding: 106px 60px 118px 60px;
       flex-direction: column;
       gap: 60px;
       border-right: 1px solid $grey;
@@ -130,7 +132,7 @@
       display: flex;
       flex-direction: column;
       width: 358px;
-      padding: 118px 60px 121px 60px;
+      padding: 106px 60px 121px 60px;
       gap: 46px;
     }
     &__paragraph_analytic span {

@@ -2,36 +2,44 @@
 @import "./src/assets/styles/breakpoints";
 @import "./src/assets/styles/vars";
 
-
+.wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+}
 
 .promo {
   display: grid;
   grid-template-columns: 60px 1fr 60px;
-  position: relative;
   font-family: 'Montserrat';
 
     &__left-banner {
       @include left-banner;
       border-bottom: none;
     }
+    &__container {
+      border-right: 1px solid $grey;
+      border-bottom: $border;
+    }
     &__titles{
       color: $black;
       padding: 260px 60px 143px 60px;
-      border-bottom: $border;
-      border-right: 1px solid $grey;
+      position: relative;
+      // border-bottom: $border;
+      // border-right: 1px solid $grey;
     }
     &__title {
       font-style: normal;
       font-weight: 800;
       font-size: 92px;
       line-height: 112px;
+ 
       
     }
     &__subtitle {
       position: absolute;
       max-width: 478px;
       top: 403px;
-      right: 118px;
+      right: 58px;
       font-family: 'Lato';
       font-weight: 400;
       font-size: 14px;
@@ -52,8 +60,8 @@
       line-height: 22px;
       color: $white;
       position: absolute;
-      bottom: 141px;
-      right: 140px;
+      bottom: -101px;
+      right: 79px;
   }
 }
 
@@ -62,7 +70,7 @@
     display: block;
     width: 100%;
     content: "";
-    border-bottom: $border;
+    border-top: $border;
     border-right: 1px solid $grey;
   }
 

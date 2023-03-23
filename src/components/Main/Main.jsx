@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import Projects from "../Projects/Projects";
 import Promo from "../Promo/Promo";
 import Services from "../Services/Services";
 import './Main.scss'
@@ -8,8 +9,9 @@ function Main() {
   return (<>
       <Header/>
     <main className="content">
-      <Promo />
-      <Services />
+        <Promo />
+        <Services />
+        <Projects />
     </main>
     <Footer 
     text="Расскажите о вашем проекте"

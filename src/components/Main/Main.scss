@@ -3,3 +3,12 @@
 main{
     background: $white;
 }
+.btn {
+    padding: 14px 44px;
+    border: 1px solid #D3D3D3;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 11px;
+    color: $black;
+    cursor: pointer;
+}
