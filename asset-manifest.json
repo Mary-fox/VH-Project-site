@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.6904b215.css",
-    "main.js": "/VH-Project-site/static/js/main.91b4653e.js",
-    "static/media/project-4.png": "/VH-Project-site/static/media/project-4.f5b28c67d27ded117f8c.png",
+    "main.css": "/VH-Project-site/static/css/main.42c874f2.css",
+    "main.js": "/VH-Project-site/static/js/main.40f3028c.js",
+    "static/media/project-4.png": "/VH-Project-site/static/media/project-4.41a1c1981050d5bff50c.png",
+    "static/media/project-2.png": "/VH-Project-site/static/media/project-2.fa8f652e6e8460884293.png",
+    "static/media/project-5.png": "/VH-Project-site/static/media/project-5.6f4f8cbaedf73095226f.png",
     "static/media/Lato-Regular.woff": "/VH-Project-site/static/media/Lato-Regular.0c0f369e632be6c40323.woff",
     "static/media/Lato-Light.woff": "/VH-Project-site/static/media/Lato-Light.202977fa58e737605da5.woff",
-    "static/media/project-2.png": "/VH-Project-site/static/media/project-2.b7088144861aba185c6c.png",
-    "static/media/project-5.png": "/VH-Project-site/static/media/project-5.74c404edff8fa9d701a8.png",
-    "static/media/project-1.png": "/VH-Project-site/static/media/project-1.a51e9ebbe212f8ce9614.png",
+    "static/media/project-1.png": "/VH-Project-site/static/media/project-1.fd24d63a8a60a1864ffc.png",
+    "static/media/project-3.png": "/VH-Project-site/static/media/project-3.7da666c5d853ffdfc73c.png",
     "static/media/Montserrat-ExtraBold.woff": "/VH-Project-site/static/media/Montserrat-ExtraBold.75ee4192581c503f2484.woff",
     "static/media/Montserrat-Regular.woff": "/VH-Project-site/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
     "static/media/Montserrat-Medium.woff": "/VH-Project-site/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff",
     "static/media/Montserrat-Light.woff": "/VH-Project-site/static/media/Montserrat-Light.be142e6c3747b7b87e60.woff",
+    "static/media/project-6.png": "/VH-Project-site/static/media/project-6.828ee5b4d1be3db19c63.png",
     "static/media/Montserrat-Thin.woff": "/VH-Project-site/static/media/Montserrat-Thin.446ea183ab98a6fd08d6.woff",
-    "static/media/project-3.png": "/VH-Project-site/static/media/project-3.58b5dfd7defe88cd90a0.png",
     "static/media/Montserrat-Bold.woff": "/VH-Project-site/static/media/Montserrat-Bold.05eda27dcdadfda355f6.woff",
-    "static/media/project-6.png": "/VH-Project-site/static/media/project-6.bbfd3085afacac869bbb.png",
     "static/media/Montserrat-Regular.woff2": "/VH-Project-site/static/media/Montserrat-Regular.8b56391ed36ea95337c6.woff2",
     "index.html": "/VH-Project-site/index.html",
     "static/media/btn-open.svg": "/VH-Project-site/static/media/btn-open.c426c60d55d0acd6f90a.svg",
     "static/media/burger-button.svg": "/VH-Project-site/static/media/burger-button.275164841630e2ec93de.svg",
     "static/media/accordion-marker.svg": "/VH-Project-site/static/media/accordion-marker.a8d31c36c174e657a274.svg",
-    "main.6904b215.css.map": "/VH-Project-site/static/css/main.6904b215.css.map",
-    "main.91b4653e.js.map": "/VH-Project-site/static/js/main.91b4653e.js.map"
+    "main.42c874f2.css.map": "/VH-Project-site/static/css/main.42c874f2.css.map",
+    "main.40f3028c.js.map": "/VH-Project-site/static/js/main.40f3028c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6904b215.css",
-    "static/js/main.91b4653e.js"
+    "static/css/main.42c874f2.css",
+    "static/js/main.40f3028c.js"
   ]
 }
