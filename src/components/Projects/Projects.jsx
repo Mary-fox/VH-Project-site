@@ -50,9 +50,7 @@ function Projects(props) {
                 <Card 
                     item={<>
                         <li>UI/UX</li>
-                        <li>1CBITRIX</li>
-                        <li>ПРОЕКТИРОВАНИЕ</li>
-                        <li>БАЗОВОЕ SEO</li></>
+                        <li>1CBITRIX</li></>
                     }
                     title="Сайт в стиле “Советский леттеринг” для компании Континент"
                     link={require("../../assets/images/project-5.png")}/>

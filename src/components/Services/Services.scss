@@ -2,6 +2,7 @@
 @import "./src/assets/styles/breakpoints";
 @import "./src/assets/styles/vars";
 
+
 .services {
   display: grid;
   grid-template-columns: 60px 1fr 60px;
@@ -20,26 +21,32 @@
       position: absolute;
       top: 320px;
     }
-    &__content {
-      border-right: 1px solid $grey;
-      border-bottom: $border;
-    }
     &__block {
       display: flex;
-      justify-content: space-between;
-      max-width: 1320px;
-      margin: 0 auto;
+      justify-content: space-evenly;
+      border-bottom: $border;
+    }
+    &__element {
+      padding: 120px 100px 109px 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      width: 69%;
+      border-right: 1px solid $grey;
+    }
+    &__element_design {
+      width: 80%;
     }
     &__title {
       font-weight: 800;
       font-size: 40px;
       line-height: 49px;
-      max-width: 515px;
     }
     &__subtitle{
       font-size: 36px;
       line-height: 44px;
       font-weight: 800;
+      padding-bottom: 60px;
     }
     &__list {
       display: flex;
@@ -54,17 +61,8 @@
       align-items: center;
       color: $black;
     }
-    &__element {
-      padding: 120px 60px 120px 60px;
-      // border-right: 1px solid $grey;
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-      width: 100%;
-    }
     &__paragraph {
-      padding: 220.5px 60px 220.5px 60px;
-      max-width: 359px;
+      padding: 205.5px 100px 205.5px 100px;
       font-family: 'Lato';
       font-weight: 300;
       font-size: 16px;
@@ -72,6 +70,8 @@
       display: flex;
       align-items: center;
       color: $black;
+      width: 31%;
+      border-right: 1px solid $grey;
     }
     &__button {
       padding: 14px 44px;
@@ -98,20 +98,19 @@
       color: $black;
     }
     &__paragraph_design {
-      max-width: 481px;
-      padding: 167.5px 60px 167.5px 60px;
+      padding: 167.5px 100px 167.5px 100px;
       border-right: 1px solid $grey;
+      width: 44%;
     }
     &__paragraph_design span {
       font-weight: 400
-    };
+    }
     &__product {
       display: flex;
-      padding: 106px 60px 118px 60px;
+      padding: 120px 100px 120px 100px;
       flex-direction: column;
-      gap: 60px;
       border-right: 1px solid $grey;
-      max-width: 480px;
+      width: 40%;
       flex: 2;
     }
     &__product-list {
@@ -131,14 +130,49 @@
     &__paragraph_analytic {
       display: flex;
       flex-direction: column;
-      width: 358px;
-      padding: 106px 60px 121px 60px;
+      width: 27%;
+      padding: 130px 100px 130.5px 100px;
       gap: 46px;
     }
     &__paragraph_analytic span {
       font-weight: 400;
     }
     &__button_big {
+      width: 83%;
+    }
+  }
+
+
+@media (max-width: 1919px) {
+.services { 
+    &__element {
+      padding: 120px 60px 120px 60px;
+      width: 74%;
+    }
+    &__title {
+      max-width: 515px;
+    }
+    &__subtitle{
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 800;
+    }
+    &__paragraph {
+      padding: 220.5px 60px 220.5px 60px;
+      width: 28%;
+    }
+    &__paragraph_design {
+      width: 40.9%;
+      padding: 167.5px 60px 167.5px 60px;
+    }
+    &__product {
+      padding: 106px 60px 118px 60px;
+    }
+    &__paragraph_analytic {
+      padding: 106px 60px 121px 60px;
+    }
+    &__button_big {
       width: 100%;
     }
+  }
 }

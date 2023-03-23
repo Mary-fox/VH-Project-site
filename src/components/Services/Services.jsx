@@ -7,7 +7,6 @@ function Services() {
         <h3>Услуги</h3>
       </div>
       <div className="services__container">
-        <div className="services__content">
             <div className="services__block">
               <div className="services__element services__element_webdev">
                 <h2 className="services__title">Разработка веб-сайтов и приложений</h2>
@@ -24,8 +23,6 @@ function Services() {
               </div>
               <div className="services__paragraph services__paragraph_webdev">Преимущественно работаем с 1C-BITRIX для чистой разработки и Tilda publishing для решения no-code задач</div>
             </div>
-        </div>
-        <div className="services__content">
           <div className="services__block">
             <div className="services__paragraph services__paragraph_design">
                 <p>У нас огромный опыт в разработке дизайна для цифровой сферы и не только, участвовали в крупных проектах <span>GameDev</span> индустрии, рисовали UI/UX дизайн для игр и <span>мобильных</span> приложений, нарисовали множество <span>артов </span> 
@@ -46,8 +43,6 @@ function Services() {
               </div>
             </div>          
           </div>
-        </div>
-        <div className="services__content">
           <div className="services__block">
             <div className="services__product services__product_analytic">
               <h2 className="services__subtitle">Аналитика</h2>
@@ -71,7 +66,6 @@ function Services() {
               <button className="services__button services__button_big">Все услуги</button>
             </div>
           </div>
-        </div>
       </div>
       <div className="services__right-banner"></div>
     </section>

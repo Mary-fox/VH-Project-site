@@ -2,11 +2,6 @@
 @import "./src/assets/styles/breakpoints";
 @import "./src/assets/styles/vars";
 
-.wrapper {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-
 .promo {
   display: grid;
   grid-template-columns: 60px 1fr 60px;
@@ -22,24 +17,21 @@
     }
     &__titles{
       color: $black;
-      padding: 260px 60px 143px 60px;
+      padding: 260px 284px 143px 100px;
       position: relative;
-      // border-bottom: $border;
-      // border-right: 1px solid $grey;
     }
     &__title {
       font-style: normal;
       font-weight: 800;
       font-size: 92px;
       line-height: 112px;
- 
-      
+      max-width: 920px;
     }
     &__subtitle {
       position: absolute;
       max-width: 478px;
       top: 403px;
-      right: 58px;
+      right: 498px;
       font-family: 'Lato';
       font-weight: 400;
       font-size: 14px;
@@ -61,16 +53,35 @@
       color: $white;
       position: absolute;
       bottom: -101px;
-      right: 79px;
+      right: 285px;
   }
 }
 
 .promo__container::after {
-    height: 242px;
+    height: 270px;
     display: block;
     width: 100%;
     content: "";
     border-top: $border;
-    border-right: 1px solid $grey;
+    // border-right: 1px solid $grey;
   }
+
+@media (max-width: 1919px) {
+  .promo {
+
+      &__titles{
+        padding: 260px 60px 143px 60px;
+      }
+      &__subtitle {
+        right: 58px;
+      }
+      &__showreel {
+        right: 79px;
+    }
+  }
+
+  .promo__container::after {
+      height: 242px;
+    }
+}
 
