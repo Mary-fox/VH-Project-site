@@ -52,7 +52,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 141px 250.5px 140px 249.5px;
+            padding: 141px 0 140px 0;
             border-bottom: 1px solid #D3D3D3;
         }
         &__btn {
@@ -63,15 +63,9 @@
 
 @media (max-width: 1919px) {
 .projects {
-
-        &__main{
-            padding: 100px 60px;
-        }
-        &__text {
-            max-width: 540px;
-        }
         &__btn {
             padding: 14px 46px;
         }    
     }
 }
+

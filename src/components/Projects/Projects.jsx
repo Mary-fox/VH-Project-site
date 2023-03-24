@@ -61,7 +61,7 @@ function Projects(props) {
                         <li>Иллюстрации</li>
                         <li>Верстка</li></>
                     }
-                    title="Детская книга для Санкт-Петербургского научно-исследовательского института вакцин и сывороток"
+                    title="Детская книга для ФГУП СПбНИИВС ФМБА России"
                     link={require("../../assets/images/project-6.png")}/>
                     <div className="projects__all-cases">
                         <Link to='#!' title="Все проекты"  className='btn projects__btn'>Все кейсы</Link>

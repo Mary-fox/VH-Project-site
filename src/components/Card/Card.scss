@@ -58,7 +58,22 @@
             &__image img {
                 width: 540px;
                 height: 404px;
-                border-radius: 5px;
+            }
+        }
+}
+@media (max-width: 1199px) {
+    .project-card {
+        padding: 57px 29px;
+        max-height: 460px;
+            &__image {
+                    width: 360px;
+            }
+            &__image img {
+                width: 360px;
+                height: 254px;
+            }
+            &__items {
+                gap: 20px;
             }
         }
 }

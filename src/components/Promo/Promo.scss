@@ -12,7 +12,7 @@
       border-bottom: none;
     }
     &__container {
-      border-right: 1px solid $grey;
+      border-right: $border;
       border-bottom: $border;
     }
     &__titles{
@@ -83,5 +83,31 @@
   .promo__container::after {
       height: 242px;
     }
+}
+
+@media (max-width: 1199px) {
+  .promo {
+    &__right-banner {
+      border-bottom: $border;
+    }
+    &__titles{
+      display: flex;
+      flex-direction: column;
+      padding: 260px 10px 130px 30px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 98px;
+      max-width: 838px;
+      padding-bottom: 30px;
+    }
+    &__subtitle {
+      position:static;
+    }
+    &__container::after {
+      height: 202px;
+    }
+  }
 }
 

@@ -58,7 +58,7 @@ function Services() {
         <div className="services__paragraph services__paragraph_analytic">
             <p>Мы поддерживаем наших клиентов <span>от</span> начала и <span>до</span> конца. Разработаем грамотную <span>стратегию</span>, проведем аналитику продвижения на цифровом рынке, 
               <span> организуем</span> поддержку разработанного <span>нами</span> продукта.</p>
-              <Link to='#!'  className="btn services__button services__button_big">Все услуги</Link>
+              <Link to='/services'  className="btn services__button services__button_big">Все услуги</Link>
         </div>
       </div>
       <div className="services__right-banner"></div>
