@@ -46,7 +46,7 @@ function Publications( ) {
                     date="20_03_2023"
                 />
                 <div className="publications__all-articles">
-                    <Link to='#!' title="Все статьи"  className='btn publications__btn'>Все статьи</Link>
+                    <Link to='#!'  className='btn publications__btn'>Все статьи</Link>
                 </div>
             </div>
             <div className="publications__right-banner"></div>

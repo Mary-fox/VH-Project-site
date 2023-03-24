@@ -12,3 +12,7 @@ main{
     color: $black;
     cursor: pointer;
 }
+.btn:hover {
+    background-color: $purple;
+    color: $white;
+}

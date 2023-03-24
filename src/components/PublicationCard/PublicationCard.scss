@@ -8,11 +8,13 @@
 .publication-card {
     display: flex;
     flex-direction: column;
-    padding: 100px 224px 100px 100px;
+    padding: 100px 0 100px 100px;
     border-bottom: $border;
     font-family: 'Montserrat';
     color: $black;
     border-right: 1px solid $grey;
+    align-items: start;
+    justify-content: center;
 
 
         &__title {
@@ -20,6 +22,7 @@
             font-size: 16px;
             line-height: 20px; 
             padding-bottom: 76px;
+            width: 75%;
         }
         &__items {
             display: flex;
@@ -40,4 +43,13 @@
             line-height: 12px;
         }
     }
+@media (max-width: 1919px) {
+    .publication-card {
+        padding: 100px 0 100px 60px;
 
+        &__items {
+            gap: 20px;
+        }
+    }
+
+}

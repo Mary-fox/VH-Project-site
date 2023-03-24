@@ -45,3 +45,20 @@
         padding: 14px 32px 15px 30px !important;
       }
     }
+
+@media (max-width: 1919px) {
+    .partners {
+        &__icon {
+             max-width: 77%;
+        }
+        &__right-block {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            padding: 138px 0px 136px 0;
+        }
+        &__left-block {
+            padding: 176px 2px 185px 59px;
+            flex: 2;
+        }
+    }
+}

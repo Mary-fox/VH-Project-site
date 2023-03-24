@@ -53,7 +53,7 @@
     }
     &__menu {
         display: flex;
-        gap: 240px;
+        gap: 337px;
         padding-bottom: 51px;
     }
     &__items li h3 {
@@ -86,7 +86,7 @@
     }
     &__right-block {
         display: flex;
-        gap: 162px;
+        gap: 430px;
         align-items: center;
     }
     &__privacy{
@@ -117,15 +117,18 @@
 }
 
 @media (max-width: 1919px) {
-.footer {
-    &__container {
-        border-right: 1px solid $grey;
-        padding: 88px 60px 89px 60px;
+    .footer {
+        &__container {
+            border-right: 1px solid $grey;
+            padding: 88px 60px 89px 60px;
+        }
+        &__menu {
+            gap: 240px;
+        }
+        &__right-block {
+            gap: 162px;
+        }
     }
-
-    
-}
-
 }
 @media (max-width: 1310px) {
     .footer {
