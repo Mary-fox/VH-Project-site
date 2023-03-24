@@ -19,24 +19,24 @@
             position: absolute;
             top: 560px;
         }
-        &__main{
-            padding: 100px 100px;
-            border-bottom: $border;
-        }
-        &__title {
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 44px;
-            padding-bottom: 40px;
-        }
-        &__text {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-            max-width: 685px;
-        }
+        // &__main{
+        //     padding: 100px 100px;
+        //     border-bottom: $border;
+        // }
+        // &__title {
+        //     font-weight: 800;
+        //     font-size: 36px;
+        //     line-height: 44px;
+        //     padding-bottom: 40px;
+        // }
+        // &__text {
+        //     font-family: 'Lato';
+        //     font-style: normal;
+        //     font-weight: 300;
+        //     font-size: 16px;
+        //     line-height: 19px;
+        //     max-width: 685px;
+        // }
         &__container {
             display: flex;
             border-right: 1px solid $grey;
