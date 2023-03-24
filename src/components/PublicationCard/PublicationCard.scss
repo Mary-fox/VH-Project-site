@@ -1,0 +1,43 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/vars";
+
+
+
+
+
+.publication-card {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 224px 100px 100px;
+    border-bottom: $border;
+    font-family: 'Montserrat';
+    color: $black;
+    border-right: 1px solid $grey;
+
+
+        &__title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px; 
+            padding-bottom: 76px;
+        }
+        &__items {
+            display: flex;
+            gap: 40px;
+        }
+        &__items li {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+        &__date {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+

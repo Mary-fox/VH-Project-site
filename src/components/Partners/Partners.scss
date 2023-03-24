@@ -1,0 +1,47 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/vars";
+
+
+.partners {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    font-family: 'Montserrat';
+    color: $black;
+  
+      &__left-banner {
+        @include left-banner;
+      }
+      &__right-banner {
+        border-bottom: $border;
+      }
+      &__container {
+        display: flex;
+        border-bottom: $border;
+        border-right: 1px solid $grey;
+      }
+        
+      &__right-block {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: space-around;
+        flex: 4;
+        padding: 138px 70px 136px 0;
+      }
+      &__left-block {
+        padding: 222px 2px 223px 59px;
+        flex: 1;
+      }
+      &__title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        color: $black;
+        padding-bottom: 46px;
+      }
+      &__btn {
+        padding: 14px 32px 15px 30px !important;
+      }
+    }

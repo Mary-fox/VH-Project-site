@@ -8,7 +8,17 @@
     grid-template-columns: 60px 1fr 60px;
     background: $white; 
     color: $black;
-
+        &__left-banner {
+            @include left-banner;
+            position: relative;
+        }
+        &__left-banner h3 {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            position: absolute;
+            top: 560px;
+        }
         &__main{
             padding: 100px 100px;
             border-bottom: $border;
@@ -42,7 +52,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 141px 250.5px 141px 249.5px;
+            padding: 141px 250.5px 140px 249.5px;
             border-bottom: 1px solid #D3D3D3;
         }
         &__btn {
@@ -55,36 +65,9 @@
 
         &__main{
             padding: 100px 60px;
-            border-bottom: $border;
-        }
-        &__title {
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 44px;
-            padding-bottom: 40px;
         }
         &__text {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
             max-width: 540px;
-        }
-        &__container {
-            display: flex;
-            border-right: 1px solid $grey;
-        }
-        &__left-block {
-            border-right: 1px solid $grey;
-            flex: 1;
-        }
-        &__right-block {
-            flex: 1;
-        }
-        &__all-cases {
-            padding: 141px 250.5px 142px 249.5px;
-            border-bottom: 1px solid #D3D3D3;
         }
         &__btn {
             padding: 14px 46px;

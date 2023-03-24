@@ -13,7 +13,7 @@
     }
     &__container {
         border-right: 1px solid $grey;
-        padding: 88px 60px 89px 60px;
+        padding: 88px 100px 89px 100px;
     }
     &__content{
         display: flex;
@@ -114,7 +114,17 @@
     &__top:hover {
         background: $purple;
     }
+}
 
+@media (max-width: 1919px) {
+.footer {
+    &__container {
+        border-right: 1px solid $grey;
+        padding: 88px 60px 89px 60px;
+    }
+
+    
+}
 
 }
 @media (max-width: 1310px) {

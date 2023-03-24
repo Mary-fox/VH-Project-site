@@ -5,7 +5,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 function Projects(props) {
     return (
     <div className="projects">
-        <div className="services__left-banner"></div>
+        <div className="projects__left-banner">
+        <h3>Проекты</h3>
+        </div>
         <div className='projects__container'>
             <div className='projects__left-block'>
                 <div className='projects__main'>
