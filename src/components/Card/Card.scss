@@ -24,6 +24,7 @@
             width: 700px;
             height: 494px;
             border-radius: 5px;
+            object-fit: contain;
         }
         &__title {
             font-style: normal;
@@ -64,16 +65,16 @@
 @media (max-width: 1199px) {
     .project-card {
         padding: 57px 29px;
-        max-height: 460px;
-            &__image {
-                    width: 360px;
-            }
+        height: 460px;
             &__image img {
                 width: 360px;
                 height: 254px;
             }
             &__items {
                 gap: 20px;
+            }
+            &__title {
+                max-width: 360px;
             }
         }
 }

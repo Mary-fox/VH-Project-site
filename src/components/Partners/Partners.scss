@@ -62,3 +62,27 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+  .partners {
+    &__container{
+      flex-direction: column;
+    }
+    &__left-block {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      padding: 140px 41px 100px 39px;
+    }
+    &__title {
+      padding-bottom: 0;
+    }
+    &__right-block {
+      row-gap: 15px;
+      padding: 0 43px 140px 40px;
+    }
+    &__icon {
+      max-width: 90%;
+ }
+  }
+}

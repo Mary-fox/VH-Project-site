@@ -21,14 +21,14 @@ function Projects(props) {
                         <li>ПРОЕКТИРОВАНИЕ</li>
                         <li>БАЗОВОЕ SEO</li></>
                     }
-                    title="Интернет-магазин ювелирных изделий Виктора Блуда"
+                    name="Интернет-магазин ювелирных изделий Виктора Блуда"
                     link={require("../../assets/images/project-1.png")}/>
                <Card 
                     item={<>
                         <li>UI/UX</li>
                         <li>1CBITRIX</li></>
                     }
-                    title="Лендинг актерского курса для актрисы театра и кино Дарьи Пицик"
+                    name="Лендинг актерского курса для актрисы театра и кино Дарьи Пицик"
                     link={require("../../assets/images/project-2.png")}/>
                <Card 
                     item={<>
@@ -37,7 +37,7 @@ function Projects(props) {
                         <li>ПРОЕКТИРОВАНИЕ</li>
                         <li>БРЕНДИНГ</li></>
                     }
-                    title="Финансовый трекер FIN FINE"
+                    name="Финансовый трекер FIN FINE"
                     link={require("../../assets/images/project-3.png")}/>
             </div>
             <div className='projects__right-block'>
@@ -47,24 +47,24 @@ function Projects(props) {
                         <li>TILDA</li>
                         <li>АНИМАЦИЯ</li></>
                     }
-                    title="Лендинг мотоподбора для Егора Михеева"
+                    name="Лендинг мотоподбора для Егора Михеева"
                     link={require("../../assets/images/project-4.png")}/>
                 <Card 
                     item={<>
                         <li>UI/UX</li>
                         <li>1CBITRIX</li></>
                     }
-                    title="Сайт в стиле “Советский леттеринг” для компании Континент"
+                    name="Сайт в стиле “Советский леттеринг” для компании Континент"
                     link={require("../../assets/images/project-5.png")}/>
                 <Card 
                     item={<>
                         <li>Иллюстрации</li>
                         <li>Верстка</li></>
                     }
-                    title="Детская книга для ФГУП СПбНИИВС ФМБА России"
+                    name="Детская книга для ФГУП СПбНИИВС ФМБА России"
                     link={require("../../assets/images/project-6.png")}/>
                     <div className="projects__all-cases">
-                        <Link to='#!' title="Все проекты"  className='btn projects__btn'>Все кейсы</Link>
+                        <Link to='#!' className='btn projects__btn'>Все кейсы</Link>
                     </div>
                     
             </div>
