@@ -91,5 +91,18 @@
             height: 394px;
         }
     }
+}
 
+@media (max-width: 639px) {
+    .project-card {
+        padding: 30px 20px;
+        height: 456px;
+        &__title {
+            max-width: 561px;
+        }
+        &__image img {
+            width: 440px;
+            height: 327px;
+        }
+    }
 }
