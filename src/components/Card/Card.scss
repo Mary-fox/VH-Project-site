@@ -66,15 +66,30 @@
     .project-card {
         padding: 57px 29px;
         height: 460px;
-            &__image img {
-                width: 360px;
-                height: 254px;
-            }
-            &__items {
-                gap: 20px;
-            }
-            &__title {
-                max-width: 360px;
-            }
+        &__image img {
+            width: 360px;
+            height: 254px;
         }
+        &__items {
+            gap: 20px;
+        }
+        &__title {
+            max-width: 360px;
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .project-card {
+        padding: 57px 40px;
+        height: 580px;
+        &__title {
+            max-width: 561px;
+        }
+        &__image img {
+            width: 561px;
+            height: 394px;
+        }
+    }
+
 }

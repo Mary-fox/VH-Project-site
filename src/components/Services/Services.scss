@@ -70,7 +70,6 @@
       font-size: 16px;
       line-height: 19px;
       color: $black;
-
       border-right: $border;
     }
     &__element_webdev{
@@ -234,5 +233,21 @@
       width: 31%;
     }
   }
+}
 
+@media (max-width: 959px) {
+  .services {
+    grid-template-columns: 0 1fr 0;
+
+    &__left-banner h3{
+      display: none
+    };
+    &__list{
+      gap: 20px;
+    }
+    &__button_big {
+      width: 42%;
+      align-self: center;
+    }
+  }
 }

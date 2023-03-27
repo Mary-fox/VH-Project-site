@@ -3,6 +3,7 @@ import './Projects.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 import ProjectTitleBlock from '../ProjectsTitleBlock/ProjectsTitleBlock';
 
+
 function Projects(props) {
     return (
     <div className="projects">
@@ -22,14 +23,16 @@ function Projects(props) {
                         <li>БАЗОВОЕ SEO</li></>
                     }
                     name="Интернет-магазин ювелирных изделий Виктора Блуда"
-                    link={require("../../assets/images/project-1.png")}/>
+                    linkLarge={require("../../assets/images/project-1.png")}
+                    linkSmall={require("../../assets/images/project-1-small.png")}/>
                <Card 
                     item={<>
                         <li>UI/UX</li>
                         <li>1CBITRIX</li></>
                     }
                     name="Лендинг актерского курса для актрисы театра и кино Дарьи Пицик"
-                    link={require("../../assets/images/project-2.png")}/>
+                    linkLarge={require("../../assets/images/project-2.png")}
+                    linkSmall={require("../../assets/images/project-2-small.png")}/>
                <Card 
                     item={<>
                         <li>АНАЛИТИКА</li>
@@ -38,7 +41,8 @@ function Projects(props) {
                         <li>БРЕНДИНГ</li></>
                     }
                     name="Финансовый трекер FIN FINE"
-                    link={require("../../assets/images/project-3.png")}/>
+                    linkLarge={require("../../assets/images/project-3.png")}
+                    linkSmall={require("../../assets/images/project-3-small.png")}/>
             </div>
             <div className='projects__right-block'>
                 <Card 
@@ -48,28 +52,31 @@ function Projects(props) {
                         <li>АНИМАЦИЯ</li></>
                     }
                     name="Лендинг мотоподбора для Егора Михеева"
-                    link={require("../../assets/images/project-4.png")}/>
+                    linkLarge={require("../../assets/images/project-4.png")}
+                    linkSmall={require("../../assets/images/project-4-small.png")}/>
                 <Card 
                     item={<>
                         <li>UI/UX</li>
                         <li>1CBITRIX</li></>
                     }
                     name="Сайт в стиле “Советский леттеринг” для компании Континент"
-                    link={require("../../assets/images/project-5.png")}/>
+                    linkLarge={require("../../assets/images/project-5.png")}
+                    linkSmall={require("../../assets/images/project-5-small.png")}/>
                 <Card 
                     item={<>
                         <li>Иллюстрации</li>
                         <li>Верстка</li></>
                     }
                     name="Детская книга для ФГУП СПбНИИВС ФМБА России"
-                    link={require("../../assets/images/project-6.png")}/>
+                    linkLarge={require("../../assets/images/project-6.png")}
+                    linkSmall={require("../../assets/images/project-6-small.png")}/>
                     <div className="projects__all-cases">
                         <Link to='#!' className='btn projects__btn'>Все кейсы</Link>
                     </div>
                     
             </div>
         </div>
-        <div className="services__rigth-banner"></div>
+        <div className="projects__right-banner"></div>
             
     </div>
     );
