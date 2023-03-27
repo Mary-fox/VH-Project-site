@@ -51,5 +51,33 @@
             gap: 20px;
         }
     }
+}
 
+
+@media (max-width: 959px) {
+    .publication-card {
+        padding: 100px 40px 100px 40px;
+        &__items {
+            gap: 20px;
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 639px) {
+    .publication-card {
+        padding: 50px 20px 50px 20px;
+        &__items li, &__date {
+            font-size: 8px;
+            line-height: 10px;
+        }
+        &__title {
+            font-size: 14px;
+            line-height: 17px;
+            padding-bottom: 100px;
+        }
+    }
 }

@@ -43,10 +43,29 @@
 @media (max-width: 1199px) {
     .projects {
         &__main{
-                padding: 100px 30px;
+            padding: 100px 30px;
         }
         &__text {
             max-width: 540px;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .projects {
+        &__main{
+            padding: 50px 20px;
+            height: auto;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            padding-bottom: 20px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 440px;
         }
     }
 }

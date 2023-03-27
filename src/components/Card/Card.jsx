@@ -9,15 +9,16 @@ function Card(props) {
 const [isSmallScreen, setIsSmallScreen] = React.useState(
   window.matchMedia("(max-width: 960px)").matches
 );
+// window.matchMedia("(max-width: 960px)") возвращает объект MediaQueryList, который представляет состояние соответствия медиазапроса, а свойство matches возвращает текущее состояние соответствия медиазапроса
 
 React.useEffect(() => {
   const mediaQuery = window.matchMedia("(max-width: 960px)");
   const handleScreenChange = (event) => {
     setIsSmallScreen(event.matches);
   };
-  mediaQuery.addListener(handleScreenChange);
+  mediaQuery.addEventListener("change", handleScreenChange);
   return () => {
-    mediaQuery.removeListener(handleScreenChange);
+    mediaQuery.removeEventListener("change", handleScreenChange);
   };
 }, []);
     return (

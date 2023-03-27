@@ -70,5 +70,23 @@
         &__container {
             flex-direction: column;
         }
+        &__all-cases {
+            border-bottom: none;
+            padding: 80px 0 80px 0;
+        }
+    }
+}
+
+
+@media (max-width: 639px) {
+    .projects {
+
+        &__all-cases {
+            padding: 50px 0 50px 0;
+        }
+        &__btn {
+            width: 90%;
+            text-align: center;
+        }
     }
 }

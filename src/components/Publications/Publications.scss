@@ -52,7 +52,6 @@
     .publications {
           &__main-block {
               padding: 100px 60px 97px 60px;
-
           }
     }
 }
@@ -61,5 +60,47 @@
         &__container {
             grid-template-columns: 4fr 4fr;
           }
+    }
+}
+
+@media (max-width: 959px) {
+    .publications {
+        grid-template-columns: 0 1fr 0;
+        &__left-banner h3 {
+            display: none;
+        }
+        &__main-block {
+            padding: 100px 30px 97px 40px;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .publications {
+
+        &__container {
+            grid-template-columns: 4fr;
+        }
+        &__main-block {
+            padding: 50px 20px 50px 20px;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+            padding-bottom: 20px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__all-articles {
+            padding: 50px 0 0 0;
+            border-bottom: none;
+        }
+        &__btn {
+            width: 90%;
+            text-align: center;
+
+        }
     }
 }

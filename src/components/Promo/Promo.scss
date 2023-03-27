@@ -134,3 +134,23 @@
   }
 }
 
+@media (max-width: 639px) {
+  .promo {
+    &__titles {
+      padding: 200px 0 118px 20px;
+    }
+    &__title {
+      padding-bottom: 17px;
+    }
+    &__showreel {
+      width: 150px;
+      height: 150px;
+      bottom: -73px;
+      right: 37px;
+    }
+    &__container::after {
+      height: 150px;
+    }
+  }
+}
+
