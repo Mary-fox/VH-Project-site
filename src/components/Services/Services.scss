@@ -306,3 +306,36 @@
   }
 }
 
+@media (max-width: 479px) {
+  .services {
+    &__info {
+      flex-direction: column;
+    }
+    &__product {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    }
+    &__product_marceting {
+      grid-row: 6 / 7;
+    }
+    &__paragraph_analytic {
+      grid-row: 7 / 8;
+    }
+    &__list {
+      padding-right: 0 !important;
+    }
+    &__info {
+      gap: 10px;
+    }
+    &__paragraph {
+      padding: 60px 20px 60px 20px;
+    }
+    &__product-list {
+      gap: 20px;
+    }
+    &__button_big {
+      width: 100%;
+    }
+  }
+}
+

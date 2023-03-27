@@ -134,3 +134,23 @@
       }    
   }
 }
+
+@media (max-width: 479px) {
+  .partners {
+
+    &__right-block {
+      padding: 10px 20px 155px 20px;
+      row-gap: 17px;
+      column-gap: 10px;
+    }
+    &__left-block {
+      padding: 25px 41px 23px 20px;
+    }
+    &__icon {
+      max-width: 95%;
+    } 
+    &__btn {
+      width: 88%;
+    } 
+  }  
+}

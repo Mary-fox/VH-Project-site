@@ -154,3 +154,21 @@
   }
 }
 
+@media (max-width: 479px) {
+  .promo {
+    &__titles {
+      padding: 200px 0 118px 20px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+      padding-bottom: 11px;
+    }
+    &__subtitle {
+      padding-right: 50px;
+    }
+    &__showreel {
+      right: 35px;
+    }
+  }
+}

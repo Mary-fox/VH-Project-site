@@ -99,10 +99,27 @@
         height: 456px;
         &__title {
             max-width: 561px;
+            font-size: 14px;
+            line-height: 17px;
         }
         &__image img {
             width: 440px;
             height: 327px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .project-card {
+        height: 360px;
+
+        &__image img {
+            width: 280px;
+            height: 192px;
+        }
+        &__items {
+            flex-flow: wrap;
+            row-gap: 10px;
         }
     }
 }
