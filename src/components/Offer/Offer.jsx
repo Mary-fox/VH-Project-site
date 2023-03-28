@@ -1,6 +1,6 @@
 import './Offer.scss';
 import LinkItem from '../LinkItem/LinkItem';
-import FeedbackForm from '../FeedbackForm/FeedbackForm';
+import FeedbackForm from './FeedbackForm/FeedbackForm';
 
 function Offer(props) {
     const { isOfferOpen } = props;

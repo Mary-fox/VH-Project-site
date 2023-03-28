@@ -8,11 +8,14 @@ import Publications from "../Publications/Publications";
 import Services from "../Services/Services";
 import './Main.scss'
 
+
+
 function Main() {
+
   return (<>
-      <Header/>
+
+   <Header/>
     <main className="content">
-      {/* <Offer /> */}
         <Promo />
         <Services />
         <Projects />
@@ -24,6 +27,8 @@ function Main() {
     subtext="Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки." 
     btn="Написать"
     />
+
+
     </>
 
   );
