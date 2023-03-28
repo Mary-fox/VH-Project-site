@@ -32,14 +32,9 @@ function Overlay(props) {
                                 <li className='contacts__item'><a href="#!">Behance</a></li>
                                 <li className='contacts__item'><a href="#!">Dribble</a></li>
                             </ul>
-
                         </nav>
-
                 </div>
-
-
             </div>
-
         </div>
         <div className='overlay__right-banner'></div>
     </div>

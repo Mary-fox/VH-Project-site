@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+// import Offer from "../Offer/Offer";
 import Partners from "../Partners/Partners";
 import Projects from "../Projects/Projects";
 import Promo from "../Promo/Promo";
@@ -11,6 +12,7 @@ function Main() {
   return (<>
       <Header/>
     <main className="content">
+      {/* <Offer /> */}
         <Promo />
         <Services />
         <Projects />

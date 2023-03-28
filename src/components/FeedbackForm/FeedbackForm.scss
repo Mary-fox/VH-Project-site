@@ -1,0 +1,110 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/vars";
+
+
+
+.form {
+    &__name::placeholder, &__phone::placeholder, &__message::placeholder {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey;
+    } 
+    &__name, &__phone, &__message {
+        width: 387px;
+        padding: 10px 10px 14px 0;
+        border-bottom: $border;
+        margin-bottom: 30px;
+        font-family: 'Lato';
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__contacts, &__budget {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 14px;
+        border-bottom: $border;
+        font-family: 'Lato';
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__budget, &__message {
+        padding-top: 30px;
+    }
+    &__message {
+        padding: 30px 10px 48px 0;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 11px;
+    }
+    &__text a {
+        text-decoration-line: underline;
+    }
+    &__btn {
+        margin-bottom: 10px;
+        padding: 14px 160px 15px 160px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 11px;
+        color: $white;
+        background: $black;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    &__btn:hover {
+        background-color: $purple;
+      }
+}
+
+@media (max-width: 1199px) {
+    .form {
+        &__name, &__phone, &__message {
+            width: 474px;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+  
+@media (max-width: 959px) {
+    .form {
+        &__name, &__phone, &__message {
+            width: 560px;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 639px) {
+    .form {
+        &__name, &__phone, &__message {
+            min-width: 440px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 479px) {
+    .form {
+        max-width: 270px;
+        &__name, &__phone, &__message{
+            min-width: 270px;
+            padding: 5px 10px 7px 0;
+        }
+        &__btn {
+            padding: 14px 106px 15px 107px;
+        }
+        &__message {
+            padding: 20px 10px 48px 0;
+        }
+        &__budget, &__message {
+            padding-top: 20px;
+        }
+    }
+}
