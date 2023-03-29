@@ -12,6 +12,7 @@ import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
 
 
 
+
 function Article({ title, content}) {
     // const { id } = useParams();
     return (
@@ -24,9 +25,9 @@ function Article({ title, content}) {
                     {label: 'Публикации', url: '/publications' },
 
                 ]}/>
-            {/* <ul className="publication-card__items">  {article.tags.map((tag) => (<li key={tag}>{tag}</li>))}</ul> */}
-                      <h2>{title}</h2>
-      <p>{content}</p>
+                
+                    <h2>{title}</h2>
+                    <p>{content}</p>
         </div>
     <Footer 
         text="Расскажите о вашем проекте"

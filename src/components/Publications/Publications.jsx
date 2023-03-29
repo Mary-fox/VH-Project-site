@@ -1,7 +1,7 @@
 import PublicationCard from '../PublicationCard/PublicationCard';
 import './Publications.scss';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import { articles } from '../../articles';
 function Publications( ) {
     return (
         <div className="publications">
@@ -14,40 +14,16 @@ function Publications( ) {
                     <p className='publications__text'>текст про статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <PublicationCard 
-                item={<>
-                    <li>#АНИМАЦИЯ</li>
-                    <li>#ДИЗАЙН</li></>
-                }
-                link="/"
-                title="Название статьи название статьи"
-                date="20_03_2023"
+                    article={articles[0]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи название статьи"
-                    date="20_03_2023"
+                    article={articles[1]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи название статьи"
-                    date="20_03_2023"
+                    article={articles[2]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи название статьи"
-                    date="20_03_2023"
+                    article={articles[0]}
                 />
                 <div className="publications__all-articles">
                     <Link to='/publications'  className='btn publications__btn'>Все статьи</Link>
