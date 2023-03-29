@@ -12,7 +12,7 @@ import Accordion from '../Accordion/Accordion';
 function CareerPage() {
     return (
     <div>
-
+y
     <Header />
         <div id={"top"}></div>
         <div className="career">
@@ -147,7 +147,7 @@ function CareerPage() {
         </div>
 
     <Footer 
-        text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='#!!' key="mail-link">почту</a>,  " или в ", <a href='#!!' key="vk-link">vk.</a>]}
+        text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='mailto:info@visualhearts.ru' key="mail-link">почту</a>,  " или в ", <a href='#!!' key="vk-link">vk.</a>]}
         btn="Откликнуться"
     />
     

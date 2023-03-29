@@ -4,28 +4,35 @@ import './ProjectsPage.scss';
 import Card from '../Card/Card';
 import { HashLink as Link } from 'react-router-hash-link';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-
-
+import { data } from '../../data';
+import IndustryFilter from './IndustryFilter/IndustryFilter';
+import WebsiteTypeFilter from './WebsiteTypeFilter/WebsiteTypeFilter';
+import ServiceFilter from './ServiceFilter/ServiceFilter';
 
 function ProjectsPage(props) {
     return (
     <>
     <Header/>
     <div className='wrapper'>
-    <div className="projects">
-        <div className="projects__left-banner">
+    <div className="projects-page">
+        <div className="projects-page__left-banner">
         <h3>Проекты</h3>
         </div>
-                <div className='projects__container'>
-                    <div className='projects__left-block'>
-                    <div className='projects__main'>
-                    <Breadcrumbs
-                          items={[
-                            {label: 'Главная', url: '#!' },
-                            {label: 'Иллюстрации', url: '#!' },
-                             ]}/>
-                    <h3 className='projects__title'>Наши проекты</h3>
-                    <p className='projects__text'>Здесь несколько наших проектов проектов из последних, для удобства вы можете перейти на страницу проекты и воспользоваться фильтрами</p>
+                <div className='projects-page__container'>
+                    <div className='projects-page__left-block'>
+                    <div className='projects-page__title-block'>
+                        <Breadcrumbs
+                            items={[
+                                {label: 'Главная', url: '#!' },
+                                {label: 'Проекты', url: '#!' },
+                                ]}/>
+                        <h3 className='projects-page__name'>Наши проекты</h3>
+                        <p className='projects-page__text'>Лучшие работы, которыми мы по-настоящему гордимся</p>
+                        <div className="filtres">
+                            <IndustryFilter data={data} />
+                            <WebsiteTypeFilter data={data} />
+                            <ServiceFilter data={data} />
+                        </div>
                 </div>
                 <Card 
                     item={<>
@@ -82,13 +89,13 @@ function ProjectsPage(props) {
                     name="Детская книга для ФГУП СПбНИИВС ФМБА России"
                     linkLarge={require("../../assets/images/project-6.png")}
                     linkSmall={require("../../assets/images/project-6-small.png")}/>
-                    <div className="projects__all-cases">
-                        <Link to='#!' className='btn projects__btn'>Все кейсы</Link>
+                    <div className="projects-page__all-cases">
+                        <Link to='#!' className='btn projects-page__btn'>Все кейсы</Link>
                     </div>
                     
             </div>
         </div>
-        <div className="projects__right-banner"></div>
+        <div className="projects-page__right-banner"></div>
         </div>
     </div>    
     <Footer 

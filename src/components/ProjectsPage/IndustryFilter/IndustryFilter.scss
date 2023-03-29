@@ -1,0 +1,9 @@
+.filter {
+    &__block {
+        max-width: 69px; 
+        background-image: url('../../../assets/images/filter.svg');
+        background-repeat: no-repeat;
+        background-position: right center; /* иконка прижимается к вертикальному центру */
+        appearance: none;
+    }
+}
