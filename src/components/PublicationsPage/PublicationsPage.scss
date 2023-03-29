@@ -1,0 +1,115 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+.publications-page {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  font-family: 'Montserrat';
+  color: $black;
+  background: $white;
+
+    &__left-banner {
+      @include left-banner;
+    }
+    &__left-banner h3 {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: 4fr 4fr;
+    }
+    &__main-block {
+        padding: 40px 100px 82px 100px;
+        border-right: 1px solid $grey;
+        border-bottom: $border;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 66px;
+        padding-bottom: 40px;
+    }
+    &__text {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__all-articles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 160px 0;
+        border-bottom: 1px solid #D3D3D3;
+        border-right: 1px solid $grey;
+    }
+}    
+
+@media (max-width: 1919px) {
+    .publications-page {
+          &__main-block {
+              padding: 40px 60px 97px 60px;
+          }
+    }
+}
+@media (max-width: 1199px) {
+    .publications-page {
+        &__main-block {
+            padding: 40px 40px 78px 40px;
+        }
+        &__title {
+            font-size: 46px;
+            line-height: 56px;
+        }
+
+    }
+}
+
+@media (max-width: 959px) {
+    .publications-page{
+        grid-template-columns: 0 1fr 0;
+        &__left-banner h3 {
+            display: none;
+        }
+        &__container {
+            grid-template-columns: 4fr;
+          }
+        &__main-block {
+            padding: 40px 40px 82px 40px;
+        }
+        &__all-articles {
+            padding: 160px 0 0 0;
+            border-bottom: none;
+        }
+
+    }
+}
+
+@media (max-width: 639px) {
+    .publications-page {
+
+
+        &__main-block {
+            padding: 20px 20px 50px 20px;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__all-articles {
+            padding: 50px 0 0 0;
+        }
+        &__btn {
+            width: 90%;
+            text-align: center;
+
+        }
+    }
+}

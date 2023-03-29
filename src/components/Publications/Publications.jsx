@@ -18,6 +18,7 @@ function Publications( ) {
                     <li>#АНИМАЦИЯ</li>
                     <li>#ДИЗАЙН</li></>
                 }
+                link="/"
                 title="Название статьи название статьи"
                 date="20_03_2023"
                 />
@@ -26,6 +27,7 @@ function Publications( ) {
                         <li>#АНИМАЦИЯ</li>
                         <li>#ДИЗАЙН</li></>
                     }
+                    link="/"
                     title="Название статьи название статьи"
                     date="20_03_2023"
                 />
@@ -34,6 +36,7 @@ function Publications( ) {
                         <li>#АНИМАЦИЯ</li>
                         <li>#ДИЗАЙН</li></>
                     }
+                    link="/"
                     title="Название статьи название статьи"
                     date="20_03_2023"
                 />
@@ -42,11 +45,12 @@ function Publications( ) {
                         <li>#АНИМАЦИЯ</li>
                         <li>#ДИЗАЙН</li></>
                     }
+                    link="/"
                     title="Название статьи название статьи"
                     date="20_03_2023"
                 />
                 <div className="publications__all-articles">
-                    <Link to='#!'  className='btn publications__btn'>Все статьи</Link>
+                    <Link to='/publications'  className='btn publications__btn'>Все статьи</Link>
                 </div>
             </div>
             <div className="publications__right-banner"></div>

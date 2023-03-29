@@ -34,7 +34,7 @@ function Header() {
           <div className="header__container">
             <nav className="header__nav">
               <ul className="header__list">
-                <li className="header__list-item"><Link to="#!">ПРОЕКТЫ</Link></li>
+                <li className="header__list-item"><Link to="/projects">ПРОЕКТЫ</Link></li>
                 <li className="header__list-item"><Link to="#!">КОМАНДА</Link></li>
                 <li className="header__list-item"><Link to="#!">МЫ</Link></li>
                 <li className="header__list-item"><Link to="/services">УСЛУГИ</Link></li>

@@ -71,7 +71,7 @@ function Projects(props) {
                     linkLarge={require("../../assets/images/project-6.png")}
                     linkSmall={require("../../assets/images/project-6-small.png")}/>
                     <div className="projects__all-cases">
-                        <Link to='#!' className='btn projects__btn'>Все кейсы</Link>
+                        <Link to='/projects' className='btn projects__btn'>Все кейсы</Link>
                     </div>
                     
             </div>

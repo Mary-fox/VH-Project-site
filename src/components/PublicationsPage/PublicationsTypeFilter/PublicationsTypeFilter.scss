@@ -1,6 +1,6 @@
-.filter {
-    &__block {
-        max-width: 79px; 
+.publications {
+    &__filtres {
+        padding-right: 10px;
         background-image: url('../../../assets/images/filter.svg');
         background-repeat: no-repeat;
         background-position: right center; /* иконка прижимается к вертикальному центру */

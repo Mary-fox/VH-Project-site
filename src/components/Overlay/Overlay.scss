@@ -41,8 +41,14 @@
     &--open{
         left: 0;
         transition: all 0.8s ease-in;
+        body {
+            overflow: hidden;
+          }
     }
 }
+
+
+
 
 .contacts {
     display: flex;

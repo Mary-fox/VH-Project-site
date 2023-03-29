@@ -23,8 +23,8 @@ function ProjectsPage(props) {
                     <div className='projects-page__title-block'>
                         <Breadcrumbs
                             items={[
-                                {label: 'Главная', url: '#!' },
-                                {label: 'Проекты', url: '#!' },
+                                {label: 'Главная', url: '/' },
+                                {label: 'Проекты', url: 'projects' },
                                 ]}/>
                         <h3 className='projects-page__name'>Наши проекты</h3>
                         <p className='projects-page__text'>Лучшие работы, которыми мы по-настоящему гордимся</p>
