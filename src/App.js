@@ -7,6 +7,7 @@ import Main from './components/Main/Main';
 import CareerPage from "./components/CareerPage/CareerPage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import PublicationsPage from "./components/PublicationsPage/PublicationsPage";
+// import Article from "./components/PublicationsPage/Article/Article";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <Route path="/career" element={<CareerPage/>}/>
     <Route path="/projects" element={<ProjectsPage/>}/>
     <Route path="/publications" element={<PublicationsPage/>}/>
+    {/* <Route path="/publications/:id" component={Article} /> */}
   </Routes>
   </HashRouter>
   );

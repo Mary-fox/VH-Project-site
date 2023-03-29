@@ -5,6 +5,7 @@ import PublicationCard from '../PublicationCard/PublicationCard';
 import { HashLink as Link } from 'react-router-hash-link';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import PublicationsTypeFilter from './PublicationsTypeFilter/PublicationsTypeFilter';
+import { articles } from '../../articles';
 
 
 
@@ -32,76 +33,28 @@ function PublicationsPage(props) {
                     </div>
                 </div>
                 <PublicationCard 
-                item={<>
-                    <li>#АНИМАЦИЯ</li>
-                    <li>#ДИЗАЙН</li></>
-                }
-                link="/"
-                title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                date="20_03_2023"
+                    article={articles[0]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    date="20_03_2023"
+                    article={articles[1]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    date="20_03_2023"
+                    article={articles[2]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    date="20_03_2023"
-                />
-                                <PublicationCard 
-                item={<>
-                    <li>#АНИМАЦИЯ</li>
-                    <li>#ДИЗАЙН</li></>
-                }
-                link="/"
-                title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                date="20_03_2023"
+                    article={articles[0]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    date="20_03_2023"
+                    article={articles[1]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    date="20_03_2023"
+                    article={articles[2]}
                 />
                 <PublicationCard 
-                    item={<>
-                        <li>#АНИМАЦИЯ</li>
-                        <li>#ДИЗАЙН</li></>
-                    }
-                    link="/"
-                    title="Название статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    date="20_03_2023"
+                    article={articles[0]}
+                />
+                <PublicationCard 
+                    article={articles[1]}
                 />
                 <div className="publications-page__all-articles">
                     <Link to='/publications'  className='btn publications-page__btn'>Все статьи</Link>
