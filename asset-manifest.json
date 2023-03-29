@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.cc9c8335.css",
-    "main.js": "/VH-Project-site/static/js/main.ce0c09f3.js",
+    "main.css": "/VH-Project-site/static/css/main.5014b74f.css",
+    "main.js": "/VH-Project-site/static/js/main.0f2ea62c.js",
     "static/media/project-4.png": "/VH-Project-site/static/media/project-4.41a1c1981050d5bff50c.png",
     "static/media/project-2.png": "/VH-Project-site/static/media/project-2.fa8f652e6e8460884293.png",
     "static/media/project-5.png": "/VH-Project-site/static/media/project-5.6f4f8cbaedf73095226f.png",
@@ -36,11 +36,11 @@
     "static/media/burger-button.svg": "/VH-Project-site/static/media/burger-button.275164841630e2ec93de.svg",
     "static/media/filter.svg": "/VH-Project-site/static/media/filter.66b5f177b245e31758e8.svg",
     "static/media/accordion-marker.svg": "/VH-Project-site/static/media/accordion-marker.a8d31c36c174e657a274.svg",
-    "main.cc9c8335.css.map": "/VH-Project-site/static/css/main.cc9c8335.css.map",
-    "main.ce0c09f3.js.map": "/VH-Project-site/static/js/main.ce0c09f3.js.map"
+    "main.5014b74f.css.map": "/VH-Project-site/static/css/main.5014b74f.css.map",
+    "main.0f2ea62c.js.map": "/VH-Project-site/static/js/main.0f2ea62c.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc9c8335.css",
-    "static/js/main.ce0c09f3.js"
+    "static/css/main.5014b74f.css",
+    "static/js/main.0f2ea62c.js"
   ]
 }
