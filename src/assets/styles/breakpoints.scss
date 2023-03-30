@@ -39,3 +39,8 @@
     @content;
   }
 }
+$mobile-small: "(max-width: 479px)";
+$mobile: "(max-width: 639px)";
+$tablet: "(max-width: 959px)";
+$desktop: "(max-width: 1199px)";
+$desktop-large: "(max-width: 1919px)";

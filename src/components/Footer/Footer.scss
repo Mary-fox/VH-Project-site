@@ -1,18 +1,20 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
 
 .footer {
     display: grid;
     grid-template-columns: 60px 1fr 60px;
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom: $border;
     font-family: 'Montserrat';
-    color: #262626;
+    color: $black;
     background: $white;
 
     &__left-banner {
-        border-right: 1px solid $grey;
+        border-right: $border;;
     }
     &__container {
-        border-right: 1px solid $grey;
+        border-right: $border;
         padding: 88px 100px 89px 100px;
     }
     &__content{
@@ -116,10 +118,10 @@
     }
 }
 
-@media (max-width: 1919px) {
+@media #{$desktop-large} {
     .footer {
         &__container {
-            border-right: 1px solid $grey;
+            border-right: $border;
             padding: 88px 60px 89px 60px;
         }
         &__menu {
@@ -137,7 +139,7 @@
         }
     }
 }
-@media (max-width: 1199px) {
+@media #{$desktop} {
     .footer {
         grid-template-columns: 60px 1fr 60px;
 
@@ -165,7 +167,7 @@
         }
     }    
 }
-@media (max-width: 959px) {
+@media #{$tablet} {
     .footer {
         grid-template-columns: 40px 1fr 40px;
         &__left-banner {
@@ -203,7 +205,7 @@
         }
     }
 }
-@media (max-width: 639px) {
+@media #{$mobile} {
     .footer {
         grid-template-columns: 20px 1fr 20px;
 
@@ -250,7 +252,7 @@
     }
 }
 
-@media (max-width: 479px) {
+@media #{$mobile-small} {
     .footer {
 
         &__container {

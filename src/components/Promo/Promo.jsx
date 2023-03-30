@@ -4,7 +4,6 @@ function Promo() {
 
   return (
     <section className="promo">
-  
         <div className="promo__left-banner">
           <h3> VH PROJECT</h3>
         </div>

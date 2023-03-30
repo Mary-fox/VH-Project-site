@@ -1,4 +1,5 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
 @import "./src/assets/styles/vars";
 
 
@@ -43,7 +44,8 @@
             line-height: 12px;
         }
     }
-@media (max-width: 1919px) {
+
+    @media #{$desktop-large}{
     .publication-card {
         padding: 100px 0 100px 60px;
 
@@ -53,8 +55,7 @@
     }
 }
 
-
-@media (max-width: 959px) {
+@media #{$tablet} {
     .publication-card {
         padding: 100px 40px 100px 40px;
         &__items {
@@ -66,8 +67,7 @@
     }
 }
 
-
-@media (max-width: 639px) {
+@media #{$mobile} {
     .publication-card {
         padding: 50px 20px 50px 20px;
         &__items li, &__date {

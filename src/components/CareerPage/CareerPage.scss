@@ -1,4 +1,6 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
 
 html, body{
     overflow: overlay;
@@ -13,7 +15,7 @@ html, body{
     color: $black;
 
     &__left-banner {
-        border-right: 1px solid #D3D3D3;
+        border-right: $border;
     }
     &__left-banner h3 {
         transform: rotate(-90deg);
@@ -24,8 +26,8 @@ html, body{
         line-height: 20px;
     }
     &__content {
-        border-right: 1px solid #D3D3D3;
-        padding: 40px 60px 17px 60px;
+        border-right: $border;
+        padding: 40px 100px 17px 100px;
     }
     &__container {
         display: flex;
@@ -44,7 +46,7 @@ html, body{
     }
     &__text {
         font-family: 'Lato';
-        max-width: 691px;
+        max-width: 760px;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
@@ -57,20 +59,28 @@ html, body{
         line-height: 56px;
         padding-bottom: 50px;
     }
+}
+@media #{$desktop-large} {
+    .career {
 
+        &__content {
+            padding: 40px 60px 17px 60px;
+        }
+        &__text {
+            max-width: 691px;
+        }
+    }
 }
 
-
-@media (max-width: 1199px) {
+@media #{$desktop} {
     .career {
         &__content {
             padding: 40px 40px 17px 40px;
         }
     }
-    
 }
 
-@media (max-width: 959px) {
+@media #{$tablet}  {
     .career {
         grid-template-columns: 0 1fr 0;
 
@@ -86,7 +96,7 @@ html, body{
     }
 }
 
-@media (max-width: 639px) {
+@media #{$mobile} {
     .career {
         &__content {
             padding: 20px 20px 17px 20px;
@@ -115,7 +125,7 @@ html, body{
     }
 }
 
-@media (max-width: 479px) {
+@media #{$mobile-small} {
     .career {
 
         &__container {

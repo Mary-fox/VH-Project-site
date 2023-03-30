@@ -1,7 +1,7 @@
 import PublicationCard from '../PublicationCard/PublicationCard';
 import './Publications.scss';
 import { HashLink as Link } from 'react-router-hash-link';
-import { articles } from '../../articles';
+import { articles } from '../../datas/articles';
 function Publications( ) {
     return (
         <div className="publications">

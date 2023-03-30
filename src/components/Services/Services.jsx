@@ -9,7 +9,7 @@ function Services() {
       </div>
       <div className="services__container">
         <div className="services__element services__element_webdev">
-          <h2 className="services__title">Разработка веб-сайтов и приложений</h2>
+          <h1 className="services__title">Разработка веб-сайтов и приложений</h1>
             <ul className="services__list">
               <li className="services__list-item">Лендинги</li>
               <li className="services__list-item">Корпоративные сайты</li>

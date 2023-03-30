@@ -1,7 +1,6 @@
 @import "./src/assets/styles/colors";
 @import "./src/assets/styles/vars";
-
-
+@import "./src/assets/styles/breakpoints";
 
 .projects {
     font-family: 'Montserrat';
@@ -26,12 +25,12 @@
         }
     }      
     
-@media (max-width: 1919px) {
+@media #{$desktop-large} {
     .projects {
 
         &__main{
-                padding: 100px 60px;
-                height: 323px;
+            padding: 100px 60px;
+            height: 323px;
         }
         &__text {
             max-width: 540px;
@@ -40,7 +39,7 @@
 }
 
 
-@media (max-width: 1199px) {
+@media #{$desktop}  {
     .projects {
         &__main{
             padding: 100px 30px;
@@ -51,7 +50,7 @@
     }
 }
 
-@media (max-width: 639px) {
+@media #{$mobile}  {
     .projects {
         &__main{
             padding: 50px 20px;

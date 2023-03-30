@@ -85,7 +85,7 @@
 //   }
 // }
 
-@media (max-width: 1919px) {
+@media #{$desktop-large}{
   .header {
     &__list {
       gap: 40px;
@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media #{$desktop} {
   .header {
     &__container{
       padding-left: 143px;
@@ -104,7 +104,7 @@
     }
   }
 }
-@media (max-width: 959px) {
+@media #{$tablet} {
   .header {
     &__list {
       display: none;

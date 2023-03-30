@@ -1,8 +1,10 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
 
 .overlay {
     padding-top: 60px;
-    background: #F8F8F8;
+    background: $white;
     position: fixed;
     z-index: 40;
     left: -100%;
@@ -11,13 +13,13 @@
     overflow-y: auto;
     display: grid;
     grid-template-columns: 60px 1fr 60px;
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom: $border;
     transition: all 0.8s ease-in;
     &__left-banner {
-        border-right: 1px solid #D3D3D3;
+        border-right: $border;
     }
     &__container{
-        border-right: 1px solid #D3D3D3;
+        border-right: $border;
         padding: 161px 60px 221px 60px;
         font-family: 'Montserrat';
         color: $black;
@@ -93,14 +95,14 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media #{$desktop} {
     .contacts {
         &__items,  &__items ul{
             gap: 30px;
         }
     }
 }
-@media (max-width: 959px) {
+@media #{$tablet} {
     .overlay {
     grid-template-columns: 1fr;
 
@@ -130,7 +132,7 @@
         }
     }
 }
-@media (max-width: 639px) {
+@media #{$mobile} {
     .overlay {
         &__list-item a {
             font-size: 28px;
@@ -161,7 +163,7 @@
     }
 }
 
-@media (max-width: 479px) {
+@media #{$mobile-small} {
     .overlay {
         &__container {
             flex-direction: column;

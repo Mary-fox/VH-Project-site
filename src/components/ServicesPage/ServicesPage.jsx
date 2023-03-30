@@ -11,7 +11,7 @@ function ServicesPage() {
     <div>
     <Header />
         <div id={"top"}></div>
-        <div className="servic">
+        <section className="servic">
         <div className='servic__left-banner'></div>
             <div className='servic__content'>
                 <div className="servic__subheader">
@@ -21,13 +21,13 @@ function ServicesPage() {
                             {label: 'Услуги', url: '#!' },
                              ]}/>
                     <div className="servic__container">
-                        <h2 className='servic__title'>Услуги</h2>
+                        <h1 className='servic__title'>Услуги</h1>
                         <p className='servic__text'>Мы оказываем полный цикл цифровизации для бизнеса любого уровня.</p>
                     </div>
                 </div>
             </div>
         <div className='servic__right-banner'></div>
-        </div>
+        </section>
         <ServicesCard
             title="Аналитика"
             text="Изучаем бизнес клиента и его конкурентов, подбираем инструменты и способы продвижения."

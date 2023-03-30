@@ -1,4 +1,6 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
 
 html, body{
     overflow: overlay;
@@ -8,15 +10,16 @@ html, body{
     font-family: 'Montserrat';
     display: grid;
     grid-template-columns: 60px 1fr 60px;
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom: $border;
     padding-top: 60px;  
     background: $white;
+    color: $black;
 
     &__left-banner {
-        border-right: 1px solid #D3D3D3;
+        border-right: $border;
     }
     &__content {
-        border-right: 1px solid #D3D3D3;
+        border-right: $border;
     }
     &__container {
         display: flex;
@@ -26,24 +29,33 @@ html, body{
 
     }   
     &__subheader{
-        padding: 40px 60px 17px 60px;
+        padding: 40px 100px 17px 100px;
     }
     &__title{
         font-size: 54px;
         line-height: 66px;
-        color: #262626;
     }
     &__text{
-        max-width: 424px;
         font-weight: 300;
         font-size: 16px;
         line-height: 25px;
-        color: #262626;
     }
 
 }
 
-@media (max-width: 1199px) {
+
+@media #{$desktop-large} {
+    .servic {
+
+        &__subheader{
+            padding: 40px 60px 17px 60px;
+        }
+        &__text{
+            max-width: 424px;
+        }
+    }
+}
+@media #{$desktop} {
     .servic {
         &__subheader{
             padding: 40px 40px 17px 40px;
@@ -52,7 +64,7 @@ html, body{
     
 }
 
-@media (max-width: 959px) {
+@media #{$tablet} {
     .servic {
         grid-template-columns: 40px 1fr 40px;
         &__left-banner {
@@ -74,7 +86,7 @@ html, body{
         }
     }   
 }
-@media (max-width: 639px) {
+@media #{$mobile} {
     .servic {
         grid-template-columns: 20px 1fr 20px;
 

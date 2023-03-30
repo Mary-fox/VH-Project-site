@@ -5,7 +5,7 @@ import PublicationCard from '../PublicationCard/PublicationCard';
 import { HashLink as Link } from 'react-router-hash-link';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import PublicationsTypeFilter from './PublicationsTypeFilter/PublicationsTypeFilter';
-import { articles } from '../../articles';
+import { articles } from '../../datas/articles';
 
 
 
@@ -14,7 +14,7 @@ function PublicationsPage(props) {
     <>
     <Header/>
     <div className='wrapper'>
-    <div className="publications-page">
+    <section className="publications-page">
         <div className="publications-page__left-banner">
         <h3>Публикации</h3>
         </div>
@@ -25,7 +25,7 @@ function PublicationsPage(props) {
                                 {label: 'Главная', url: '/' },
                                 {label: 'Публикации', url: '/publications' },
                                 ]}/>
-                    <h3 className="publications-page__title">Публикации</h3>
+                    <h1 className="publications-page__title">Публикации</h1>
                     <p className='publications-page__text'>текст про статьи lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div className="filtres">
                         <PublicationsTypeFilter />
@@ -61,7 +61,7 @@ function PublicationsPage(props) {
                 </div>
             </div>
             <div className="publications-page__right-banner"></div>
-        </div>
+        </section>
         </div>
     <Footer 
         text="Расскажите о вашем проекте"

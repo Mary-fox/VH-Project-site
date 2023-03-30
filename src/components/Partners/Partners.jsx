@@ -10,11 +10,11 @@ import img8 from '../../assets/images/dcut.svg';
 
 function Partners( ) {
     return (
-        <div className="partners">
+        <section className="partners">
         <div className="partners__left-banner"></div>
             <div className='partners__container'>
                 <div className="partners__left-block">
-                    <h3 className='partners__title'>Нам доверяют</h3>
+                    <h1 className='partners__title'>Нам доверяют</h1>
                     <a href="#!" className='btn partners__btn'>Стать клиентом</a>
                 </div>
                 <div className="partners__right-block">
@@ -29,7 +29,7 @@ function Partners( ) {
                 </div>
             </div>
             <div className="partners__right-banner"></div>
-        </div>
+        </section>
     )
 }
     

@@ -1,5 +1,6 @@
 @import "./src/assets/styles/colors";
 @import "./src/assets/styles/vars";
+@import "./src/assets/styles/breakpoints";
 
 
 
@@ -66,7 +67,7 @@ select  {
     color: $black;
   }
 
-@media (max-width: 1199px) {
+  @media #{$desktop} {
     .form {
         &__name, &__phone, &__message {
             width: 474px;
@@ -77,7 +78,7 @@ select  {
     }
 }
   
-@media (max-width: 959px) {
+@media #{$tablet}  {
     .form {
         &__name, &__phone, &__message {
             width: 560px;
@@ -87,7 +88,7 @@ select  {
         }
     }
 }
-@media (max-width: 639px) {
+@media #{$mobile}  {
     .form {
         &__name, &__phone, &__message {
             min-width: 440px;
@@ -95,7 +96,7 @@ select  {
         }
     }
 }
-@media (max-width: 479px) {
+@media #{$mobile-small}  {
     .form {
         max-width: 270px;
         &__name, &__phone, &__message{

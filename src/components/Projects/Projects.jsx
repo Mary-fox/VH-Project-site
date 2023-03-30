@@ -76,8 +76,7 @@ function Projects(props) {
                     
             </div>
         </div>
-        <div className="projects__right-banner"></div>
-            
+        <div className="projects__right-banner"></div>           
     </div>
     );
   }

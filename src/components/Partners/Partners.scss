@@ -1,4 +1,5 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
 @import "./src/assets/styles/vars";
 
 
@@ -17,7 +18,7 @@
       &__container {
         display: flex;
         border-bottom: $border;
-        border-right: 1px solid $grey;
+        border-right: $border;
       }
         
       &__right-block {
@@ -46,7 +47,7 @@
       }
     }
 
-@media (max-width: 1919px) {
+    @media #{$desktop-large}{
     .partners {
         &__icon {
              max-width: 77%;
@@ -63,7 +64,7 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media #{$desktop}{
   .partners {
     &__container{
       flex-direction: column;
@@ -87,7 +88,7 @@
   }
 }
 
-@media (max-width: 959px) {
+@media #{$tablet}{
   .partners {
     grid-template-columns: 0 1fr 0;
 
@@ -106,7 +107,7 @@
   }
 }
 
-@media (max-width: 639px) {
+@media #{$mobile} {
   .partners {
 
       &__container {
@@ -135,7 +136,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media #{$mobile-small} {
   .partners {
 
     &__right-block {

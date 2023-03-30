@@ -63,10 +63,9 @@
     width: 100%;
     content: "";
     border-top: $border;
-    // border-right: 1px solid $grey;
-  }
+}
 
-@media (max-width: 1919px) {
+  @media #{$desktop-large} {
   .promo {
 
       &__titles{
@@ -85,7 +84,7 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media #{$desktop} {
   .promo {
     &__right-banner {
       border-bottom: $border;
@@ -111,7 +110,7 @@
   }
 }
 
-@media (max-width: 959px) {
+@media #{$tablet} {
   .promo {
     grid-template-columns: 0 1fr 0;
     &__left-banner h3 {
@@ -134,7 +133,7 @@
   }
 }
 
-@media (max-width: 639px) {
+@media #{$mobile} {
   .promo {
     &__titles {
       padding: 200px 0 118px 20px;
@@ -154,7 +153,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media #{$mobile-small} {
   .promo {
     &__titles {
       padding: 200px 0 118px 20px;

@@ -1,7 +1,6 @@
-
-
 @import "./src/assets/styles/colors";
 @import "./src/assets/styles/vars";
+@import "./src/assets/styles/breakpoints";
 
 .wrapper {
     padding-top: 60px;
@@ -73,7 +72,7 @@
     gap: 36px;
 }
 
-@media (max-width: 1919px) {
+@media #{$desktop-large} {
 .projects-page {
         &__btn {
             padding: 14px 46px;
@@ -84,7 +83,7 @@
         }
     }
 }
-@media (max-width: 1199px) {
+@media #{$desktop} {
     .projects-page {
         &__right-banner {
             border-bottom: $border;
@@ -104,7 +103,7 @@
 }
 
 
-@media (max-width: 959px) {
+@media #{$tablet}{
     .projects-page {
         grid-template-columns: 0 1fr 0;
 
@@ -125,7 +124,7 @@
 }
 
 
-@media (max-width: 639px) {
+@media #{$mobile}{
     .projects-page {
 
         &__all-cases {

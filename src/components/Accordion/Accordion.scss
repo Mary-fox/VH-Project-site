@@ -1,11 +1,13 @@
 @import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
 
 *{
     transition: all 0.8s;
 }
 .accordion {
     color: $black;
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom:$border;
     padding: 0 20px 0 20px;
     cursor: pointer;
     transition: all 0.6s ease-in;
@@ -89,7 +91,7 @@
 
 }
 
-@media (max-width: 1199px) {
+@media #{$desktop} {
     .accordion {
 
         &__info {
@@ -101,7 +103,7 @@
     }
     
 }
-@media (max-width: 959px) {
+@media #{$tablet}  {
     .accordion {
         &__info {
             padding-right: 80px !important;
@@ -109,7 +111,7 @@
     }
 }
 
-@media (max-width: 639px) {
+@media #{$mobile}  {
     .accordion {
         padding: 0 10px 0 10px;
 
@@ -143,7 +145,7 @@
 }
 
 
-@media (max-width: 479px) {
+@media #{$mobile-small}  {
     .accordion { 
 
         &__info{

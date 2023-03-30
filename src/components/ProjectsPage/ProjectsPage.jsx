@@ -4,7 +4,7 @@ import './ProjectsPage.scss';
 import Card from '../Card/Card';
 import { HashLink as Link } from 'react-router-hash-link';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-import { data } from '../../data';
+import { data } from '../../datas/data';
 import IndustryFilter from './IndustryFilter/IndustryFilter';
 import WebsiteTypeFilter from './WebsiteTypeFilter/WebsiteTypeFilter';
 import ServiceFilter from './ServiceFilter/ServiceFilter';
@@ -14,7 +14,7 @@ function ProjectsPage(props) {
     <>
     <Header/>
     <div className='wrapper'>
-    <div className="projects-page">
+    <section className="projects-page">
         <div className="projects-page__left-banner">
         <h3>Проекты</h3>
         </div>
@@ -26,7 +26,7 @@ function ProjectsPage(props) {
                                 {label: 'Главная', url: '/' },
                                 {label: 'Проекты', url: 'projects' },
                                 ]}/>
-                        <h3 className='projects-page__name'>Наши проекты</h3>
+                        <h1 className='projects-page__name'>Наши проекты</h1>
                         <p className='projects-page__text'>Лучшие работы, которыми мы по-настоящему гордимся</p>
                         <div className="filtres">
                             <IndustryFilter data={data} />
@@ -96,7 +96,7 @@ function ProjectsPage(props) {
             </div>
         </div>
         <div className="projects-page__right-banner"></div>
-        </div>
+    </section>
     </div>    
     <Footer 
         text="Расскажите о вашем проекте"

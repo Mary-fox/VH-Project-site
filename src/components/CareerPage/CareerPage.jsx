@@ -15,7 +15,7 @@ function CareerPage() {
 y
     <Header />
         <div id={"top"}></div>
-        <div className="career">
+        <section className="career">
         <div className='career__left-banner'>
             <h3>Вакансии</h3>
         </div>
@@ -28,7 +28,7 @@ y
                              ]}/>
                 </div>
                 <div className="career__container">
-                    <h2 className='career__title'>Карьера</h2>
+                    <h1 className='career__title'>Карьера</h1>
                     <p className="career__slogan">Работа для лучших</p>
                 </div>
                 <p className="career__text">Digital-агентство Visual Hearts объединяет сильных специалистов, чтобы делать сложные веб-проекты.
@@ -144,7 +144,7 @@ y
                 />
             </div>
             <div className='servic__right-banner'></div>
-        </div>
+        </section>
 
     <Footer 
         text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='mailto:info@visualhearts.ru' key="mail-link">почту</a>,  " или в ", <a href='#!!' key="vk-link">vk.</a>]}

@@ -22,7 +22,7 @@ function Overlay(props) {
                     <LinkItem  className='contacts__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
                 </div>
                 <div className="contacts__links">
-                    <h3 className='contacts__title'>Мы в социальных сетях:</h3>
+                    <h1 className='contacts__title'>Мы в социальных сетях:</h1>
                         <nav className='contacts__items'>
                             <ul>                            
                                 <li className='contacts__item'><a href="#!">telegram</a></li>

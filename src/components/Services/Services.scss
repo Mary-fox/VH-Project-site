@@ -149,8 +149,7 @@
     }
   }
 
-
-@media (max-width: 1919px) {
+@media #{$desktop-large} {
 .services { 
     &__element {
       padding: 120px 60px 120px 60px;
@@ -181,7 +180,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media #{$desktop} {
   .services { 
 
     &__container {
@@ -232,7 +231,7 @@
   }
 }
 
-@media (max-width: 959px) {
+@media #{$tablet} {
   .services {
     grid-template-columns: 0 1fr 0;
 
@@ -249,7 +248,7 @@
   }
 }
 
-@media (max-width: 639px) {
+@media #{$mobile} {
   .services {
     &__element {
       padding: 80px 20px 77px 20px;
@@ -306,7 +305,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media #{$mobile-small} {
   .services {
     &__info {
       flex-direction: column;
