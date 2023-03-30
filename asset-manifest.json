@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VH-Project-site/static/css/main.faeaa24e.css",
-    "main.js": "/VH-Project-site/static/js/main.ca2c05b4.js",
+    "main.js": "/VH-Project-site/static/js/main.f100038c.js",
     "static/media/project-4.png": "/VH-Project-site/static/media/project-4.41a1c1981050d5bff50c.png",
     "static/media/project-2.png": "/VH-Project-site/static/media/project-2.fa8f652e6e8460884293.png",
     "static/media/project-5.png": "/VH-Project-site/static/media/project-5.6f4f8cbaedf73095226f.png",
@@ -39,10 +39,10 @@
     "static/media/filter.svg": "/VH-Project-site/static/media/filter.e04d97ffa35176efb994.svg",
     "static/media/accordion-marker.svg": "/VH-Project-site/static/media/accordion-marker.2aa8d04f2ef92de942bf.svg",
     "main.faeaa24e.css.map": "/VH-Project-site/static/css/main.faeaa24e.css.map",
-    "main.ca2c05b4.js.map": "/VH-Project-site/static/js/main.ca2c05b4.js.map"
+    "main.f100038c.js.map": "/VH-Project-site/static/js/main.f100038c.js.map"
   },
   "entrypoints": [
     "static/css/main.faeaa24e.css",
-    "static/js/main.ca2c05b4.js"
+    "static/js/main.f100038c.js"
   ]
 }
