@@ -1,24 +1,28 @@
 import React, { useState } from "react";
+import Popup from "../Popup/Popup";
 import './FeedbackForm.scss';
+import BlackLayer from "../../BlackLayer/BlackLayer";
 
-function FeedbackForm() {
+function FeedbackForm(props) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   // const [errorName, setErrorName] = useState ('');
   const [errorPhone, setErrorPhone] = useState ('');
+  const { showPopup, setShowPopup } = props;
 
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log("Name:", name);
-    console.log("Phone:", phone);
-    console.log("Message:", message);
+    setShowPopup(true);
+  };
+  const handleClosePopup = () => {
+    setShowPopup(false);
   };
 
   return (
+    <>
     <form  className="form" method="post" action="#!" onSubmit={handleSubmit}>
       <label className="form__input-name">
         <input  className="form__name" type="text" value={name} placeholder="Имя" onChange={(e) => setName(e.target.value)}/>
@@ -57,6 +61,10 @@ function FeedbackForm() {
       <button className="form__btn" type="submit">Отправить</button>
       <p className="form__text">Нажимая на кнопку вы соглашаетесь с условиями <a href="#!">политики конфиденциальности</a>.</p>
     </form>
+
+    {showPopup && <Popup  onClose={handleClosePopup}  showPopup={showPopup} setShowPopup={setShowPopup} />}
+    {showPopup && <BlackLayer  showPopup={showPopup} onClose={handleClosePopup} />}
+    </>
   );
 }
 

@@ -1,12 +1,19 @@
 import './Offer.scss';
 import LinkItem from '../LinkItem/LinkItem';
 import FeedbackForm from './FeedbackForm/FeedbackForm';
+import { useState } from 'react';
+
 
 function Offer(props) {
-    const { isOfferOpen } = props;
+    const { isOfferOpen} = props;
+    const [showPopup, setShowPopup] = useState(false);
+
+
+
 
     return (
     <div className={`offer ${isOfferOpen ? 'offer--open' : ''}`} >
+        
         <div className='offer__left-banner'></div>
         <div className="offer__container">
             <div className='offer__content'>
@@ -19,9 +26,11 @@ function Offer(props) {
                     </div>
                 </div>
             </div>
-            <FeedbackForm />
+
+            <FeedbackForm showPopup={showPopup} setShowPopup={setShowPopup} />
         </div>
         <div className="offer__right-banner"></div>
+
     </div>
 
     );

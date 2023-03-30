@@ -2,8 +2,6 @@
 @import "./src/assets/styles/vars";
 @import "./src/assets/styles/breakpoints";
 
-
-
 .form {
     &__name::placeholder, &__phone::placeholder, &__message::placeholder {
         font-family: 'Lato';

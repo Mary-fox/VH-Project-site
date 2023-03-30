@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Breadcrumbs.scss"
 import {Link} from"react-router-dom";
-import './Breadcrumbs.scss';
 
 
 function Breadcrumbs ({items}) {
