@@ -3,12 +3,13 @@ import './Header.scss';
 import { useState } from 'react';
 import {Link} from "react-router-dom";
 import Offer from '../Offer/Offer';
-import MyContext from "../../context"
 
 
-function Header() {
+
+function Header(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOfferOpen, setIsOfferOpen] = useState(false);
+  const {isOfferOpen, setIsOfferOpen} = props;
+ 
 
   function handleMenuClick() {
     if (isMenuOpen || isOfferOpen){
@@ -28,7 +29,6 @@ function Header() {
 
 
   return (<>
-    <MyContext.Provider value={{isOfferOpen, setIsOfferOpen}}>
     <header className="header">
           <button className={`header__burger-button ${isMenuOpen || isOfferOpen ? 'header__burger-button--active' : ''}`}   onClick={() => {handleMenuClick()}}/>
           <div className="header__container">
@@ -48,7 +48,7 @@ function Header() {
       {/* <div className={`black-layer ${isMenuOpen ? 'black-layer--active' : ''}`}  onClick={handleCloseClick}></div> */}
       <Overlay isMenuOpen={isMenuOpen}  />
       <Offer isOfferOpen={isOfferOpen} /> 
-    </MyContext.Provider>
+
  
 </>
   )

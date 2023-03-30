@@ -7,14 +7,14 @@ import Promo from "../Promo/Promo";
 import Publications from "../Publications/Publications";
 import Services from "../Services/Services";
 import './Main.scss'
-
+import { useState } from "react";
 
 
 function Main() {
-
+  const [isOfferOpen, setIsOfferOpen] = useState(false);
   return (<>
 
-   <Header/>
+   <Header  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
     <main className="content">
         <Promo />
         <Services />
@@ -22,7 +22,7 @@ function Main() {
         <Partners />
         <Publications />
     </main>
-    <Footer 
+    <Footer  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
     text="Расскажите о вашем проекте"
     subtext="Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки." 
     btn="Написать"

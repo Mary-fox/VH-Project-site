@@ -1,19 +1,15 @@
 import './Footer.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 import React from 'react';
-// import MyContext from "../../context"
-// import { useState } from 'react';
 
-// import { useState } from 'react';
 
 function Footer(props) {
-//   const isOfferOpen = useContext(MyContext);
-//   const [setIsOfferOpen] = useState(false);
-//   function handleOfferOpen() {
-//     setIsOfferOpen(!isOfferOpen);
-//     console.log("bla")
 
-//   }
+const {isOfferOpen, setIsOfferOpen} = props;
+  function handleOfferOpen() {
+    setIsOfferOpen(!isOfferOpen);
+    console.log("bla")
+  }
 
   return (
     <footer className='footer' > 
@@ -24,7 +20,7 @@ function Footer(props) {
             <h2 className='footer__text' key="about-heading">{props.text}</h2>
             <p className='footer__subtext' key="about-subheading">{props.subtext}</p>
           </div>
-          <button className='footer__btn' type="button" key="footer-button" >{props.btn}</button>
+          <button className='footer__btn' type="button" key="footer-button"  onClick={handleOfferOpen} >{props.btn}</button>
         </div>  
         <nav className='footer__menu'>
           <ul className='footer__items'>

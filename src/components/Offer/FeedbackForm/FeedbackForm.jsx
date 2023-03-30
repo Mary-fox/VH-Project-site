@@ -3,13 +3,14 @@ import Popup from "../Popup/Popup";
 import './FeedbackForm.scss';
 import BlackLayer from "../../BlackLayer/BlackLayer";
 
-function FeedbackForm(props) {
+function FeedbackForm( ) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   // const [errorName, setErrorName] = useState ('');
   const [errorPhone, setErrorPhone] = useState ('');
-  const { showPopup, setShowPopup } = props;
+  const [showPopup, setShowPopup] = useState(false);
+
 
 
 

@@ -1,16 +1,11 @@
 import './Offer.scss';
 import LinkItem from '../LinkItem/LinkItem';
 import FeedbackForm from './FeedbackForm/FeedbackForm';
-import { useState } from 'react';
 
 
 function Offer(props) {
     const { isOfferOpen} = props;
-    const [showPopup, setShowPopup] = useState(false);
-
-
-
-
+ 
     return (
     <div className={`offer ${isOfferOpen ? 'offer--open' : ''}`} >
         
@@ -25,9 +20,9 @@ function Offer(props) {
                         <LinkItem  className='contact__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
                     </div>
                 </div>
-            </div>
+            </div> 
 
-            <FeedbackForm showPopup={showPopup} setShowPopup={setShowPopup} />
+            <FeedbackForm  /> 
         </div>
         <div className="offer__right-banner"></div>
 

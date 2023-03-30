@@ -67,6 +67,7 @@ select  {
 
   @media #{$desktop} {
     .form {
+        padding-bottom: 20px;
         &__name, &__phone, &__message {
             width: 474px;
         }

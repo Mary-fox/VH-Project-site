@@ -3,13 +3,14 @@ import Footer from '../Footer/Footer';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import './ServicesPage.scss';
 import ServicesCard from '../ServicesCard/ServicesCard';
-
+import { useState } from 'react';
 
 
 function ServicesPage() {
+    const [isOfferOpen, setIsOfferOpen] = useState(false);
     return (
     <div>
-    <Header />
+    <Header  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
         <div id={"top"}></div>
         <section className="servic">
         <div className='servic__left-banner'></div>
@@ -94,7 +95,7 @@ function ServicesPage() {
                     <li>Семантика и базовая SEO оптимизация</li>
             </>}
         />
-    <Footer 
+     <Footer  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
     text="Расскажите о вашем проекте"
     subtext="Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки." 
     btn="Написать"
