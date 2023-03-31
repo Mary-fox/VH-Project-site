@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './PublicationsPage.scss';
@@ -9,10 +10,11 @@ import { articles } from '../../datas/articles';
 
 
 
-function PublicationsPage(props) {
+function PublicationsPage( ) {
+    const [isOfferOpen, setIsOfferOpen] = useState(false);
     return (
     <>
-    <Header/>
+    <Header  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
     <div className='wrapper'>
     <section className="publications-page">
         <div className="publications-page__left-banner">
@@ -63,7 +65,7 @@ function PublicationsPage(props) {
             <div className="publications-page__right-banner"></div>
         </section>
         </div>
-    <Footer 
+    <Footer  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
         text="Расскажите о вашем проекте"
         subtext="Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки." 
         btn="Написать"/>

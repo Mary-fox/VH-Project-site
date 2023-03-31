@@ -7,7 +7,6 @@ import Main from './components/Main/Main';
 import CareerPage from "./components/CareerPage/CareerPage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import PublicationsPage from "./components/PublicationsPage/PublicationsPage";
-// import Article from "./components/PublicationsPage/Article/Article";
 import TeamPage from "./components/TeamPage/TeamPage"
 import ArticlePage from "./components/PublicationsPage/ArticlePage/ArticlePage";
 import { articles } from './datas/articles';

@@ -1,5 +1,5 @@
+import React, {useState} from 'react';
 import './CareerPage.scss';
-
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
@@ -10,10 +10,10 @@ import Accordion from '../Accordion/Accordion';
 
 
 function CareerPage() {
+    const [isOfferOpen, setIsOfferOpen] = useState(false);
     return (
     <div>
-y
-    <Header />
+    <Header  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
         <div id={"top"}></div>
         <section className="career">
         <div className='career__left-banner'>
@@ -146,7 +146,7 @@ y
             <div className='servic__right-banner'></div>
         </section>
 
-    <Footer 
+    <Footer isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
         text={["Если вы не нашли интересующую вакансию — пишите нам на ", <a href='mailto:info@visualhearts.ru' key="mail-link">почту</a>,  " или в ", <a href='#!!' key="vk-link">vk.</a>]}
         btn="Откликнуться"
     />

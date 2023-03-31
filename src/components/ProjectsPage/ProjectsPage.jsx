@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './ProjectsPage.scss';
@@ -10,9 +11,10 @@ import WebsiteTypeFilter from './WebsiteTypeFilter/WebsiteTypeFilter';
 import ServiceFilter from './ServiceFilter/ServiceFilter';
 
 function ProjectsPage(props) {
+    const [isOfferOpen, setIsOfferOpen] = useState(false);
     return (
     <>
-    <Header/>
+    <Header isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
     <div className='wrapper'>
     <section className="projects-page">
         <div className="projects-page__left-banner">
@@ -98,7 +100,7 @@ function ProjectsPage(props) {
         <div className="projects-page__right-banner"></div>
     </section>
     </div>    
-    <Footer 
+    <Footer isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
         text="Расскажите о вашем проекте"
         subtext="Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки." 
         btn="Написать"/>
