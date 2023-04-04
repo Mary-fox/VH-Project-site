@@ -7,7 +7,6 @@
     font-family: 'Montserrat';
     display: grid;
     grid-template-columns: 60px 1fr 60px;
-    border-bottom: $border;
     padding-top: 60px;  
     background: $white;
     color: $black;
@@ -154,5 +153,59 @@
     &__little-block_text {
         grid-column: 5 / 9;
         grid-row: 3 / 4;
+        border-right: none;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0 220px;
+        max-width: 1140px;
+    }
+}
+.image {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    border-bottom: $border;
+    padding-top: 60px;  
+    background: $white;
+    color: $black;
+
+    &__left-banner {
+        border-right: $border;
+        @include left-banner;
+        border-bottom: none;
+    }
+}
+.reviews {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    background: $white;
+    color: $black;
+
+    &__left-banner {
+        border-right: $border;
+        @include left-banner;
+        border-bottom: none;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        border-right: $border;
+    }
+    &__title-block{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        padding: 140px 0 80px 99px;
+    }
+    &__subtitle {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    &__content{
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
     }
 }

@@ -1,0 +1,48 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+.review-slider {
+    font-family: 'Lato';
+    overflow: hidden;
+        &__block {
+            border-bottom: $border;
+            border-top: $border;
+        }
+        &__content {
+            display: flex;
+            height: 468px;
+        }
+        &__slide {
+            padding: 100px 100px;
+            flex: 0 0 calc(100% / 3);
+            border-left: $border;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+        }
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            padding: 55px 0 0 400px;
+            gap: 55px;
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            padding-bottom: 10px;
+        }
+        &__company {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #D3D3D3;
+        }
+
+}

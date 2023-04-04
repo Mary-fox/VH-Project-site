@@ -2,8 +2,9 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import './TeamPage.scss';
-
-
+import SliderBlock from './SliderBlock/SliderBlock';
+import ReviewSlider from './ReviewSlider/ReviewSlider';
+import { reviews } from '../../datas/reviews';
 
 function ServicesPage() {
     return (
@@ -103,7 +104,23 @@ function ServicesPage() {
 
                 </div>
             <div className='team__right-banner'></div>
+            </section>
+        <SliderBlock />
+        <section className='reviews'>
+            <div className='reviews__left-banner'></div>
+                <div className="reviews__container">
+                    <div className="reviews__title-block">
+                        <h2 className='reviews__subtitle'>Что говорят о нас</h2>
+                    </div>
+                    <div className="reviews__content">
+                    <ReviewSlider reviews={reviews} />
+                    </div>
+
+                </div>
+            <div className='reviews__right-banner'></div>
         </section>
+
+
        
     <Footer 
     text="Расскажите о вашем проекте"
