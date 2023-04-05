@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
@@ -6,10 +7,11 @@ import SliderBlock from './SliderBlock/SliderBlock';
 import ReviewSlider from './ReviewSlider/ReviewSlider';
 import { reviews } from '../../datas/reviews';
 
-function ServicesPage() {
+function TeamPage() {
+    const [isOfferOpen, setIsOfferOpen] = useState(false);
     return (
     <div>
-    <Header />
+    <Header isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
         <div id={"top"}></div>
         <section className="team">
             <div className='team__left-banner'>
@@ -42,15 +44,15 @@ function ServicesPage() {
                     <div className="team__big-block team__big-block_info">
                         <div className='team__principle'>
                             <h2 className='team__subtitle'>Сотрудничество</h2>
-                            <p className='team__text'>Не бросаем своих клиентов на пол пути, всегда рассчитываем на долгосрочное сотрудничество.</p>
+                            <p className='team__text team__text_small'>Не бросаем своих клиентов на пол пути, всегда рассчитываем на долгосрочное сотрудничество.</p>
                         </div>
                         <div className='team__principle'>
                             <h2 className='team__subtitle'>Ответственность</h2>
-                            <p className='team__text'>Всегда четко выполняем свои обязательства.</p>
+                            <p className='team__text team__text_small'>Всегда четко выполняем свои обязательства.</p>
                         </div>
                         <div className='team__principle'>
                             <h2 className='team__subtitle'>Вовлеченность</h2>
-                            <p className='team__text'>Заинтересованны в создании сильных продуктов.</p>
+                            <p className='team__text team__text_small'>Заинтересованны в создании сильных продуктов.</p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,7 @@ function ServicesPage() {
                             <p className='team__text team__text_narrow'>Для задач с предсказуемым сроком и бюджетом.</p>
                         </div>
                         <div className='team__sheme'>
-                            <h2 className='team__subtitle'>TIME & MATERIALS</h2>
+                            <h2 className='team__subtitle '>TIME & MATERIALS</h2>
                             <p className='team__text team__text_narrow'>Для длинных и сложных проектов с гибким планированием.</p>
                         </div>
                         <div className='team__sheme'>
@@ -122,7 +124,7 @@ function ServicesPage() {
 
 
        
-    <Footer 
+    <Footer  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
     text="Расскажите о вашем проекте"
     subtext="Опишите свою задачу и мы свяжемся с вами в кратчайшие сроки." 
     btn="Написать"
@@ -132,5 +134,5 @@ function ServicesPage() {
     );
   }
   
-  export default ServicesPage;
+  export default TeamPage;
   

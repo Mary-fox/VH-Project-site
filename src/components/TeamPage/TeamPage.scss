@@ -38,7 +38,6 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        
     }
     &__btn {
         width: 200px;
@@ -185,7 +184,6 @@
     color: $black;
 
     &__left-banner {
-        border-right: $border;
         @include left-banner;
         border-bottom: none;
     }
@@ -207,5 +205,290 @@
     &__content{
         grid-column: 1 / 4;
         grid-row: 2 / 3;
+    }
+}
+
+@media #{$desktop-large} {
+    .team {
+        &__subheader{
+            padding: 40px 60px 0 60px;
+
+        }
+        &__subtext{
+            max-width: 740px;
+        }
+        &__purpose {
+            padding: 120px 60px 120px 60px;
+        }  
+        &__text_wide {
+            max-width: 794px;
+        }
+        &__principles {
+            padding: 133px 0 0 40px;
+        }
+        &__text_small {
+            width: 475px;
+        }
+        &__big-block {
+            padding: 120px 0 133px 145px;
+        }
+        &__little-block{
+            padding: 120px 60px 120px 60px;
+        }
+        &__about_info {
+            padding: 0 70px  0 56px;
+        }
+        &__title-block{
+            padding: 140px 0 80px 60px;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .team {
+        &__container {
+            padding: 100px 0 340px 20px;
+        }
+        &__subheader{
+            padding: 40px 40px 0 40px;
+        }
+        &__subtext{
+            max-width: 478px;
+        }
+        &__btn {
+            right: 116px;
+            bottom: 100px;
+        }
+        &__purpose {
+            padding: 120px 40px 120px 40px;
+            align-items: center;
+        }  
+        &__text_wide {
+            max-width: 484px;
+        }
+        &__principles {
+            padding: 120px 0 0 40px;
+            grid-column: 1 / 9;
+            grid-row: 2 / 3;
+            border-bottom: none;
+        }
+        &__big-block {
+            grid-column: 1 / 9;
+            grid-row: 3 / 4;
+            padding: 160px 0 120px 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 160px;
+            border-bottom: $border;
+        }
+        &__little-block{
+            grid-column: 1 / 9;
+            grid-row: 1 / 2;
+            padding: 120px 40px 120px 40px;
+            border-bottom: none;
+            border-right: none;
+        }
+        &__about_info {
+            grid-column: 1 / 9;
+            grid-row: 2 / 3;
+            padding: 0 49px  125px 39px;
+        }
+        &__text {
+            max-width: 761px;
+        }
+        &__text_wide {
+            max-width: 484px;
+        }
+        &__little-block_schemes {
+            grid-column: 1 / 9;
+            grid-row: 3 / 4;
+            border-bottom: $border;
+        }
+        &__big-block_schemes {
+            grid-column: 1 / 9;
+            grid-row: 4 / 5;
+            padding: 120px 0 120px 236px;
+        }
+        &__little-block_title{
+            grid-column: 1 / 5;
+            grid-row: 5 / 6;
+            border-bottom: $border;
+        }
+        &__little-block_text{
+            grid-column: 5 / 9;
+            grid-row: 5 / 6;
+            border-bottom: $border;
+        }
+        &__text_narrow {
+            max-width: 368px;
+        }
+    }
+    .reviews {
+
+        &__title-block{
+            padding: 140px 0 80px 40px;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .team {
+
+        grid-template-columns: 0 1fr 0;         
+            &__left-banner h3{
+                display: none;
+            }
+            &__container {
+                padding: 100px 0 340px 0;
+            }
+            &__btn {
+                right: 38px;
+                bottom: 160px;
+            }
+            &__text_wide {
+                max-width: 284px;
+            }
+            &__big-block {
+                padding: 160px 0 120px 138px;
+            }
+            &__text_small {
+                max-width: 364px;
+            }
+            &__big-block_schemes {
+                padding: 120px 0 120px 157px;
+            }
+    }
+    .image {
+        grid-template-columns: 0 1fr 0;
+    }
+    .reviews {
+        grid-template-columns: 0 1fr 0;
+    }
+}
+
+@media #{$mobile} {
+    .team {
+        &__container {
+            padding: 82px 0 268px 0;
+        }
+        &__subheader {
+            padding: 20px 20px 0 20px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+        }
+        &__subtext {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__btn {
+            width: 150px;
+            height: 150px;
+            font-size: 15px;
+            line-height: 18px;
+            right: 25px;
+            bottom: 339px;
+        }
+        &__purpose {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 80px 20px 80px 20px;
+        }
+        &__subtitle {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__text_wide {
+            max-width: 100%;
+        }
+        &__principles {
+            padding: 80px 20px;
+        }
+        &__big-block {
+            padding: 0 0 80px 80px;
+            gap: 80px;
+        }
+        &__little-block {
+            padding: 80px 20px 77px 20px;
+        }
+        &__number {
+            font-size: 40px;
+            line-height: 49px;
+        }
+        &__about_info {
+            padding: 0 49px 82px 39px;
+        }
+        &__big-block_schemes {
+            padding: 80px 0 80px 78px;
+        }
+        &__little-block_title{
+            grid-column: 1 / 9;
+            grid-row: 5 / 6;
+            border-bottom: none;
+            padding: 80px 20px 0 20px;
+        }
+        &__little-block_text{
+            grid-column: 1 / 9;
+            grid-row: 6 / 7;
+            border-bottom: $border;
+            padding: 33px 20px 77px 20px;
+        }
+    }
+    .reviews {
+        &__title-block {
+            padding: 84px 0 40px 20px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__subtitle {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+}
+
+
+@media #{$mobile-small} {
+    .team {
+
+        &__btn {
+            bottom: 303px;
+        }
+        &__principles {
+            padding: 94px 20px 80px 20px;
+        }
+        &__big-block {
+            padding: 0 0 80px 20px;
+        }
+        &__text_small {
+            max-width: 280px;
+        }
+        &__little-block {
+            padding: 80px 20px 46px 20px;
+        }
+        &__about_info {
+            flex-direction: column;
+            gap: 80px;
+            padding: 0 49px 53px 39px;
+        }
+        &__little-block_schemes {
+            padding: 80px 20px 80px 20px;
+        }
+        &__big-block_schemes {
+            padding: 80px 32px 80px 32px;
+        }
+        &_little-block_title {
+            padding: 80px 20px 0 20px;
+        }
+        &__little-block_text {
+            padding: 0 20px 77px 20px;
+        }
     }
 }

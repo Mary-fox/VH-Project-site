@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ReviewSlider.scss';
 import btnLeft from '../../../assets/images/slide-left.svg';
 import btnRight from '../../../assets/images/slide-rigth.svg';
@@ -8,33 +8,44 @@ import newNextBtnImg from '../../../assets/images/slide-right-grey.svg';
 const ReviewSlider = ({ reviews }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [prevBtnImg, setPrevBtnImg] = useState(btnLeft);
-    const [nextBtnImg, setNextBtnImg] = useState(btnRight);;
+    const [nextBtnImg, setNextBtnImg] = useState(btnRight);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const handlePrevClick = () => {
-    if (currentSlide === 0) {
-        setPrevBtnImg(btnLeft)
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const slideWidth = windowWidth >= 1200 ? 100 / 3 : (windowWidth >= 640 ? 50 : 100);
+
+    const handlePrevClick = () => {
+        if (currentSlide === 0) {
+            setPrevBtnImg(btnLeft)
+            setNextBtnImg(btnRight)
+            return;
+        }
+        setCurrentSlide((prev) => prev - 1);
         setNextBtnImg(btnRight)
-        return;
-      }
-      setCurrentSlide((prev) => prev - 1);
-  };
+    };
 
-  const handleNextClick = () => {
-    if (currentSlide === reviews.length - 3) {
-        setNextBtnImg(newNextBtnImg)
-        return;
-
-      }
-      setCurrentSlide((prev) => prev + 1);
-      setPrevBtnImg(newPrevBtnImg)
-      setNextBtnImg(btnRight)
-      
-  };
+    const handleNextClick = () => {
+        if (currentSlide === reviews.length - 3) {
+            setNextBtnImg(newNextBtnImg)
+            return;
+        }
+        setCurrentSlide((prev) => prev + 1);
+        setPrevBtnImg(newPrevBtnImg)
+        setNextBtnImg(btnRight)     
+    };
 
   return (
     <div className="review-slider">
         <div className="review-slider__block">
-                <div className="review-slider__content" style={{ transform: `translateX(-${currentSlide * (100 / 3)}%)` }}>
+        <div className="review-slider__content" style={{ transform: `translateX(-${currentSlide * slideWidth}%)` }}>
                 {reviews.map((review) => (
                 <div key={review.id} className="review-slider__slide">
                     <p className='review-slider__text'>{review.text}</p>    
