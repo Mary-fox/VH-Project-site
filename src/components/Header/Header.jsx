@@ -36,7 +36,7 @@ function Header(props) {
               <ul className="header__list">
                 <li className="header__list-item"><Link to="/projects">ПРОЕКТЫ</Link></li>
                 <li className="header__list-item"><Link to="/team">КОМАНДА</Link></li>
-                <li className="header__list-item"><Link to="#!">МЫ</Link></li>
+                <li className="header__list-item"><Link to="/contacts">КОНТАКТЫ</Link></li>
                 <li className="header__list-item"><Link to="/services">УСЛУГИ</Link></li>
               </ul>
             </nav>

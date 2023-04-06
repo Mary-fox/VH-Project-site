@@ -53,6 +53,8 @@
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent; 
+        touch-action: none;
       }
       &__partner1 {
           background-image: url('../../assets/images/logo-09.svg');
@@ -79,6 +81,7 @@
         background-image: url('../../assets/images/dcut.svg');
       }
       &__partner1:hover {
+        -webkit-tap-highlight-color: transparent; 
         background-image: url('../../assets/images/logo09-hover.svg');
       }
       &__partner2:hover {

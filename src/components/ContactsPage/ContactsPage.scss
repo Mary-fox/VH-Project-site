@@ -1,0 +1,59 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+  .main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.contacts-page {
+    display: grid;
+    padding-top: 60px;
+    background: $white;
+    grid-template-columns: 60px 1fr 60px;
+    font-family: 'Montserrat';
+    color: $black;
+    height: 100%;
+    flex: 1;
+
+    &__left-banner {
+        @include left-banner;
+        border-bottom: none;
+    }
+    &__container {
+        padding: 40px 100px 0 100px;
+        border-right: $border;
+    }
+    &__content {
+        display: flex;
+        gap: 329px;
+        padding-top: 40px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 92px;
+        line-height: 112px;
+    }
+    &__right-block {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+    &__subtitle {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 20px;
+    }
+    &__items,  &__items ul {
+        display: flex;
+        gap: 30px;
+    }
+    &__item a{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
