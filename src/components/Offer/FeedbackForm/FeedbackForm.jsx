@@ -7,35 +7,64 @@ function FeedbackForm( ) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  // const [errorName, setErrorName] = useState ('');
+  const [errorName, setErrorName] = useState ('');
   const [errorPhone, setErrorPhone] = useState ('');
   const [showPopup, setShowPopup] = useState(false);
+  const [errorMessage, setErrorMessage] = useState ('');
 
 
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name === "" || name === null ) {
+      setErrorName('Обязательное поле');
+      return false;
+    } 
+    if (phone === "" || phone === null ) {
+      setErrorPhone('Обязательное поле');
+      return false;
+    }  
+  //   if (!/^\d+$/.test(phone))
+  //  {
+  //   setErrorPhone("Номер телефона введен некорректно");
+  //   return false;
+  //   }
+    if (message === "" || message === null ) {
+      setErrorMessage('Обязательное поле');
+      return false;
+    }
+
     setShowPopup(true);
   };
   const handleClosePopup = () => {
     setShowPopup(false);
+  };
+  const handlePhoneChange = (e) => {
+    const re = /^[0-9+]*$/;
+    if (e.target.value === "" || re.test(e.target.value)) {
+      setPhone(e.target.value);
+      setErrorPhone("");
+    }
   };
 
   return (
     <>
     <form  className="form" method="post" action="#!" onSubmit={handleSubmit}>
       <label className="form__input-name">
-        <input  className="form__name" type="text" value={name} placeholder="Имя" onChange={(e) => setName(e.target.value)}/>
+        {/* <input  className="form__name" type="text" value={name} placeholder="Имя" onChange={(e) => setName(e.target.value)}/> */}
+        <input type="text" name="name" placeholder="Имя" onInput={(evt) => {
+                                setName(evt.target.value) 
+                                setErrorName('')}}
+                                className={`form__name ${errorName ? "form__name_error" : ""}`}  value={name} />
+                            <div className={`error ${errorName ? "error_active" : ""}`}>{errorName}</div> 
       </label>
       <br />
       <label>
-        <input className="form__phone" value={phone}  onInput={(e) => {
-                                setPhone(e.target.value)
-                                setErrorPhone('')}}
-                                type="tel" placeholder="Телефон"
-                                pattern="^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$"
-                                title={errorPhone ? errorPhone : 'Введите корректный номер телефона'}/>
+        <input value={phone}   onChange={handlePhoneChange}
+                                className={`form__phone ${errorPhone ? "form__phone_error" : ""}`}
+                                type="tel" placeholder="Телефон"/>
+                                <div className={`error ${errorPhone ? "error_active" : ""}`}>{errorPhone}</div> 
       </label>
       <br />
       <div className="form__contacts">
@@ -56,7 +85,11 @@ function FeedbackForm( ) {
           </select>
       </div>
       <label >
-        <textarea  className="form__message" value={message} placeholder="Опишите проект"  onChange={(e) => setMessage(e.target.value)} />
+        <textarea  placeholder="Опишите проект"  onInput={(evt) => {
+                                setMessage(evt.target.value)
+                                setErrorMessage('')}}
+                                className={`form__message ${errorMessage ? "form__message_error" : ""}`}  value={message}  />
+                            <div className={`error ${errorMessage ? "error_active" : ""}`}>{errorMessage}</div> 
       </label>
       <br />
       <button className="form__btn" type="submit">Отправить</button>

@@ -1,9 +1,17 @@
 .filter {
     &__block {
-        max-width: 79px; 
+        width: 100px; 
         background-image: url('../../../assets/images/filter.svg');
         background-repeat: no-repeat;
         background-position: right center; /* иконка прижимается к вертикальному центру */
         appearance: none;
+        cursor: pointer;
     }
+}
+select option {
+    padding-bottom: 9px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+    cursor: pointer;
 }

@@ -340,11 +340,12 @@
                 display: none;
             }
             &__container {
-                padding: 100px 0 340px 0;
+                padding: 100px 0 100px 0;
             }
             &__btn {
-                right: 38px;
-                bottom: 160px;
+                position: static;
+                align-self: flex-end;
+                margin-top: 40px;
             }
             &__text_wide {
                 max-width: 284px;
@@ -370,7 +371,7 @@
 @media #{$mobile} {
     .team {
         &__container {
-            padding: 82px 0 268px 0;
+            padding: 82px 0 100px 0;
         }
         &__subheader {
             padding: 20px 20px 0 20px;
@@ -388,8 +389,6 @@
             height: 150px;
             font-size: 15px;
             line-height: 18px;
-            right: 25px;
-            bottom: 339px;
         }
         &__purpose {
             flex-direction: column;
@@ -458,9 +457,6 @@
 @media #{$mobile-small} {
     .team {
 
-        &__btn {
-            bottom: 303px;
-        }
         &__principles {
             padding: 94px 20px 80px 20px;
         }

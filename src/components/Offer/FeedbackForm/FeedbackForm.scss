@@ -14,12 +14,17 @@
         width: 387px;
         padding: 10px 10px 14px 0;
         border-bottom: $border;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         font-family: 'Lato';
         font-size: 16px;
         line-height: 19px;
     }
-
+    &__name_error, &__message_error, &__phone_error {
+        border-bottom: 1px solid #D91717;
+    }
+    &__contacts {
+        margin-bottom: 30px;
+    }
     &__contacts, &__budget {
         display: flex;
         flex-direction: column;
@@ -60,6 +65,15 @@
         background-color: $purple;
     }
 
+}
+.error {
+    margin-bottom: 20px;
+    &_active {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #D91717;
+    }
 }
 select  {
     color: $black;

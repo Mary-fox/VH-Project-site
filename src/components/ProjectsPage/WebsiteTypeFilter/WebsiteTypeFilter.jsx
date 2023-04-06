@@ -14,9 +14,18 @@ function WebsiteTypeFilter({ data }) {
     <div>
       <select  className='filter__block' value={selectedType} onChange={handleChange}>
         <option value="">Тип сайтов</option>
-        <option value="блог">Блог</option>
-        <option value="онлайн-магазин">Онлайн-магазин</option>
-        <option value="корпоративный">Корпоративный</option>
+        <option value="e-commerce">e-commerce</option>
+        <option value="продуктовый">продуктовые сайты</option>
+        <option value="корпоративный">корпоративный сайт</option>
+        <option value="лендинги">лендинги</option>
+        <option value="сайт">сайт</option>
+        <option value="каталог">каталог и витрина</option>
+        <option value="система">система сайтов</option>
+        <option value="портал">портал</option>
+        <option value="промо-сайт">промо-сайт</option>
+        <option value="сервис">сервис</option>
+        <option value="crm">crm</option>
+
       </select>
       {/* <ul>
         {filteredData.map(item => (
