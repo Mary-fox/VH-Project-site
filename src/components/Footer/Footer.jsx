@@ -8,7 +8,6 @@ function Footer(props) {
 const {isOfferOpen, setIsOfferOpen} = props;
   function handleOfferOpen() {
     setIsOfferOpen(!isOfferOpen);
-    console.log("bla")
   }
 
   return (

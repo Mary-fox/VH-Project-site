@@ -26,6 +26,7 @@
         flex-wrap: wrap;
         row-gap: 30px;
         justify-content: space-around;
+        justify-items: center;
         flex: 4;
         padding: 138px 70px 136px 0;
       }
@@ -45,12 +46,69 @@
       &__btn {
         padding: 14px 32px 15px 30px !important;
       }
+      &__icon {
+        width: 285px;
+        height: 112px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+      }
+      &__partner1 {
+          background-image: url('../../assets/images/logo-09.svg');
+      }
+      &__partner2 {
+        background-image: url('../../assets/images/seller.svg');
+      }
+      &__partner3 {
+        background-image: url('../../assets/images/viraj.svg');
+      }
+      &__partner4 {
+        background-image: url('../../assets/images/logo-06.svg');
+      }
+      &__partner5 {
+        background-image: url('../../assets/images/logo-05.svg');
+      }
+      &__partner6 {
+        background-image: url('../../assets/images/logo-04.svg');
+      }
+      &__partner7 {
+        background-image: url('../../assets/images/feliksov.svg');
+      }
+      &__partner8 {
+        background-image: url('../../assets/images/dcut.svg');
+      }
+      &__partner1:hover {
+        background-image: url('../../assets/images/logo09-hover.svg');
+      }
+      &__partner2:hover {
+        background-image: url('../../assets/images/seller-hover.svg');
+      }
+      &__partner3:hover {
+        background-image: url('../../assets/images/viraj-hover.svg');
+      }
+      &__partner4:hover {
+        background-image: url('../../assets/images/logo06-hover.svg');
+      }
+      &__partner5:hover {
+        background-image: url('../../assets/images/logo05-hover.svg');
+      }
+      &__partner6:hover {
+        background-image: url('../../assets/images/logo04-hover.svg');
+      }
+      &__partner7:hover {
+        background-image: url('../../assets/images/feliksov-hover.svg');
+      }
+      &__partner8:hover {
+        background-image: url('../../assets/images/dcut-hover.svg');
+      }
     }
 
     @media #{$desktop-large}{
     .partners {
         &__icon {
-             max-width: 77%;
+            width: 190px;
+            height: 80px;
         }
         &__right-block {
             display: grid;
@@ -85,6 +143,7 @@
     &__icon {
       max-width: 90%;
     }
+    
   }
 }
 
@@ -133,6 +192,7 @@
       &__icon {
         max-width: 90%;
       }    
+
   }
 }
 
@@ -148,8 +208,9 @@
       padding: 25px 41px 23px 20px;
     }
     &__icon {
-      max-width: 95%;
-    } 
+      width: 130px;
+      height: 51px;
+    }
     &__btn {
       width: 88%;
     } 

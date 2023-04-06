@@ -19,7 +19,7 @@ function Main() {
         <Promo />
         <Services />
         <Projects />
-        <Partners />
+        <Partners  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
         <Publications />
     </main>
     <Footer  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
