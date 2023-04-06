@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.c6b14565.css",
-    "main.js": "/VH-Project-site/static/js/main.cc3dc832.js",
+    "main.css": "/VH-Project-site/static/css/main.c0eff51a.css",
+    "main.js": "/VH-Project-site/static/js/main.67ce4860.js",
     "static/media/project-4.png": "/VH-Project-site/static/media/project-4.41a1c1981050d5bff50c.png",
     "static/media/project-2.png": "/VH-Project-site/static/media/project-2.fa8f652e6e8460884293.png",
     "static/media/project-5.png": "/VH-Project-site/static/media/project-5.6f4f8cbaedf73095226f.png",
@@ -10,9 +10,10 @@
     "static/media/project-2-small.png": "/VH-Project-site/static/media/project-2-small.3149231efc41a11dc2b1.png",
     "static/media/project-1.png": "/VH-Project-site/static/media/project-1.fd24d63a8a60a1864ffc.png",
     "static/media/project-5-small.png": "/VH-Project-site/static/media/project-5-small.eec232d0aa169e92e898.png",
+    "static/media/logo09-hover.svg": "/VH-Project-site/static/media/logo09-hover.b9c16ffda805ce3649f9.svg",
     "static/media/project-3.png": "/VH-Project-site/static/media/project-3.7da666c5d853ffdfc73c.png",
     "static/media/project-1-small.png": "/VH-Project-site/static/media/project-1-small.fbb572ffc3c8b51aec37.png",
-    "static/media/logo-09.svg": "/VH-Project-site/static/media/logo-09.9cfb8dde9b8bf087de2efd4ea4299f86.svg",
+    "static/media/logo-09.svg": "/VH-Project-site/static/media/logo-09.3549b3aab8bef4737cbe.svg",
     "static/media/project-4-small.png": "/VH-Project-site/static/media/project-4-small.64fe3089f5392e45fe93.png",
     "static/media/Montserrat-ExtraBold.woff": "/VH-Project-site/static/media/Montserrat-ExtraBold.75ee4192581c503f2484.woff",
     "static/media/Montserrat-Regular.woff": "/VH-Project-site/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
@@ -29,14 +30,21 @@
     "static/media/Mark.jpg": "/VH-Project-site/static/media/Mark.095a812595def54e3faf.jpg",
     "static/media/Vladislav.jpg": "/VH-Project-site/static/media/Vladislav.14d6e0ce3bb6fe1a5b72.jpg",
     "static/media/Juliana.jpg": "/VH-Project-site/static/media/Juliana.d6e9ff3435d596c8d92e.jpg",
+    "static/media/logo05-hover.svg": "/VH-Project-site/static/media/logo05-hover.3b561289d001f20308f4.svg",
     "static/media/Yaroslav.jpg": "/VH-Project-site/static/media/Yaroslav.7437753e1881df919af1.jpg",
-    "static/media/viraj.svg": "/VH-Project-site/static/media/viraj.479ef61f2e0495842708f40f6bbeb7d7.svg",
-    "static/media/logo-05.svg": "/VH-Project-site/static/media/logo-05.99ca7dedbab83051b26dc970d0b434a0.svg",
-    "static/media/logo-06.svg": "/VH-Project-site/static/media/logo-06.f8c306768c54639078c313c2b44297b4.svg",
-    "static/media/logo-04.svg": "/VH-Project-site/static/media/logo-04.8b25bf5f4207d98bd97874cf4d35fd96.svg",
-    "static/media/feliksov.svg": "/VH-Project-site/static/media/feliksov.ca8bfbd0c05beba35891f92d52e586e0.svg",
-    "static/media/seller.svg": "/VH-Project-site/static/media/seller.bea0a0be47106f57e72a094089978495.svg",
-    "static/media/dcut.svg": "/VH-Project-site/static/media/dcut.3660cf1e37ac299019f55442ab826afd.svg",
+    "static/media/viraj.svg": "/VH-Project-site/static/media/viraj.fe86431fe087c6f2118e.svg",
+    "static/media/logo-05.svg": "/VH-Project-site/static/media/logo-05.79b9f5407b55ce428e67.svg",
+    "static/media/viraj-hover.svg": "/VH-Project-site/static/media/viraj-hover.be5b425144392142a206.svg",
+    "static/media/logo-06.svg": "/VH-Project-site/static/media/logo-06.12a30a56fa386776a354.svg",
+    "static/media/logo06-hover.svg": "/VH-Project-site/static/media/logo06-hover.3dee4beece5528b239b3.svg",
+    "static/media/logo-04.svg": "/VH-Project-site/static/media/logo-04.9d358764be36a348d28b.svg",
+    "static/media/logo04-hover.svg": "/VH-Project-site/static/media/logo04-hover.2852a4ecf476f0808103.svg",
+    "static/media/feliksov-hover.svg": "/VH-Project-site/static/media/feliksov-hover.b0ea135e0bc0f8c37076.svg",
+    "static/media/feliksov.svg": "/VH-Project-site/static/media/feliksov.fd90c5f15c3596ac1289.svg",
+    "static/media/seller-hover.svg": "/VH-Project-site/static/media/seller-hover.f04349f2dbddde22b17c.svg",
+    "static/media/seller.svg": "/VH-Project-site/static/media/seller.18e109b421dac506cd90.svg",
+    "static/media/dcut-hover.svg": "/VH-Project-site/static/media/dcut-hover.6bf518f4a0e9918adb8c.svg",
+    "static/media/dcut.svg": "/VH-Project-site/static/media/dcut.ea1ca5505932a2accba1.svg",
     "static/media/slick.svg": "/VH-Project-site/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/VH-Project-site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/VH-Project-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -52,11 +60,11 @@
     "static/media/accordion-marker.svg": "/VH-Project-site/static/media/accordion-marker.2aa8d04f2ef92de942bf.svg",
     "static/media/slide-rigth.svg": "/VH-Project-site/static/media/slide-rigth.1fb3ecf2270da9af2a3abf1ac392ec1a.svg",
     "static/media/slide-right-grey.svg": "/VH-Project-site/static/media/slide-right-grey.cea28acfd131ac1ab7a657de2973dc49.svg",
-    "main.c6b14565.css.map": "/VH-Project-site/static/css/main.c6b14565.css.map",
-    "main.cc3dc832.js.map": "/VH-Project-site/static/js/main.cc3dc832.js.map"
+    "main.c0eff51a.css.map": "/VH-Project-site/static/css/main.c0eff51a.css.map",
+    "main.67ce4860.js.map": "/VH-Project-site/static/js/main.67ce4860.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6b14565.css",
-    "static/js/main.cc3dc832.js"
+    "static/css/main.c0eff51a.css",
+    "static/js/main.67ce4860.js"
   ]
 }
