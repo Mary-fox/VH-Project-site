@@ -5,7 +5,7 @@ import React from "react";
 
 
 function Card(props) {
-    const { linkSmall, linkLarge } = props;
+    const { linkSmall, linkLarge,  backgroundStyle } = props;
 const [isSmallScreen, setIsSmallScreen] = React.useState(
   window.matchMedia("(max-width: 960px)").matches
 );
@@ -22,12 +22,13 @@ React.useEffect(() => {
   };
 }, []);
     return (
-    <div className="project-card">
+    <div className={`project-card ${backgroundStyle}`}>
         <ul className="project-card__items">{props.item}</ul>
         <h3 className='project-card__title'>{props.name}</h3>
         <div className='project-card__image'>
         {isSmallScreen ?(<img  src={linkSmall} alt="project" />) : (<img  src={linkLarge} alt="project" />)}
         </div>
+        <a className="project-card__link" href={props.link}>Перейти на сайт</a>
     </div>
     );
   }

@@ -64,7 +64,7 @@
 }
 .filtres {
     display: flex;
-    padding-top: 40px;
+    padding-top: 41px;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 12px;
@@ -80,6 +80,9 @@
         &__title-block {
             padding: 40px 0 82px 60px;
             border-bottom: $border;
+        }
+        &__text{
+            max-width: 360px;
         }
     }
 }

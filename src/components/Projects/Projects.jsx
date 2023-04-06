@@ -24,7 +24,8 @@ function Projects(props) {
                     }
                     name="Интернет-магазин ювелирных изделий Виктора Блуда"
                     linkLarge={require("../../assets/images/project-1.png")}
-                    linkSmall={require("../../assets/images/project-1-small.png")}/>
+                    linkSmall={require("../../assets/images/project-1-small.png")}
+                    backgroundStyle="blueshade-background"/>
                <Card 
                     item={<>
                         <li>UI/UX</li>
@@ -32,7 +33,8 @@ function Projects(props) {
                     }
                     name="Лендинг актерского курса для актрисы театра и кино Дарьи Пицик"
                     linkLarge={require("../../assets/images/project-2.png")}
-                    linkSmall={require("../../assets/images/project-2-small.png")}/>
+                    linkSmall={require("../../assets/images/project-2-small.png")}
+                    backgroundStyle="gray-background"/>
                <Card 
                     item={<>
                         <li>АНАЛИТИКА</li>
@@ -42,7 +44,8 @@ function Projects(props) {
                     }
                     name="Финансовый трекер FIN FINE"
                     linkLarge={require("../../assets/images/project-3.png")}
-                    linkSmall={require("../../assets/images/project-3-small.png")}/>
+                    linkSmall={require("../../assets/images/project-3-small.png")}
+                    backgroundStyle="blue-background"/>
             </div>
             <div className='projects__right-block'>
                 <Card 
@@ -53,7 +56,8 @@ function Projects(props) {
                     }
                     name="Лендинг мотоподбора для Егора Михеева"
                     linkLarge={require("../../assets/images/project-4.png")}
-                    linkSmall={require("../../assets/images/project-4-small.png")}/>
+                    linkSmall={require("../../assets/images/project-4-small.png")}
+                    backgroundStyle="red-background"/>
                 <Card 
                     item={<>
                         <li>UI/UX</li>
@@ -61,7 +65,8 @@ function Projects(props) {
                     }
                     name="Сайт в стиле “Советский леттеринг” для компании Континент"
                     linkLarge={require("../../assets/images/project-5.png")}
-                    linkSmall={require("../../assets/images/project-5-small.png")}/>
+                    linkSmall={require("../../assets/images/project-5-small.png")}
+                    backgroundStyle="darkred-background"/>
                 <Card 
                     item={<>
                         <li>Иллюстрации</li>
@@ -69,7 +74,8 @@ function Projects(props) {
                     }
                     name="Детская книга для ФГУП СПбНИИВС ФМБА России"
                     linkLarge={require("../../assets/images/project-6.png")}
-                    linkSmall={require("../../assets/images/project-6-small.png")}/>
+                    linkSmall={require("../../assets/images/project-6-small.png")}
+                    backgroundStyle="darkblue-background"/>
                     <div className="projects__all-cases">
                         <Link to='/projects' className='btn projects__btn'>Все кейсы</Link>
                     </div>
