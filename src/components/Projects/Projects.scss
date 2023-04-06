@@ -45,8 +45,8 @@
           
     }
 
-    @media #{$desktop-large}  {
-.projects {
+@media #{$desktop-large}  {
+    .projects {
         &__btn {
             padding: 14px 46px;
         }    
