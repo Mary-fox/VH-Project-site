@@ -18,7 +18,7 @@ function Main() {
     <main className="content">
         <Promo />
         <Services />
-        <Projects />
+        <Projects title="Свежие проекты" text="Здесь несколько наших проектов из последних, для удобства вы можете перейти на страницу проекты и воспользоваться фильтрами"/>
         <Partners  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
         <Publications />
     </main>

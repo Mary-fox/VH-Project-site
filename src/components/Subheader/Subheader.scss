@@ -1,0 +1,127 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+.subheader {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 220px;
+    max-width: 1140px; 
+    &__title{
+        font-weight: 700;
+        font-size: 92px;
+        line-height: 112px;
+        padding-bottom: 30px;
+    }
+    &__subtext{
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__btn {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        transform: rotate(-23.91deg);
+        background-color: $black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+        position: absolute;
+        right: 155px;
+    }
+}
+@media #{$desktop-large} {
+    .subheader{
+            &__subtext{
+                max-width: 740px;
+            }
+    }
+}
+@media #{$desktop} {
+    .subheader{
+            padding: 100px 0 100px 0;
+
+            &__title{
+                font-size: 54px;
+                line-height: 66px;
+                max-width: 700px;
+            }
+            &__subtext{
+                max-width: 100%;
+            }
+            &__btn {
+                position: static;
+                align-self: flex-end;
+                margin-top: 65px;
+            }
+    }
+}
+
+@media #{$tablet} {
+    .subheader {
+
+        padding: 100px 0 100px 0;
+        &__title{
+            font-size: 54px;
+            line-height: 66px;
+            max-width: 560px;
+        }
+            &__btn {
+                position: static;
+                align-self: flex-end;
+                margin-top: 40px;
+            }
+    }
+}
+
+@media #{$mobile} {
+    .subheader{
+      
+        padding: 82px 0 80px 0;
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+        }
+        &__subtext {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__btn {
+            width: 150px;
+            height: 150px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media #{$mobile-small} {
+    .subheader{
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            
+        }
+        &__subtext {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__btn {
+            width: 150px;
+            height: 150px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+

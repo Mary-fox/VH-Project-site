@@ -25,8 +25,8 @@ function Overlay(props) {
                     <h1 className='contacts__title'>Мы в социальных сетях:</h1>
                         <nav className='contacts__items'>
                             <ul>                            
-                                <li className='contacts__item'><a href="#!">telegram</a></li>
-                                <li className='contacts__item'><a href="#!">vkontakte</a></li>
+                                <li className='contacts__item'><a href="https://t.me/anyera" target="_blank" rel="noopener noreferrer">telegram</a></li>
+                                <li className='contacts__item'><a href="https://vk.com/anyera" target="_blank" rel="noopener noreferrer">vkontakte</a></li>
                             </ul>
                             <ul>                            
                                 <li className='contacts__item'><a href="#!">Behance</a></li>

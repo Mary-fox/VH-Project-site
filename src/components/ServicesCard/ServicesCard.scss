@@ -54,7 +54,7 @@
         line-height: 11px;
         position: absolute;
         color: $black;
-        left: 60px;
+        left: 100px;
         bottom: 89px;
         cursor: pointer;
     } 
@@ -72,6 +72,10 @@
     &__item:first-child {
         min-width: 385px;
     }
+    &__btn:hover {
+        border: 1px solid $purple;
+        color: $purple;
+    }
 }
 @media #{$desktop-large} {
     .card {
@@ -84,6 +88,9 @@
         }   
         &__item:first-child {
             min-width: 265px;
+        }
+        &__btn {
+            left: 60px;
         }
     }
 }

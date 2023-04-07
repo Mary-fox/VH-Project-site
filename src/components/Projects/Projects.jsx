@@ -1,7 +1,6 @@
 import Card from '../Card/Card';
 import './Projects.scss';
 import { HashLink as Link } from 'react-router-hash-link';
-import ProjectTitleBlock from '../ProjectsTitleBlock/ProjectsTitleBlock';
 
 
 function Projects(props) {
@@ -12,9 +11,10 @@ function Projects(props) {
         </div>
         <div className='projects__container'>
             <div className='projects__left-block'>
-                <ProjectTitleBlock 
-                    title="Свежие проекты"
-                    text="Здесь несколько наших проектов проектов из последних, для удобства вы можете перейти на страницу проекты и воспользоваться фильтрами"/>
+            <div className='projects__main'>
+                <h3 className='projects__title'>{props.title}</h3>
+                <p className='projects__text'>{props.text}</p>
+            </div>
                 <Card 
                     item={<>
                         <li>UI/UX</li>

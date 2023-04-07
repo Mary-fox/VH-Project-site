@@ -85,6 +85,7 @@ function ServicesPage() {
                     <li>Дизайн поддержка</li>
                     <li>Контент поддержка</li>
                 </>}
+            link="/promotion"
         />
         <ServicesCard
             title="Маркетинг"

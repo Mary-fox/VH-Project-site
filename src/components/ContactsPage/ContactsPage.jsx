@@ -29,18 +29,18 @@ function ContactsPage() {
                     <div className="contacts-page__right-block">
                         <div className="contacts-page__phone">
                             <h3 className='contacts-page__subtitle'>Номер телефона для связи:</h3>
-                            <LinkItem className='contacts__phone' href="tel:79270030100" text='8 927 003 01 00'/>
+                            <LinkItem className='contacts-page__phone' href="tel:79270030100" text='8 927 003 01 00'/>
                         </div>
                         <div className="contacts-page__email">
                             <h3 className='contacts-page__subtitle'>Предложения и сотрудничество:</h3>
-                            <LinkItem  className='contacts__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
+                            <LinkItem  className='contacts-page__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
                         </div>
                         <div className="contacts-page__links">
                             <h3 className='contacts-page__subtitle'>Мы в социальных сетях:</h3>
                                 <nav className='contacts-page__items'>
                                     <ul>                            
-                                        <li className='contacts-page__item'><a href="#!">telegram</a></li>
-                                        <li className='contacts-page__item'><a href="#!">vkontakte</a></li>
+                                        <li className='contacts-page__item'><a href="https://t.me/anyera"  target="_blank" rel="noopener noreferrer">telegram</a></li>
+                                        <li className='contacts-page__item'><a href="https://vk.com/anyera"  target="_blank" rel="noopener noreferrer">vkontakte</a></li>
                                     </ul>
                                     <ul>                            
                                         <li className='contacts-page__item'><a href="#!">Behance</a></li>

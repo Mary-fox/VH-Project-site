@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './ServicesCard.scss';
 
 function ServicesCard(props) {
@@ -8,7 +9,7 @@ function ServicesCard(props) {
             <div className="card__content">
                 <h2 className="card__title">{props.title}</h2>
                 <p className="card__text">{props.text}</p>
-                <button className="card__btn">Подробнее</button>
+                <Link to={props.link} className="card__btn">Подробнее</Link>
             </div>
             <div className="card__menu">
                 <nav className='card__items'>

@@ -22,12 +22,12 @@
         border-bottom: none;
     }
     &__container {
-        padding: 40px 100px 0 100px;
+        padding: 40px 300px 0 100px;
         border-right: $border;
     }
     &__content {
         display: flex;
-        gap: 329px;
+        justify-content: space-between;
         padding-top: 40px;
     }
     &__title {
@@ -47,6 +47,19 @@
         line-height: 19px;
         padding-bottom: 20px;
     }
+    &__phone {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        color: $black;
+    }
+    &__email {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+    }
     &__items,  &__items ul {
         display: flex;
         gap: 30px;
@@ -55,5 +68,96 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
+    }
+}
+
+
+@media #{$desktop-large} {
+    .contacts-page {
+
+        &__container {
+            padding: 40px 60px 0 60px;
+        }
+    }
+}
+
+@media  (max-width: 1300px) {
+    .contacts-page {
+
+        &__title {
+            font-size: 54px;
+            line-height: 66px;
+        }
+    }
+}
+    
+@media #{$desktop} {
+    .contacts-page {
+
+        &__right-block {
+            gap: 50px;
+        }
+        &__links {
+            position: absolute;
+            top: 445px;
+            left: 130px;
+        }
+        
+    }
+}
+@media #{$tablet} {
+    .contacts-page {
+        grid-template-columns: 0 1fr 0;
+        &__left-banner h3 {
+            display: none;
+        }
+        
+        &__container {
+            padding: 40px 40px 0 40px;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__title {
+            padding-bottom: 80px;
+        }
+        &__links {
+            position: static;
+        }
+    }
+}
+@media #{$mobile} {
+    .contacts-page {
+        &__container {
+            padding: 20px 20px 0 20px;
+        }
+        &__content {
+            padding-top: 10px;
+        }
+        &__title {
+            padding-bottom: 50px;
+            font-size: 40px;
+            line-height: 49px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 17px;
+            padding-bottom: 10px;
+        }
+        &__phone {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__email {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__item a {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__items {
+            flex-direction: column;
+        }
     }
 }

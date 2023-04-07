@@ -11,6 +11,7 @@ import TeamPage from "./components/TeamPage/TeamPage"
 import ArticlePage from "./components/PublicationsPage/ArticlePage/ArticlePage";
 import { articles } from './datas/articles';
 import ContactsPage from "./components/ContactsPage/ContactsPage";
+import PromotionPage from "./components/PromotionPage/PromotionPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
     <Route path="/team" element={<TeamPage/>}/>
     <Route path="/publications/:id" element={<ArticlePage articles={articles} />} />
     <Route path="/contacts" element={<ContactsPage/>} />
+    <Route path="/promotion" element={<PromotionPage/>} />
   </Routes>
   </HashRouter>
   );

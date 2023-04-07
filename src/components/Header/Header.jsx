@@ -21,7 +21,6 @@ function Header(props) {
   }
   function handleOfferClick() {
     setIsOfferOpen(!isOfferOpen);
-    console.log("bla")
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }  

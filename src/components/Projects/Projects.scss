@@ -20,6 +20,24 @@
             position: absolute;
             top: 560px;
         }
+        &__main{
+            padding: 100px 100px;
+            border-bottom: $border;
+        }
+        &__title {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 44px;
+            padding-bottom: 40px;
+        }
+        &__text {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 685px;
+        }
         &__container {
             display: flex;
             border-right: $border;
@@ -50,12 +68,25 @@
         &__btn {
             padding: 14px 46px;
         }    
+        &__main{
+            padding: 100px 60px;
+            height: 323px;
+        }
+        &__text {
+            max-width: 540px;
+        }
     }
 }
 @media #{$desktop} {
     .projects {
         &__right-banner {
             border-bottom: $border;
+        }
+        &__main{
+            padding: 100px 30px;
+        }
+        &__text {
+            max-width: 540px;
         }
     }
 }
@@ -89,5 +120,22 @@
             width: 90%;
             text-align: center;
         }
+        &__main{
+            padding: 50px 20px;
+            height: auto;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            padding-bottom: 20px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 440px;
+        }
     }
 }
+
+
+    

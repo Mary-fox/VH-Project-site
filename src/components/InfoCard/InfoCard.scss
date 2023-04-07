@@ -1,0 +1,52 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+
+.info-card {
+    font-family: 'Montserrat';
+    background: $white; 
+    color: $black;
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-right: $border;
+    border-bottom: $border;
+        &__title {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &__text {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+}
+
+@media #{$desktop-large} {
+    .info-card {
+        padding: 120px 60px;
+    }
+}
+
+@media #{$desktop} {
+    .info-card {
+        padding: 120px 40px;
+    }
+}
+@media #{$mobile} {
+    .info-card {
+        padding: 80px 20px;
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
