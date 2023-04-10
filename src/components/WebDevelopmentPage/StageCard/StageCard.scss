@@ -1,0 +1,74 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+@import "./src/assets/styles/vars";
+
+
+.stage-card {
+    font-family: 'Montserrat';
+    background: $white; 
+    color: $black;
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: $border;
+    border-bottom: $border;
+        &__subtitle {
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            padding-bottom: 20px;
+        }
+        &__title {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 44px;
+            padding-bottom: 20px;
+        }
+        &__text, &__subtext, &__item li {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__item li {
+            display: flex;
+            gap: 20px;
+        }
+        &__item li::before {
+            content: "• ";
+            font-size: 30px;
+            color: $black;
+        }
+}
+
+@media #{$desktop-large} {
+    .stage-card {
+        padding: 120px 60px;
+    }
+}
+
+@media #{$desktop} {
+    .stage-card {
+        padding: 120px 40px;
+    }
+}
+@media #{$mobile} {
+    .stage-card {
+        padding: 80px 20px;
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

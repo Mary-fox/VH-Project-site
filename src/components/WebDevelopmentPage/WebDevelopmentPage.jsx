@@ -4,8 +4,9 @@ import Footer from '../Footer/Footer';
 import './WebDevelopmentPage.scss';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import Subheader from '../Subheader/Subheader';
-import InfoCard from '../InfoCard/InfoCard';
 import Projects from '../Projects/Projects';
+import StageCard from './StageCard/StageCard';
+import Prices from './Prices/Prices';
 
 
 function WebDevelopmentPage( ) {
@@ -17,9 +18,9 @@ function WebDevelopmentPage( ) {
     <>
     <Header isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
     <div className='wrapper'>
-    <section className="promotion">
-        <div className="promotion__left-banner"></div>
-            <div className='promotion__title-block'>
+    <section className="web-development">
+        <div className="web-development__left-banner"></div>
+            <div className='web-development__title-block'>
                 <Breadcrumbs
                     items={[
                         {label: 'Главная', url: '/' },
@@ -31,31 +32,74 @@ function WebDevelopmentPage( ) {
                     btn="Стать клиентом"
                     click={handleOfferOpen}/>
             </div>
-        <div className="promotion__right-banner"></div>
-        <div className="promotion__left-banner"></div>
-            <div className="promotion__container">
-                <InfoCard 
-                    title="Аналитическая поддержка"
-                    text="Анализируем ваши метрики и предоставляем еженедельные отчёты о работе вашего продукта с предложениями по улучшению и выводами."/>
-                <div className="promotion__empty-block"></div>
+        <div className="web-development__right-banner"></div>
+        <div className="web-development__left-banner"></div>
+            <div className="web-development__container">
+                <StageCard
+                    subtitle="Этап 1:"
+                    title="Аналитика"
+                    text="Это основной и важный этап для создания работающего и конверсионного сайта, без этой документации дизайн делается в воздух, без опоры на данные."
+                    subtext="Мы же проводим полный список всех необходимых анализов и исследований:"
+                    items={<>
+                        <li>Продуктовая и маркетинговая аналитика</li>
+                        <li>Анализ конкуренции</li>
+                        <li>Исследование пользовательского опыта (UX)</li>
+                        <li>Полноценное тестирование респондентов</li>
+                        <li>Персоны и боли</li>
+                        </>}
+                    />
+                <div className="web-development__empty-block"></div>
 
-                <div className="promotion__empty-block"></div>
-                <InfoCard 
-                title="Дизайн поддержка"
-                text="Нарисуем для вас баннеры или посты для социальных сетей, будем поддерживать вас по всем дизайн направлениям. Услуга преимущественно для наших клиентов, такая поддержка намного выгоднее чем заказывать дизайн где-то отдельно."/>
-    
-                <InfoCard 
-                title="Техническая поддержка"
-                text="Постоянная поддержка созданных нами продуктов, мы не бросаем своих клиентов после завершения проекта, стараемся максимально учавствовать в их развитии, поэтому осуществляем поддержку как почасовую так и по фиксированной цене. Поддержка сайтов на тильде, битриксе, ларавель, джанго и других платформах."/>
-                <div className="promotion__empty-block"></div>
+                <div className="web-development__empty-block"></div>
+                <StageCard
+                    subtitle="Этап 2:"
+                    title="Дизайн"
+                    text="На основе данных аналитики мы создаём действительно подтверждённый, современный и работающий дизайн"
+                    items={<>
+                        <li>Карта проекта и путь пользователя</li>
+                        <li>Доска референсов</li>
+                        <li>Low-fi & High-fi прототипирование</li>
+                        <li>Стилевая концепция</li>
+                        <li>UI/UX дизайн макет</li>
+                        <li>Дизайн</li>
+                        </>}
+                />
 
-                <div className="promotion__empty-block"></div>
-                <InfoCard 
-                title="Маркетинг и продвижение"
-                text="Настройка базового SEO, Продвижение через Яндекс директ и бизнес."/>
+                <StageCard
+                    subtitle="Этап 3:"
+                    title="Разработка"
+                    items={<>
+                        <li>Подготавливаем дизайн макет к вёрстке</li>
+                        <li>Верстаем на Тильда с триггерной анимацией и JS скриптами</li>
+                        <li>Устанавливаем домен и сертификат защиты</li>
+                        <li>Подключаем все необходимые сервисы и формы</li>
+                        <li>Интегрируем с кассами, CRM и средствами доставки</li>
+                        <li>Соединяем с Яндекс метрикой, веб-мастером</li>
+                        <li>Проставляем базовые SEO настройки (Теги, Альт-теги)</li>
+                        <li>Создаём базовое семантическое ядро</li>
+                        <li>Индексируем сайт</li>
+                        </>}
+                />
+                <div className="web-development__empty-block"></div>
+
+                <div className="web-development__empty-block"></div>
+                <StageCard
+                    subtitle="Этап 4:"
+                    title="Поддержка и продвижение"
+                    text="Это основной и важный этап для создания работающего и конверсионного сайта, без этой документации дизайн делается в воздух, без опоры на данные."
+                    subtext="Мы же проводим полный список всех необходимых анализов и исследований:"
+                    items={<>
+                        <li>Техническая поддержка </li>
+                        <li>Контент менеджемент</li>
+                        <li>Настройка яндекс бизнес</li>
+                        <li>Продвижение контекстной рекламой</li>
+                        <li>Таргетинг Вконтакте</li>
+                        </>}
+                />
             </div>
-            <div className="promotion__right-banner"></div>
+            <div className="web-development__right-banner"></div>
             </section>
+            <Prices />
             <Projects title="Кейсы" text="Здесь несколько наших проектов из последних, лучшие работы, которыми мы по-настоящему гордимся" />
     </div>    
     <Footer isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}

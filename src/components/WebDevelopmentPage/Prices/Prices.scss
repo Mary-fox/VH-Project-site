@@ -1,0 +1,38 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/vars";
+@import "./src/assets/styles/breakpoints";
+
+
+.prices {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    background: $white; 
+    color: $black;
+
+        &__left-banner {
+            @include left-banner;
+            position: relative;
+        }
+        &__title-block {
+            padding: 120px 100px 120px 100px;
+            border-right: $border;
+            border-bottom: $border ;
+        }
+        &__title {
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 44px;
+            padding-bottom: 30px;
+        }
+        &__text {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+}
