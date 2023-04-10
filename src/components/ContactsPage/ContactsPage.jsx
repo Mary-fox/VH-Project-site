@@ -10,7 +10,7 @@ import LinkItem from '../LinkItem/LinkItem';
 function ContactsPage() {
     const [isOfferOpen, setIsOfferOpen] = useState(false);
     return (
-    <div className='main-wrapper'>
+    <div className='page-wrapper'>
         <Header  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
         <section className="contacts-page">
             <div className='contacts-page__left-banner'>

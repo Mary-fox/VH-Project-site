@@ -12,6 +12,7 @@ import ArticlePage from "./components/PublicationsPage/ArticlePage/ArticlePage";
 import { articles } from './datas/articles';
 import ContactsPage from "./components/ContactsPage/ContactsPage";
 import PromotionPage from "./components/PromotionPage/PromotionPage";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
   <HashRouter>
   <ScrollToTop />
   <Routes>
-    <Route path="/" element={<Main/>}/>
+    <Route path="/" element={<Main/>}  exact/>
     <Route path="/services" element={<ServicesPage/>}/>
     <Route path="/career" element={<CareerPage/>}/>
     <Route path="/projects" element={<ProjectsPage/>}/>
@@ -28,6 +29,7 @@ function App() {
     <Route path="/publications/:id" element={<ArticlePage articles={articles} />} />
     <Route path="/contacts" element={<ContactsPage/>} />
     <Route path="/promotion" element={<PromotionPage/>} />
+    <Route path="*" element={<ErrorPage />} />
   </Routes>
   </HashRouter>
   );
