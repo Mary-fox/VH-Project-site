@@ -43,6 +43,7 @@ function ServicesPage() {
                     <li>UX - Исследования</li>
                     <li>Аналитика метрик</li>
                     </>}
+            link="/analytics"
             />
         <ServicesCard
             title="Дизайн"

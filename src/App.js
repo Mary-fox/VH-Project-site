@@ -13,6 +13,8 @@ import { articles } from './datas/articles';
 import ContactsPage from "./components/ContactsPage/ContactsPage";
 import PromotionPage from "./components/PromotionPage/PromotionPage";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import WebDevelopmentPage from "./components/WebDevelopmentPage/WebDevelopmentPage";
+import AnalyticsPage from "./components/AnalyticsPage/AnalyticsPage";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
     <Route path="/publications/:id" element={<ArticlePage articles={articles} />} />
     <Route path="/contacts" element={<ContactsPage/>} />
     <Route path="/promotion" element={<PromotionPage/>} />
+    <Route path="/webdevelopment" element={<WebDevelopmentPage/>} />
+    <Route path="/analytics" element={<AnalyticsPage/>} />
     <Route path="*" element={<ErrorPage />} />
   </Routes>
   </HashRouter>

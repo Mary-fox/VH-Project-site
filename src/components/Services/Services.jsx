@@ -17,7 +17,7 @@ function Services() {
               <li className="services__list-item">Сервисы</li>
             </ul>
           <div className="services__info">
-            <Link to='#!'  className="btn services__button">Подробнее</Link>
+            <Link to='/webdevelopment'  className="btn services__button">Подробнее</Link>
             <p className='services__text'>Нажмите на кнопку подробнее чтобы изучить наш стек технологий и принципы работы.</p>
           </div>
         </div>

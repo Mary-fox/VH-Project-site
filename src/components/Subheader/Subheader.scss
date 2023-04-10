@@ -12,12 +12,14 @@
         font-size: 92px;
         line-height: 112px;
         padding-bottom: 30px;
+        max-width: 949px;
     }
     &__subtext{
         font-family: 'Lato';
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
+        max-width: 949px;
     }
     &__btn {
         width: 200px;
@@ -45,7 +47,7 @@
     }
 }
 @media #{$desktop} {
-    .subheader{
+    .subheader {
             padding: 100px 0 100px 0;
 
             &__title{
@@ -64,6 +66,13 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .subheader {
+        &__btn {
+            right: 100px; 
+        }
+    }
+}
 @media #{$tablet} {
     .subheader {
 

@@ -1,0 +1,80 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/vars";
+@import "./src/assets/styles/breakpoints";
+
+.wrapper {
+    padding-top: 60px;
+}
+
+.analytics {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    background: $white; 
+    color: $black;
+        &__left-banner {
+            @include left-banner;
+            position: relative;
+        }
+        &__left-banner h3 {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            position: absolute;
+            top: 560px;
+        }
+        &__title-block {
+            padding: 40px 100px 0 100px;
+            border-bottom: $border;
+            border-right: $border;
+        }
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__empty-block {
+            border-bottom: $border;
+            border-right: $border;
+        }
+}
+
+@media #{$desktop-large} {
+    .analytics {
+
+        &__title-block {
+            padding: 40px 60px 0 60px;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .analytics {
+
+        &__title-block {
+            padding: 40px 40px 0 40px;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .analytics {
+        grid-template-columns: 0 1fr 0;
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__title-block {
+            border-bottom: none;
+        }
+        &__empty-block {
+            display: none;
+        }
+    }
+}
+@media #{$mobile} {
+    .analytics {
+
+        &__title-block {
+            padding: 20px 20px 0 20px;
+        }
+    }
+}
