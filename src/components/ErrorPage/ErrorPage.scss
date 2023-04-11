@@ -2,7 +2,7 @@
 @import "./src/assets/styles/breakpoints";
 @import "./src/assets/styles/vars";
 
-.error {
+.error-page  {
     padding-top: 60px;
     font-family: 'Montserrat';
     display: grid;
@@ -74,7 +74,7 @@
 }
 
 @media #{$desktop-large} {
-    .error{
+    .error-page {
 
         &__container {
             padding: 0 60px 0 60px;
@@ -82,7 +82,7 @@
     }
 }
 @media #{$desktop} {
-    .error{
+    .error-page {
 
         &__container {
             padding: 0 40px 0 40px;
@@ -93,7 +93,7 @@
     }
 }
 @media #{$tablet} {
-    .error{
+    .error-page {
         grid-template-columns: 0 1fr 0;
         &__container {
             align-items: center;
@@ -109,7 +109,7 @@
     }
 }
 @media #{$mobile} {
-    .error{
+    .error-page {
         &__container {
             padding: 0 20px 0 20px;
         }
@@ -136,7 +136,7 @@
     }
 }
 @media #{$mobile-small} {
-    .error{
+    .error-page {
         &__title {
             font-size: 100px;
             line-height: 122px;

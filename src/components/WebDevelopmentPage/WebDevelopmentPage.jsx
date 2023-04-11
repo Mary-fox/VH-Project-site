@@ -7,6 +7,7 @@ import Subheader from '../Subheader/Subheader';
 import Projects from '../Projects/Projects';
 import StageCard from './StageCard/StageCard';
 import Prices from './Prices/Prices';
+import Technologies from './Technologies/Technologies';
 
 
 function WebDevelopmentPage( ) {
@@ -100,7 +101,9 @@ function WebDevelopmentPage( ) {
             <div className="web-development__right-banner"></div>
             </section>
             <Prices />
+            <Technologies isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
             <Projects title="Кейсы" text="Здесь несколько наших проектов из последних, лучшие работы, которыми мы по-настоящему гордимся" />
+
     </div>    
     <Footer isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
         text="Расскажите о вашем проекте"

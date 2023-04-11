@@ -12,19 +12,19 @@ function ErrorPage( ) {
   <div className='page-wrapper'>
     <Header isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
 
-    <section className="error">
-    <div className='error__left-banner'></div>
-        <div className="error__container">
-          <h1 className='error__title'>404</h1>
-          <div className="error__content">
-            <div className="error__info">
-              <h2 className='error__subtitle'>Страница не найдена</h2>
-              <p className='error__text'>Мы обязательно разберёмся с этим недоразумением, а пока вернитесь на главную страницу</p>
+    <section className="error-page">
+    <div className='error-page__left-banner'></div>
+        <div className="error-page__container">
+          <h1 className='error-page__title'>404</h1>
+          <div className="error-page__content">
+            <div className="error-page__info">
+              <h2 className='error-page__subtitle'>Страница не найдена</h2>
+              <p className='error-page__text'>Мы обязательно разберёмся с этим недоразумением, а пока вернитесь на главную страницу</p>
             </div>
-            <Link className='error__btn' to="/">На главную</Link>
+            <Link className='error-page__btn' to="/">На главную</Link>
           </div>
         </div>
-      <div className='error__right-banner'></div>
+      <div className='error-page__right-banner'></div>
 
     </section>
   </div>
