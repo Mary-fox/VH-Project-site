@@ -5,7 +5,7 @@ import React from "react";
 
 
 function Card(props) {
-    const { linkSmall, linkLarge,  backgroundStyle } = props;
+const { linkSmall, linkLarge,  backgroundStyle } = props;
 const [isSmallScreen, setIsSmallScreen] = React.useState(
   window.matchMedia("(max-width: 960px)").matches
 );

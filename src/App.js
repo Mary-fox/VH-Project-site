@@ -15,6 +15,7 @@ import PromotionPage from "./components/PromotionPage/PromotionPage";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import WebDevelopmentPage from "./components/WebDevelopmentPage/WebDevelopmentPage";
 import AnalyticsPage from "./components/AnalyticsPage/AnalyticsPage";
+import IllustrationsPage from "./components/IllustraitionsPage/IllustrationsPage";
 
 function App() {
   return (
@@ -33,7 +34,9 @@ function App() {
     <Route path="/promotion" element={<PromotionPage/>} />
     <Route path="/webdevelopment" element={<WebDevelopmentPage/>} />
     <Route path="/analytics" element={<AnalyticsPage/>} />
+    <Route path="/illustrations" element={<IllustrationsPage />} />
     <Route path="*" element={<ErrorPage />} />
+    
   </Routes>
   </HashRouter>
   );

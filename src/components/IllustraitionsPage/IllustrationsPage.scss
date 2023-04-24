@@ -1,0 +1,23 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/vars";
+@import "./src/assets/styles/breakpoints";
+
+.wrapper {
+    padding-top: 60px;
+}
+
+.illustrations {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    background: $white; 
+    color: $black;
+        &__left-banner {
+            @include left-banner;
+            position: relative;
+        }
+        &__container {
+
+        }
+
+}

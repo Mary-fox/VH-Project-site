@@ -26,7 +26,7 @@ function TeamPage() {
                 <div className="team__title-block">
                     <h1 className='team__title'>КОМАНДА</h1>
                     <p className='team__subtext'>Мы - единомышленники, которые стремятся создавать уникальные и функциональные продукты на основе аналитики, данных из метрик и исследовании пользовательского опыта.</p>
-                    <button  className="subheader__btn">Присоединиться</button>    
+                    <button  className="team__btn">Присоединиться</button>    
                 </div>
                 </div>
             <div className='team__right-banner'></div>
