@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 60px 1fr 60px;
     border-bottom: $border;
-    transition: all 0.8s ease-in;
+    transition: all 0.5s ease-in;
         &__left-banner {
             border-right: $border;
         }
@@ -46,7 +46,7 @@
         }
         &--open{
             right: 0;
-            transition: all 0.8s ease-in;
+            transition: all 0.5s ease-in;
         }
 }
 

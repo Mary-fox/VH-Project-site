@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 60px 1fr 60px;
     border-bottom: $border;
-    transition: all 0.8s ease-in;
+    transition: all 0.5s ease-in;
     &__left-banner {
         border-right: $border;
     }
@@ -42,7 +42,7 @@
     }
     &--open{
         left: 0;
-        transition: all 0.8s ease-in;
+        transition: all 0.5s ease-in;
         body {
             overflow: hidden;
           }
@@ -55,26 +55,23 @@
 .contacts {
     display: flex;
     flex-direction: column;
-    gap: 220px;
+    gap: 72px;
 
     &__block{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 8px;
+    }
+    &__phone,&__email {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 68px;
+        color: $black;
     }
     &__phone {
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 44px;
-        color: $black;
+        padding-bottom: 36px;
     }
-    &__email {
-        font-family: 'Lato';
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: $black;
-    }
+
     &__title {
         font-family: 'Montserrat';
         font-weight: 400;
@@ -109,6 +106,9 @@
         &__items,  &__items ul{
             gap: 30px;
         }
+        &__phone,&__email {
+            font-size: 44px;
+        }
     }
 }
 @media #{$tablet} {
@@ -139,6 +139,9 @@
             gap: 0;
             justify-content: space-between;
         }
+        &__phone,&__email {
+            font-size: 30px;
+        }
     }
 }
 @media #{$mobile} {
@@ -152,13 +155,9 @@
         }
     }
     .contacts {
-        &__phone {
+        &__phone, &__email {
             font-size: 28px;
             line-height: 34px;
-        }
-        &__email {
-            font-size: 14px;
-            line-height: 17px;
         }
         &__title {
             font-size: 14px;
@@ -178,6 +177,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 50px;
+            justify-content: flex-start;
         }
     }
     .contacts {

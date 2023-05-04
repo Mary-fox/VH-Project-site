@@ -18,8 +18,10 @@ function Overlay(props) {
             </nav>
             <div className="contacts">
                 <div className="contacts__block">
+                    <p>Телефон для связи:</p>
                     <LinkItem className='contacts__phone' href="tel:79270030100" text='8 927 003 01 00'/>
-                    <LinkItem  className='contacts__email' href="mailto:info@visualhearts.ru" text='info@visualhearts.ru'/>
+                    <p>По вопросам сотрудничества:</p>
+                    <LinkItem  className='contacts__email' href="mailto:HELLO@ANYERA.RU" text='HELLO@ANYERA.RU'/>
                 </div>
                 <div className="contacts__links">
                     <h1 className='contacts__title'>Мы в социальных сетях:</h1>

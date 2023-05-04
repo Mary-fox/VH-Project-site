@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Popup from "../Popup/Popup";
 import './FeedbackForm.scss';
 import BlackLayer from "../../BlackLayer/BlackLayer";
+import offerIcon from '../../../assets/images/offer-icon.svg';
 
 function FeedbackForm( ) {
   const [name, setName] = useState("");
@@ -11,8 +12,21 @@ function FeedbackForm( ) {
   const [errorPhone, setErrorPhone] = useState ('');
   const [showPopup, setShowPopup] = useState(false);
   const [errorMessage, setErrorMessage] = useState ('');
-
-
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenBudget, setIsOpenBudget] = useState(false);
+  const [contact, setContact] = useState("");
+  const [budget, setBudget] = useState("");
+  const contacts = [
+    { label: "Telegram" },
+    { label: "VKontakte"},
+    { label: "Позвонить"}
+  ];
+  const budgets = [
+    { label: "До 100 тыс" },
+    { label: "От 100 до 200 тыс"},
+    { label: "От 200 до 500 тыс"},
+    { label: "От 500 тыс до 1млн"}
+  ];
 
 
   const handleSubmit = (e) => {
@@ -47,7 +61,14 @@ function FeedbackForm( ) {
       setErrorPhone("");
     }
   };
-
+  const handleOptionClick = (option) => {
+    setContact(option.label);
+    setIsOpen(false);
+  };//клик для открытия выпадающего меню в выборе контакта
+  const handleBudgetClick = (option) => {
+    setBudget(option.label);
+    setIsOpenBudget(false);
+  };//клик для открытия выпадающего меню в выборе бюджета
   return (
     <>
     <form  className="form" method="post" action="#!" onSubmit={handleSubmit}>
@@ -68,21 +89,54 @@ function FeedbackForm( ) {
       </label>
       <br />
       <div className="form__contacts">
-        <label className="form__contact" htmlFor="contactMethod">Cпособ связи:</label>
-          <select id="contactMethod" name="contactMethod">
-              <option value="messengers">Telegram</option>
-              <option value="vk">VKontakte</option>
-              <option value="phone">Позвонить</option>
-          </select>
+      <label className="form__contact" htmlFor="contactMethod">Cпособ связи:</label>
+                  <div className="form-dropdown__selected" onClick={() => setIsOpen(!isOpen)}>
+                    {contact ? budgets.find(option => option.label === contact).label : "Telegram"}
+                    <img className="form-dropdown__icon" src={offerIcon} alt="icon" />
+                  </div>
+                    {isOpen && (
+                      <div className="contact-dropdown__options">
+                        {contacts.map((option) => (
+                          <div
+                            key={option.label}
+                            className={
+                              "contact-dropdown__option " +
+                              (contact === option.label
+                                ? "contact-dropdown__option--selected"
+                                : "")
+                            }
+                            onClick={() => handleOptionClick(option)}
+                          >
+                            {option.label}
+                          </div>
+                        ))}
+                      </div>
+                    )}
       </div>
       <div className="form__budget">
-        <label  className="form__money" htmlFor="contactMethod">Бюджет проекта</label>
-          <select id="contactMethod" name="contactMethod">
-              <option value="100">До 100 тыс</option>
-              <option value="200">От 100 до 200 тыс</option>
-              <option value="500">От 200 до 500 тыс</option>
-              <option value="1">От 500 тыс до 1млн</option>
-          </select>
+      <label className="form__money" htmlFor="contactMethod">Бюджет проекта</label>
+                  <div className="form-dropdown__selected" onClick={() => setIsOpenBudget(!isOpenBudget)}>
+                    {budget ? budgets.find(option => option.label === budget).label : "До 100 тыс"}
+                    <img className="form-dropdown__icon" src={offerIcon} alt="icon" />
+                  </div>
+                    {isOpenBudget && (
+                      <div className="contact-dropdown__options">
+                        {budgets.map((option) => (
+                          <div
+                            key={option.label}
+                            className={
+                              "contact-dropdown__option " +
+                              (budget === option.label
+                                ? "contact-dropdown__option--selected"
+                                : "")
+                            }
+                            onClick={() => handleBudgetClick(option)}
+                          >
+                            {option.label}
+                          </div>
+                        ))}
+                      </div>
+                    )}
       </div>
       <label >
         <textarea  placeholder="Опишите проект"  onInput={(evt) => {

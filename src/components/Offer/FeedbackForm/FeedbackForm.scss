@@ -35,6 +35,7 @@
         font-size: 16px;
         line-height: 19px;
         color: $black;
+        position: relative;
     }
     &__budget, &__message {
         padding-top: 30px;
@@ -64,7 +65,36 @@
     &__btn:hover {
         background-color: $purple;
     }
-
+}
+.form-dropdown {
+    &__selected {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+}
+.contact-dropdown {
+    &__options {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        top: 100px;
+        width: 100%;
+        z-index: 10;
+        background-color: $white;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    &__option{
+        color: $grey;
+    }
+    &__option:hover{
+        color: $black;
+    }
+    &__option--selected {
+        color: $black;
+    }
 }
 .error {
     height: 12px;
