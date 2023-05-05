@@ -1,10 +1,10 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 // import Offer from "../Offer/Offer";
-import Partners from "../Partners/Partners";
+// import Partners from "../Partners/Partners"; временно скрываем
 import Projects from "../Projects/Projects";
 import Promo from "../Promo/Promo";
-import Publications from "../Publications/Publications";
+// import Publications from "../Publications/Publications"; временно скрываем
 import Services from "../Services/Services";
 import './Main.scss'
 import { useState } from "react";
@@ -19,8 +19,8 @@ function Main() {
         <Promo />
         <Services />
         <Projects title="Свежие проекты" text="Здесь несколько наших проектов из последних, для удобства вы можете перейти на страницу проекты и воспользоваться фильтрами"/>
-        <Partners  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
-        <Publications />
+        {/* <Partners  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}/>
+        <Publications /> */}
     </main>
     <Footer  isOfferOpen={isOfferOpen} setIsOfferOpen={setIsOfferOpen}
     text="Расскажите о вашем проекте"
@@ -33,5 +33,5 @@ function Main() {
 
   );
 }
-
+ 
 export default Main;

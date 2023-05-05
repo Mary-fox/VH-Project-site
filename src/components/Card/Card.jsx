@@ -1,6 +1,6 @@
 import './Card.scss';
 import React from "react";
-
+import Animated from '../Animated/Animated';
 
 
 
@@ -22,7 +22,9 @@ React.useEffect(() => {
   };
 }, []);
     return (
+
     <div className={`project-card ${backgroundStyle}`}>
+      <Animated>
         <ul className="project-card__items">{props.item}</ul>
         <h3 className='project-card__title'>{props.name}</h3>
         <p className='project-card__text'>{props.text}</p>
@@ -30,7 +32,9 @@ React.useEffect(() => {
         {isSmallScreen ?(<img  src={linkSmall} alt="project" />) : (<img  src={linkLarge} alt="project" />)}
         </div>
         <button className="project-card__link" onClick={() => window.location.href = props.link}>Перейти на сайт</button>
+        </Animated>
     </div>
+
     );
   }
   

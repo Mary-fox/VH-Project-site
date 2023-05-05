@@ -1,7 +1,7 @@
 import Card from '../Card/Card';
 import './Projects.scss';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import Animated from '../Animated/Animated';
 
 function Projects(props) {
     return (
@@ -12,8 +12,10 @@ function Projects(props) {
         <div className='projects__container'>
             <div className='projects__left-block'>
             <div className='projects__main'>
+            <Animated>
                 <h3 className='projects__title'>{props.title}</h3>
                 <p className='projects__text'>{props.text}</p>
+            </Animated>
             </div>
                 <Card 
                     item={<>
@@ -83,10 +85,12 @@ function Projects(props) {
                     linkLarge={require("../../assets/images/project-6.png")}
                     linkSmall={require("../../assets/images/project-6-small.png")}
                     backgroundStyle="darkblue-background"/>
+
                     <div className="projects__all-cases">
+                    <Animated>
                         <Link to='/projects' className='btn projects__btn'>Все кейсы</Link>
+                    </Animated>
                     </div>
-                    
             </div>
         </div>
         <div className="projects__right-banner"></div>           
