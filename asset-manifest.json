@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/VH-Project-site/static/css/main.992bdc80.css",
-    "main.js": "/VH-Project-site/static/js/main.d9db455a.js",
+    "main.css": "/VH-Project-site/static/css/main.f0f5be03.css",
+    "main.js": "/VH-Project-site/static/js/main.8793c61c.js",
     "static/media/project-4.png": "/VH-Project-site/static/media/project-4.41a1c1981050d5bff50c.png",
     "static/media/python-hover.svg": "/VH-Project-site/static/media/python-hover.51f8f4982c21dccc313e.svg",
     "static/media/postgresql-hover.svg": "/VH-Project-site/static/media/postgresql-hover.e574dfc18e51470546d6.svg",
@@ -70,11 +70,11 @@
     "static/media/slide-rigth.svg": "/VH-Project-site/static/media/slide-rigth.1fb3ecf2270da9af2a3abf1ac392ec1a.svg",
     "static/media/slide-right-grey.svg": "/VH-Project-site/static/media/slide-right-grey.cea28acfd131ac1ab7a657de2973dc49.svg",
     "static/media/offer-icon.svg": "/VH-Project-site/static/media/offer-icon.a031e9a47e4d20ca8baaf7ea88225c21.svg",
-    "main.992bdc80.css.map": "/VH-Project-site/static/css/main.992bdc80.css.map",
-    "main.d9db455a.js.map": "/VH-Project-site/static/js/main.d9db455a.js.map"
+    "main.f0f5be03.css.map": "/VH-Project-site/static/css/main.f0f5be03.css.map",
+    "main.8793c61c.js.map": "/VH-Project-site/static/js/main.8793c61c.js.map"
   },
   "entrypoints": [
-    "static/css/main.992bdc80.css",
-    "static/js/main.d9db455a.js"
+    "static/css/main.f0f5be03.css",
+    "static/js/main.8793c61c.js"
   ]
 }
