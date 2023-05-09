@@ -25,13 +25,15 @@ React.useEffect(() => {
 
     <div className={`project-card ${backgroundStyle}`}>
       <Animated>
-        <ul className="project-card__items">{props.item}</ul>
-        <h3 className='project-card__title'>{props.name}</h3>
-        <p className='project-card__text'>{props.text}</p>
-        <div className='project-card__image'>
-        {isSmallScreen ?(<img  src={linkSmall} alt="project" />) : (<img  src={linkLarge} alt="project" />)}
+        <div className='project-card__content'>
+          <ul className="project-card__items">{props.item}</ul>
+          <h3 className='project-card__title'>{props.name}</h3>
+          <p className='project-card__text'>{props.text}</p>
+          <div className='project-card__image'>
+          {isSmallScreen ?(<img  src={linkSmall} alt="project" />) : (<img  src={linkLarge} alt="project" />)}
+          </div>
+          <button className="project-card__link" onClick={() => window.location.href = props.link}>Перейти на сайт</button>
         </div>
-        <button className="project-card__link" onClick={() => window.location.href = props.link}>Перейти на сайт</button>
         </Animated>
     </div>
 

@@ -8,9 +8,6 @@
 
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     padding: 57px 100px;
     border-bottom: $border;
     font-family: 'Montserrat';
@@ -19,6 +16,11 @@
     cursor: pointer;
     position: relative;
 
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
         &__image {
             display: flex;
             justify-content: center; 
@@ -55,21 +57,9 @@
             font-size: 16px;
             line-height: 20px;
             color: $white;
-            top: 300px;
+            top: 500px;
             opacity: 0;
-            width: 250px;
-            height: 250px;
             cursor: pointer;
-            transform: rotate(-23.91deg);
-            background-color: $light-grey;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-            color: #F8F8F8;
         }
         &__link:hover {
             background-color: #bfbfbf;
@@ -137,8 +127,6 @@
                 padding-right: 60px;
             }
             &__link {
-                width: 180px;
-                height: 180px;
                 top: 300px;
             }
         }
@@ -166,9 +154,6 @@
         }
         &__link {
             top: 280px;
-            opacity: 0;
-            width: 100px;
-            height: 100px;
             font-size: 14px;
             line-height: 18px;
         }
@@ -194,8 +179,6 @@
         }
         &__link {
             top: 300px;
-            height: 150px;
-            width: 150px;
         }
     }
 }
@@ -219,8 +202,6 @@
         }
         &__link {
             top: 300px;
-            width: 100px;
-            height: 100px;
         }
     }
 }
@@ -244,10 +225,6 @@
         }
         &__link {
             top: 240px;
-            width: 80px;
-            height: 80px;
-            font-size: 12px;
-            right: -15px;
         }
     }
 }
